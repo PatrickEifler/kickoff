@@ -1,10 +1,37 @@
-<li><a href="/kickoff/learn/index.html"{% if page.navactive == 'docsindex' %} class="is-active"{% endif %}>Principles</a></li>
-<li><a href="/kickoff/learn/get.html"{% if page.navactive == 'docsget' %} class="is-active"{% endif %}>Get Kickoff</a></li>
-<li><a href="/kickoff/learn/usage.html"{% if page.navactive == 'docsusage' %} class="is-active"{% endif %}>Usage</a></li>
-<li><a href="/kickoff/learn/grunt.html"{% if page.navactive == 'docsgrunt' %} class="is-active"{% endif %}>Grunt</a></li>
-<li><a href="/kickoff/learn/sass.html"{% if page.navactive == 'docssass' %} class="is-active"{% endif %}>Sass</a></li>
-<li><a href="/kickoff/learn/css.html"{% if page.navactive == 'docscss' %} class="is-active"{% endif %}>CSS</a></li>
-<li><a href="/kickoff/learn/js.html"{% if page.navactive == 'docsjs' %} class="is-active"{% endif %}>Javascript</a></li>
-<li><a href="/kickoff/learn/grid.html"{% if page.navactive == 'docsgrid' %} class="is-active"{% endif %}>The Grid</a></li>
-<li><a href="/kickoff/learn/yeoman.html"{% if page.navactive == 'docsyo' %} class="is-active"{% endif %}>Yeoman generator</a></li>
-<li><a href="/kickoff/learn/sublime.html"{% if page.navactive == 'docssublime' %} class="is-active"{% endif %}>Sublime Text snippets</a></li>
+<ul class="sidebar-nav unstyled">
+	<li><a href="/kickoff/learn/index.html"{% if page.navactive == 'docsindex' %} class="is-active"{% endif %}>Meet Kickoff</a></li>
+	<li><a href="/kickoff/learn/get.html"{% if page.navactive == 'docsget' %} class="is-active"{% endif %}>Get Kickoff</a></li>
+	<li><a href="/kickoff/learn/use.html"{% if page.navactive == 'docsuse' %} class="is-active"{% endif %}>Use Kickoff</a></li>
+</ul>
+
+<ul class="sidebar-nav unstyled">
+	<li><a href="/kickoff/learn/grunt.html"{% if page.navactive == 'docsgrunt' %} class="is-active"{% endif %}>Grunt</a></li>
+	<li><a href="/kickoff/learn/css.html"{% if page.navactive == 'docscss' %} class="is-active"{% endif %}>CSS</a>
+		{% if page.navactive == 'docscss' %}
+		<ul class="sidebar-subnav unstyled">
+			<li><a href="#how">How we use it</a></li>
+			<li><a href="#namingscheme">Naming scheme</a></li>
+			<li><a href="#sass">Sass</a></li>
+			<li><a href="#structure">Structure</a></li>
+			<li><a href="#variables">Variables</a></li>
+			<li><a href="#responsive">Responsive</a></li>
+		</ul>
+		{% endif %}
+	</li>
+	<li><a href="/kickoff/learn/js.html"{% if page.navactive == 'docsjs' %} class="is-active"{% endif %}>Javascript</a>
+		{% if page.navactive == 'docsjs' %}
+		<ul class="sidebar-subnav unstyled">
+			<li><a href="#how">How we use it</a></li>
+			<li><a href="#namingscheme">Naming scheme</a></li>
+			<li><a href="#structure">Structure</a></li>
+			<li><a href="#browserify">Browserify</a></li>
+		</ul>
+		{% endif %}
+	</li>
+	<li><a href="/kickoff/learn/grid.html"{% if page.navactive == 'docsgrid' %} class="is-active"{% endif %}>The Grid</a></li>
+</ul>
+
+<ul class="sidebar-nav unstyled">
+	<li><a href="/kickoff/learn/yeoman.html"{% if page.navactive == 'docsyo' %} class="is-active"{% endif %}>Yeoman generator</a></li>
+	<li><a href="/kickoff/learn/sublime.html"{% if page.navactive == 'docssublime' %} class="is-active"{% endif %}>Sublime Text snippets</a></li>
+</ul>
