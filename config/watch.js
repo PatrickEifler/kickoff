@@ -60,23 +60,14 @@ module.exports.tasks = {
 		// fix watch process
 		jekyll : {
 			files: [
-				'_includes/**/*.html',
-				'_layouts/**/*.html',
-				'archive/**/*.html',
-				'_posts/**/*.md',
-				'demos/**/*.md',
-				'docs/**/*.md',
-				'code/**/*.html',
-				'_drafts/**/*.md',
-				'css/**/*.css',
-				'js/**/*.js',
+				'!kickoff/**/*.*',
+				'**/*.html',
+				'**/*.md',
 				'img/**/*.*',
-				'*.html',
-				'*.md',
-				'_plugins/*.rb',
-				'Gruntfile.js',
-				'config/*.js',
-				'**/*.yml'
+				'**/*.css',
+				'**/*.js',
+				'**/*.yml',
+				'_plugins/*.rb'
 			],
 			tasks: 'jekyll',
 			options: {
