@@ -182,6 +182,8 @@ a {
 	}
 }
 
+.sub
+
 .github-link {
 	background-color: darken($color-primary, 20%);
 }
@@ -304,6 +306,8 @@ a {
 		background-color: #fff;
 		max-width: 475px;
 		margin: 0 auto;
+		display: block;
+		position: relative;
 	}
 
 	li {
@@ -311,7 +315,16 @@ a {
 	}
 
 	figcaption {
-		line-height: 2;
+		// line-height: 2;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(#000, .8);
+		padding: 0.5em;
+		text-align: left;
+		color: #fff;
+		// opacity: 0;
+		@include font-size($type-small);
 	}
 
 	img {
@@ -405,6 +418,8 @@ a {
 
 
 .sidebar-nav {
+	margin-bottom: 1em;
+
 	a {
 		padding: 1px 4px;
 		border-radius: 2px;
@@ -412,6 +427,18 @@ a {
 	.is-active {
 		background-color: $color-primary;
 		color: #fff;
+	}
+}
+.sidebar-subnav {
+	margin-left: 1em;
+
+	a:link {
+		font-weight: normal;
+
+		&:before {
+			content:'- ';
+
+		}
 	}
 }
 .docs-footer {
