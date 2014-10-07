@@ -41,7 +41,6 @@ code {
 		background-color: darken($color-code-bg, 15%);
 		display: block;
 		text-align: center;
-		@include border-radius(3px 0 0 3px);
 		font-weight: $font-weight-bold;
 
 	}
