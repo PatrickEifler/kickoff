@@ -1955,8 +1955,6 @@ code {
   background-color: #cbcbd8;
   display: block;
   text-align: center;
-  -o-border-radius: 3px 0 0 3px;
-  border-radius: 3px 0 0 3px;
   font-weight: bold;
 }
 
@@ -2516,6 +2514,7 @@ a {
   border-color: #924d10;
 }
 
+.sub
 .github-link {
   background-color: #924d10;
 }
@@ -2626,12 +2625,22 @@ a {
   background-color: #fff;
   max-width: 475px;
   margin: 0 auto;
+  display: block;
+  position: relative;
 }
 .showcaseList li {
   margin-bottom: 20px;
 }
 .showcaseList figcaption {
-  line-height: 2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0.5em;
+  text-align: left;
+  color: #fff;
+  font-size: 14.4px;
+  font-size: 0.8rem;
 }
 .showcaseList img {
   display: block;
@@ -2713,6 +2722,9 @@ a {
   margin-bottom: 0;
 }
 
+.sidebar-nav {
+  margin-bottom: 1em;
+}
 .sidebar-nav a {
   padding: 1px 4px;
   border-radius: 2px;
@@ -2720,6 +2732,16 @@ a {
 .sidebar-nav .is-active {
   background-color: #e67e22;
   color: #fff;
+}
+
+.sidebar-subnav {
+  margin-left: 1em;
+}
+.sidebar-subnav a:link {
+  font-weight: normal;
+}
+.sidebar-subnav a:link:before {
+  content: '- ';
 }
 
 .docs-footer {
