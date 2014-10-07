@@ -1,8 +1,8 @@
 ---
 layout: docs
 navgroup: docs
-navactive: docsusage
-title: Usage
+navactive: docsuse
+title: Use Kickoff
 ---
 
 Kickoff is not meant to be too prescriptive; we don't want to force developers into a certain coding style. At it's heart lies the CSS framework (built with the `.scss` version of Sass) so, if you wanted to, you could just include that.

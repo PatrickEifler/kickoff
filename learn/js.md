@@ -2,7 +2,7 @@
 layout: docs
 navgroup: docs
 navactive: docsjs
-title: The JavaScript
+title: JavaScript
 ---
 
 Information about the default JavaScript included in the project.
