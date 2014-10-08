@@ -61,44 +61,8 @@ a {
 	background-color: $color-primary;
 	color: #fff;
 	border-bottom: 3px solid darken($color-primary, 10%);
-	height: 50px;
+	min-height: 50px;
 	line-height: 45px;
-
-	a, h1, h2 {
-		color: #fff;
-	}
-
-	a:after {
-		// font-size: 30px;
-	}
-}
-
-.masthead-home {
-	text-align: center;
-	padding: 20px 0;
-
-	.g-container {
-		padding-top: 0;
-	}
-
-	.logo {
-		margin-top: 0;
-		margin-bottom: 20px;
-		line-height: 1.1;
-	}
-
-	h2 {
-		margin-top: 10px;
-		margin-bottom: 10px;
-		@include font-size(20);
-		line-height: 1.1;
-	}
-}
-
-.masthead-all {
-	background-color: $color-primary;
-	color: #fff;
-	text-align: center;
 
 	.logo {
 		margin: 0;
@@ -110,7 +74,73 @@ a {
 	.g-container {
 		padding: 5px;
 	}
+
+	a, h1, h2 {
+		color: #fff;
+	}
+
+	a:after {
+		// font-size: 30px;
+	}
+
+	@include respond-min($bp-single-col) {
+		.logo {
+			float: left;
+			margin: 0;
+			@include font-size(30);
+			text-align: left;
+		}
+
+		.nav {
+			float: right;
+		}
+
+		.g-container {
+			padding: 0;
+			line-height: 50px;
+		}
+	}
+
 }
+
+// .masthead-home {
+// 	text-align: center;
+// 	padding: 20px 0;
+
+// 	.g-container {
+// 		padding-top: 0;
+// 	}
+
+// 	.logo {
+// 		margin-top: 0;
+// 		margin-bottom: 20px;
+// 		line-height: 1.1;
+// 	}
+
+// 	h2 {
+// 		margin-top: 10px;
+// 		margin-bottom: 10px;
+// 		@include font-size(20);
+// 		line-height: 1.1;
+// 	}
+// }
+
+// .masthead-all {
+// 	background-color: $color-primary;
+// 	color: #fff;
+// 	text-align: center;
+
+// 	.logo {
+// 		margin: 0;
+// 		@include font-size(30);
+// 		text-align: center;
+// 		line-height: 1.5;
+// 	}
+
+// 	.g-container {
+// 		padding: 5px;
+// 	}
+// }
 
 .nav {
 	a {
@@ -153,6 +183,25 @@ a {
 	a:after {
 		display: none;
 	}
+
+	@include respond-min($bp-single-col) {
+		> li {
+			&:hover {
+				.sub-nav {
+					display: block;
+				}
+			}
+		}
+
+		a:after {
+			display: inherit;
+			@include font-size(22);
+
+			vertical-align: baseline;
+			line-height: 0.4;
+		}
+	}
+
 }
 
 .sub-nav {
@@ -525,69 +574,69 @@ a {
 
 // === $bp-mid> ===
 @include respond-min($bp-mid) {
-	body {
-		padding-top: 50px;
+	// body {
+	// 	padding-top: 50px;
 
-		&.page-home {
-			padding-top: 0;
-		}
-	}
+	// 	&.page-home {
+	// 		padding-top: 0;
+	// 	}
+	// }
 
-	.masthead-home {
-		padding: 60px 0;
+	// .masthead-home {
+	// 	padding: 60px 0;
 
-		.logo {
-			margin-top: 0;
-			margin-bottom: 20px;
-		}
+	// 	.logo {
+	// 		margin-top: 0;
+	// 		margin-bottom: 20px;
+	// 	}
 
-		h2 {
-			margin-top: 20px;
-			@include font-size(28);
-			line-height: 1.5;
-		}
-	}
+	// 	h2 {
+	// 		margin-top: 20px;
+	// 		@include font-size(28);
+	// 		line-height: 1.5;
+	// 	}
+	// }
 
-	.masthead-all {
-		background-color: $color-primary;
-		color: #fff;
-		position: fixed;
-		top: 0; right: 0; left: 0;
+	// .masthead-all {
+	// 	background-color: $color-primary;
+	// 	color: #fff;
+	// 	position: fixed;
+	// 	top: 0; right: 0; left: 0;
 
-		.logo {
-			float: left;
-			margin: 0;
-			@include font-size(30);
-			text-align: left;
-		}
+	// 	.logo {
+	// 		float: left;
+	// 		margin: 0;
+	// 		@include font-size(30);
+	// 		text-align: left;
+	// 	}
 
-		.nav {
-			float: right;
-		}
+	// 	.nav {
+	// 		float: right;
+	// 	}
 
-		.g-container {
-			padding: 0;
-			line-height: 50px;
-		}
-	}
+	// 	.g-container {
+	// 		padding: 0;
+	// 		line-height: 50px;
+	// 	}
+	// }
 
-	.main-nav {
-		> li {
-			&:hover {
-				.sub-nav {
-					display: block;
-				}
-			}
-		}
+	// .main-nav {
+	// 	> li {
+	// 		&:hover {
+	// 			.sub-nav {
+	// 				display: block;
+	// 			}
+	// 		}
+	// 	}
 
-		a:after {
-			display: inherit;
-			@include font-size(22);
+	// 	a:after {
+	// 		display: inherit;
+	// 		@include font-size(22);
 
-			vertical-align: baseline;
-			line-height: 0.4;
-		}
-	}
+	// 		vertical-align: baseline;
+	// 		line-height: 0.4;
+	// 	}
+	// }
 
 	.bigBoy.wideBoy {
 		h1 {

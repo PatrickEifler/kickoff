@@ -1668,7 +1668,7 @@ img, object, embed, video {
   height: auto;
   padding: 10px;
 }
-@media screen and (min-width: 42.66666667em) and (max-width: 42.66666667em) {
+@media screen and (min-width: 22.22222222em) and (max-width: 42.66666667em) {
   .l-blockGrid[class*="up--narrow"] > li {
     display: block;
     height: auto;
@@ -2096,8 +2096,6 @@ code {
   background-color: #cbcbd8;
   display: block;
   text-align: center;
-  -o-border-radius: 3px 0 0 3px;
-  border-radius: 3px 0 0 3px;
   font-weight: bold;
 }
 
@@ -2559,47 +2557,37 @@ a {
   background-color: #e67e22;
   color: #fff;
   border-bottom: 3px solid #bf6516;
-  height: 50px;
+  min-height: 50px;
   line-height: 45px;
 }
-.masthead a, .masthead h1, .masthead h2 {
-  color: #fff;
-}
-
-.masthead-home {
-  text-align: center;
-  padding: 20px 0;
-}
-.masthead-home .g-container {
-  padding-top: 0;
-}
-.masthead-home .logo {
-  margin-top: 0;
-  margin-bottom: 20px;
-  line-height: 1.1;
-}
-.masthead-home h2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 20px;
-  font-size: 1.11111111rem;
-  line-height: 1.1;
-}
-
-.masthead-all {
-  background-color: #e67e22;
-  color: #fff;
-  text-align: center;
-}
-.masthead-all .logo {
+.masthead .logo {
   margin: 0;
   font-size: 30px;
   font-size: 1.66666667rem;
   text-align: center;
   line-height: 1.5;
 }
-.masthead-all .g-container {
+.masthead .g-container {
   padding: 5px;
+}
+.masthead a, .masthead h1, .masthead h2 {
+  color: #fff;
+}
+@media screen and (min-width: 42.66666667em) {
+  .masthead .logo {
+    float: left;
+    margin: 0;
+    font-size: 30px;
+    font-size: 1.66666667rem;
+    text-align: left;
+  }
+  .masthead .nav {
+    float: right;
+  }
+  .masthead .g-container {
+    padding: 0;
+    line-height: 50px;
+  }
 }
 
 .nav a {
@@ -2633,6 +2621,18 @@ a {
 .main-nav a:after {
   display: none;
 }
+@media screen and (min-width: 42.66666667em) {
+  .main-nav > li:hover .sub-nav {
+    display: block;
+  }
+  .main-nav a:after {
+    display: inherit;
+    font-size: 22px;
+    font-size: 1.22222222rem;
+    vertical-align: baseline;
+    line-height: 0.4;
+  }
+}
 
 .sub-nav {
   position: absolute;
@@ -2657,6 +2657,7 @@ a {
   border-color: #924d10;
 }
 
+.sub
 .github-link {
   background-color: #924d10;
 }
@@ -2767,12 +2768,22 @@ a {
   background-color: #fff;
   max-width: 475px;
   margin: 0 auto;
+  display: block;
+  position: relative;
 }
 .showcaseList li {
   margin-bottom: 20px;
 }
 .showcaseList figcaption {
-  line-height: 2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0.5em;
+  text-align: left;
+  color: #fff;
+  font-size: 14.4px;
+  font-size: 0.8rem;
 }
 .showcaseList img {
   display: block;
@@ -2854,6 +2865,9 @@ a {
   margin-bottom: 0;
 }
 
+.sidebar-nav {
+  margin-bottom: 1em;
+}
 .sidebar-nav a {
   padding: 1px 4px;
   border-radius: 2px;
@@ -2861,6 +2875,16 @@ a {
 .sidebar-nav .is-active {
   background-color: #e67e22;
   color: #fff;
+}
+
+.sidebar-subnav {
+  margin-left: 1em;
+}
+.sidebar-subnav a:link {
+  font-weight: normal;
+}
+.sidebar-subnav a:link:before {
+  content: '- ';
 }
 
 .docs-footer {
@@ -2924,61 +2948,6 @@ a {
   }
 }
 @media screen and (min-width: 42.66666667em) {
-  body {
-    padding-top: 50px;
-  }
-  body.page-home {
-    padding-top: 0;
-  }
-
-  .masthead-home {
-    padding: 60px 0;
-  }
-  .masthead-home .logo {
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
-  .masthead-home h2 {
-    margin-top: 20px;
-    font-size: 28px;
-    font-size: 1.55555556rem;
-    line-height: 1.5;
-  }
-
-  .masthead-all {
-    background-color: #e67e22;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-  }
-  .masthead-all .logo {
-    float: left;
-    margin: 0;
-    font-size: 30px;
-    font-size: 1.66666667rem;
-    text-align: left;
-  }
-  .masthead-all .nav {
-    float: right;
-  }
-  .masthead-all .g-container {
-    padding: 0;
-    line-height: 50px;
-  }
-
-  .main-nav > li:hover .sub-nav {
-    display: block;
-  }
-  .main-nav a:after {
-    display: inherit;
-    font-size: 22px;
-    font-size: 1.22222222rem;
-    vertical-align: baseline;
-    line-height: 0.4;
-  }
-
   .bigBoy.wideBoy h1 {
     font-size: 80px;
     font-size: 4.44444444rem;
