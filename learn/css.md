@@ -5,16 +5,14 @@ navactive: docscss
 title: CSS
 ---
 
-The Kickoff starting CSS includes:
+<a name="how"></a>
+## How we use Kickoff
+Kickoff provides many variables and sensible defaults (colour palette, fonts, grid settings and more) so you can start writing code as quickly as possible. To take advantage of the full power of this, it is advised that you start each project by defining your own defaults.
 
-* [Normalize.css](https://github.com/necolas/normalize.css) - a great CSS reset
-* Useful Kickoff defaults
-* Common helpers
-* Placeholder media queries
-* Print styles
-* A solid Sass framework for building sites or apps of all types
+<hr>
 
-## CSS naming scheme
+<a name="namingscheme"></a>
+## CSS Naming scheme
 Kickoff uses a bespoke naming scheme for classnames.
 
 ```scss
@@ -52,20 +50,43 @@ a {
 }
 ```
 
-## Kickoff defaults
+<hr>
 
-This project includes a handful of base styles that build upon Normalize.css.
-These include:
+<a name="sass"></a>
+## Sass
+Kickoff is made with [Sass](http://sass-lang.com/) at its core, it makes developing systems-based CSS faster, easier, and more fun. Sass has two syntaxes. The most commonly used syntax is known as “SCSS” (for “Sassy CSS”), and is a superset of CSS3’s syntax. This means that every valid CSS3 stylesheet is valid SCSS as well. SCSS files use the extension `.scss`; we use this version for Kickoff.
 
-* Basic typography settings to provide improved text readability by default.
-* Protection against unwanted `text-shadow` during text highlighting.
-* Tweaks to default image alignment, fieldsets, and textareas.
+### Install the Sass Ruby gem
 
-You are free to modify or add to these base styles as your project requires.
+```sh
+gem install sass
+```
 
+### Key files
 
-## Media Queries
-Media queries in Kickoff are typically handled with a [set of useful mixins](https://github.com/tmwagency/kickoff/blob/master/scss/mixins/_responsive.scss). These are used so that we can define separate media-query content for `< IE9` and browsers with support for media queries. These are directly related to the global `$fix-mqs` var defined in `kickoff-old-ie.scss`. `kickoff-old-ie.scss` ignores any content in media-queries with values less than the `$fix-mqs` var value.
+#### _dependencies.scss
+This file is where its all at. It imports all the scss files that will be compiled into your project. If you need to add or remove a file, do it here.
+
+<a name="structure"></a>
+## Structure
+Folder structure, difference between components and views
+
+<a name="variables"></a>
+## Sass Variables
+We take full advantage of Sass' variables and there are two key files that should be edited before you start 'proper' development for any new project, these are `scss/_variables.scss` and `scss/_color-palette.scss`.
+
+#### _variables.scss
+This is where you define your global Sass variables. Here you can define your:
+
+* **global typographic styles** — including font choices and typographic scale);
+* **responsive breakpoints** — we try not to target devices by not being too specific with our widths. Breakpoints included are: `$bp-narrow`, `$bp-mid`, `$bp-wide`, `$bp-huge` and a few *special* vars. These include `$bp-single-col` for when you need your design to break from a single column to multiple columns; `$bp-block-grid-narrow` for use with the block grids; and `$bp-rwd-text` for our simple implementation of responsive typography.
+
+#### _color-palette.scss
+Text colour, link colours, background colour, form fields and various component colours can all be set in this file.
+
+<a name="responsive"></a>
+## Responsive
+Kickoff does not enforce a mobile first approach to CSS but it is encouraged and it takes a fairly unique approach to responsive sites. Media queries in Kickoff are typically handled with a [set of useful mixins](https://github.com/tmwagency/kickoff/blob/master/scss/mixins/_responsive.scss). These are used so that we can define separate media-query content for `< IE9` and browsers with support for media queries. These are directly related to the global `$fix-mqs` var defined in `kickoff-old-ie.scss`. `kickoff-old-ie.scss` ignores any content in media-queries with values less than the `$fix-mqs` var value.
 
 * `respond-min` for `min-width` media queries
 * `respond-max` for `max-width` media queries
@@ -73,7 +94,7 @@ Media queries in Kickoff are typically handled with a [set of useful mixins](htt
 
 #### Media query example
 
-```sass
+```scss
 /* This Sass mixin: */
 @include respond-min(800) {
 	a {
@@ -87,6 +108,43 @@ Media queries in Kickoff are typically handled with a [set of useful mixins](htt
 	}
 }
 ```
+
+#### Better media query example
+Rather than having all your *narrow* styles up at the top of a file and your *wider* styles further down, we suggest making use of Sass' nested media queries. This means that all styles related to an element are together, see below for an example.
+
+```scss
+a {
+	padding: 1em;
+
+	@include respond-min(800) {
+		padding: 2em;
+	}
+}
+```
+
+The Kickoff starting CSS includes:
+
+* [Normalize.css](https://github.com/necolas/normalize.css) - a great CSS reset
+* Useful Kickoff defaults
+* Common helpers
+* Placeholder media queries
+* Print styles
+* A solid Sass framework for building sites or apps of all types
+
+
+## Kickoff defaults
+
+This project includes a handful of base styles that build upon Normalize.css.
+These include:
+
+* Basic typography settings to provide improved text readability by default.
+* Protection against unwanted `text-shadow` during text highlighting.
+* Tweaks to default image alignment, fieldsets, and textareas.
+
+You are free to modify or add to these base styles as your project requires.
+
+
+
 
 
 ## Print styles
