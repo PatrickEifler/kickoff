@@ -5,9 +5,29 @@ subtitle:
 navgroup: docs
 navactive: docsindex
 ---
-Kickoff is a lightweight front-end framework for creating scalable, responsive sites; that might sound a bit vague but it is the essence of the framework. Due to the nature of agency work, the projects are hugely varied, but as developers, we always try to cut corners to normalise things as much as possible – basically because we're lazy and we don't want to have to repeat things very often! Kickoff aims to mitigate common problems found in web development by providing a strong starting point and a set of helpful defaults for use on almost any project.
+Kickoff is a lightweight front-end framework for creating scalable, responsive sites.
 
-The key difference of Kickoff when compared with other similar frameworks – I'm looking at you Bootstrap and Foundation – is that it is not nearly as prescriptive. While those frameworks define almost every aspect of a website with CSS styles and JavaScript plugins that do everything, Kickoff has most of that but does not enable it by default. For example, we have a simple grid system, but if you need something more complex or, heaven forbid, not use one, that is not a problem; just don't include it.
+As front-end developers, the type of project we work on is becoming more and more varied. Kickoff aims to help keep a consistent structure and style across all of your projects, without adding the bloat that other frameworks can lead to.
+
+Kickoff tries to mitigate common problems found in web development by providing a strong starting point and a set of helpful defaults for use on almost any project.
+
+### Lightweight
+
+The main difference when comparing Kickoff with other similar frameworks is that it is not nearly as prescriptive – we’re looking at you Bootstrap and Foundation.
+
+Part of the reason we built Kickoff was because we find these frameworks a bit unwieldy in most circumstances – it’s a bit like grabbing a chainsaw when all you need it for is to cut through a toothpick.  While those frameworks define almost every aspect of a website with CSS styles and JavaScript plugins that do everything, Kickoff gives you just what you need.
+
+### Flexible and Extensible
+
+When you do need to extend, or remove, parts Kickoff, it’s easy to do so.
+
+Kickoff’s CSS and JavaScript has been built in a modular way, meaning that if don’t need a feature, you can easily remove it.  Similarly, when you need a new component, adding it is as simple as including a new file.
+
+For example, Kickoff includes a simple grid system, but if you need something more complex or, heaven forbid, not use one at all, that’s not a problem; just remove it.
+
+### Next steps
+
+
 
 <ul class="l-blockGrid l-blockGrid--2up">
 	<li>
