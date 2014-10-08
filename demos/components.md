@@ -5,6 +5,7 @@ navgroup: demo
 navactive: democomponents
 title: Components
 ---
+<a name="buttons"></a>
 
 <h2>Buttons</h2>
 <p>Button styles can be applied to anything with the <code>.btn</code> class applied. However, typically you'll want to apply these to only <code>&lt;a></code> and <code>&lt;button></code> elements for the best rendering.</p>
@@ -52,6 +53,8 @@ title: Components
 
 <hr>
 
+<a name="pillbuttons"></a>
+
 <h2>Pill Buttons</h2>
 <p>Add the <code>.btn--pill</code> class to any <code>.btn</code>.</p>
 <div class="demo">
@@ -77,6 +80,8 @@ title: Components
 </div>
 
 <hr>
+
+<a name="mediaobject"></a>
 
 <h2>Media Object</h2>
 <p>Place any image- and text-like content side-by-side, as per: <a href="stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code">media object</a></p>
@@ -126,6 +131,8 @@ title: Components
 
 <hr>
 
+<a name="fluidvideo"></a>
+
 <h2>Fluid video</h2>
 <div class="demo">
 	<div class="demo-visual">
@@ -143,6 +150,8 @@ title: Components
 </div>
 
 <hr>
+
+<a name="blockgrids"></a>
 
 <h2>Block grids</h2>
 <div class="demo">
@@ -171,6 +180,8 @@ title: Components
 </div>
 
 <hr>
+
+<a name="lists"></a>
 
 <h2>Lists</h2>
 <div class="demo">
@@ -212,6 +223,8 @@ title: Components
 </div>
 
 <hr>
+
+<a name="tables"></a>
 
 <h2>Tables</h2>
 <div class="demo">
@@ -268,6 +281,7 @@ title: Components
 
 <hr>
 
+<a name="rwdtables"></a>
 <h2>Responsive tables</h2>
 <div class="demo">
 	<div class="demo-visual">
@@ -348,6 +362,8 @@ title: Components
 </div>
 
 <hr>
+
+<a name="tabs"></a>
 
 <h2>Tabs</h2>
 <div class="demo">

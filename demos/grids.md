@@ -7,7 +7,7 @@ title: The Kickoff Grid
 prettyprint: true
 ---
 
-<p><a href="../docs/grid.html">View the grid documentation</a></p>
+<a name="standard"></a>
 
 <div class="demo">
 	<div class="demo-visual">
@@ -112,6 +112,8 @@ prettyprint: true
 	</div>
 </div>
 
+<a name="offset"></a>
+
 <div class="demo">
 	<div class="demo-visual">
 		<h2>Offset</h2>
@@ -184,6 +186,8 @@ prettyprint: true
 {% endhighlight %}
 	</div>
 </div>
+
+<a name="sourceordering"></a>
 
 <div class="demo">
 	<div class="demo-visual">
@@ -265,6 +269,8 @@ prettyprint: true
 {% endhighlight %}
 	</div>
 </div>
+
+<a name="centred"></a>
 
 <div class="demo">
 	<div class="demo-visual">

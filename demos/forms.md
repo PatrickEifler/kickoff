@@ -5,6 +5,9 @@ navgroup: demo
 navactive: demoforms
 title: Form styling
 ---
+
+<a name="labelsabove"></a>
+
 <h2>Forms <small>with labels above inputs</small></h2>
 <p>Having forms styled like this depends on specific markup with specific class names. Please take the example code below as a guide.</p>
 
@@ -68,6 +71,8 @@ title: Form styling
 <!-- END EXAMPLE -->
 
 <hr>
+
+<a name="labelsinline"></a>
 
 <h2>Forms <small>with inline labels</small></h2>
 <p>Assuming you use the same markup as above, all you have to do is simply add a <code>.form--horizontal</code> class to the <code>&lt;form></code> element &amp; you'll now have right aligned, inline form labels in an instant.</p>
@@ -145,6 +150,8 @@ title: Form styling
 <!-- END EXAMPLE -->
 
 <hr>
+
+<a name="multicolumnform"></a>
 
 <h2>Multi column forms <small>with labels above inputs</small></h2>
 <p>Multi-column forms are easy to achieve by using the existing grid. See the comments in the code below for implementation details.</p>
@@ -247,6 +254,8 @@ title: Form styling
 
 <hr>
 
+<a name="formfieldstates"></a>
+
 <h2>Form field states <small>with labels above inputs</small></h2>
 <p>You can easily update field states by adding modifier classes to <code>.form-controlGroup</code>, see the comments in the code below for implementation details.</p>
 
@@ -319,6 +328,8 @@ title: Form styling
 <!-- END EXAMPLE -->
 
 <hr>
+
+<a name="customfields"></a>
 
 <h2>Custom field elements</h2>
 <p>Improved styling for checkboxes, radios &amp; file upload</p>
@@ -497,6 +508,8 @@ title: Form styling
 <!-- END EXAMPLE -->
 
 <hr>
+
+<a name="allformelements"></a>
 
 <h2>All Form Elements</h2>
 <p>All the form elements you could need.</p>
