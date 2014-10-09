@@ -3,70 +3,74 @@ layout: home
 navgroup: home
 body-class: page-home
 ---
-<section class="wideBoy wideBoy--primary bigBoy text-centre">
-
+<section class="wideBoy wideBoy--dark bigBoy primary text-centre">
 	<div class="l-container">
 		<h1>Kickoff</h1>
-		<h2>A lightweight front-end framework <br> for creating scalable, responsive sites</h2>
+		<p>A lightweight front-end framework for creating scalable, responsive sites</p>
 
-		<a href="https://github.com/tmwagency/kickoff/" class="btn btn--bright btn--large" onclick="_gaq.push(['_trackEvent', 'Home', 'Download']);">Download Kickoff now</a>
-
-		<ul class="linkList l-list--centred">
-			<li><iframe src="http://ghbtns.com/github-btn.html?user=tmwagency&repo=kickoff&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="135" height="30"></iframe></li>
-			<li><iframe src="http://ghbtns.com/github-btn.html?user=tmwagency&repo=kickoff&type=fork&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="80" height="30"></iframe></li>
-		</ul>
-
-		<code class="code-lrg" data-before="GIT:">
-			git clone https://github.com/tmwagency/kickoff.git your-project-folder
-		</code>
-		<p>Find other ways to get Kickoff <a href="/kickoff/docs/get.html">in our documentation</a></p>
-		<p>Follow <a href="http://twitter.com/tmwkickoff">@tmwkickoff</a> for updates</p>
-
+		<a href="https://github.com/tmwagency/kickoff/" class="btn btn--primary btn--large" onclick="_gaq.push(['_trackEvent', 'Home', 'Download']);">Download Kickoff</a>
 	</div>
 </section>
-<!-- <section class="techStack wideBoy wideBoy--tertiary text-centre">
-	<div class="g-container" role="main">
-		<h2>Kickoff is built with:</h2>
-		<ul class="showcaseList l-blockGrid l-blockGrid--4up">
-			<li>&nbsp;</li>
-			<li>
-				<a href="docs/sass.html" target="_blank">
-					<figure>
-						<img src="/kickoff/img/stack-logos/sass.jpg" alt="Sass logo">
-						<figcaption>Sass</figcaption>
-					</figure>
-				</a>
-			</li>
-			<li>
-				<a href="docs/grunt.html" target="_blank">
-					<figure>
-						<img src="/kickoff/img/stack-logos/grunt.jpg" alt="Grunt logo">
-						<figcaption>Grunt</figcaption>
-					</figure>
-				</a>
-			</li>
-			<li>&nbsp;</li>
-		</ul>
-		<p class="text-centre">Read more about them in our <a href="/kickoff/docs/">documentation</a></p>
+
+<section class="wideBoy wideBoy--bright get-started">
+	<div class="l-container">
+		<div class="g-row">
+			<div class="g-span6 g-col">
+				<h2>To get started, simply checkout the framework using Git.</h2>
+
+			</div>
+			<div class="g-span6 g-col">
+
+			</div>
+		</div>
+
+		<code class="code-lrg" data-before="GIT:">
+			$ git clone https://github.com/tmwagency/kickoff.git your-project-folder
+		</code>
+		<code class="code-lrg" data-before="Yeoman:">
+			$ yo kickoff
+		</code>
+
+		<div class="g-row">
+			<div class="g-span6 g-col">
+				<iframe src="http://ghbtns.com/github-btn.html?user=tmwagency&repo=kickoff&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="135" height="30"></iframe>
+				<iframe src="http://ghbtns.com/github-btn.html?user=tmwagency&repo=kickoff&type=fork&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="80" height="30"></iframe>
+			</div>
+			<div class="g-span6 g-col">
+				<p>Find other ways to get Kickoff <a href="/kickoff/docs/get.html">in our documentation</a></p>
+				<p>Follow <a href="http://twitter.com/tmwkickoff">@tmwkickoff</a> for updates</p>
+			</div>
+		</div>
 	</div>
-</section> -->
+</section>
 
-<section class="showcase wideBoy wideBoy--secondary text-centre">
-	<div class="l-container" role="main">
-	<h2>Kickoff has been used on these fine websites</h2>
+<section class="showcase wideBoy--dark wideBoy text-centre">
+	<div class="l-container">
+		<h2>Kickoff has been used on these fine websites</h2>
 
-	<ul class="showcaseList l-blockGrid l-blockGrid--4up">
-		{% for item in site.data.showcase %}
-			<li>
-				{% if item.url != null %}<a href="{{ item.url }}" target="_blank">{% endif %}
-					<figure>
-						<img src="img/showcase/{{ item.img }}" alt="{{ item.name }}">
-						<figcaption>{{ item.name }}</figcaption>
-					</figure>
-				{% if item.url != null %}</a>{% endif %}
-			</li>
-		{% endfor %}
-	</ul>
-	<h3 class="text-centre">Have you used Kickoff on a project? Let us know so we can add it here.</h3>
-</div>
+		<ul class="showcaseList l-blockGrid l-blockGrid--4up  l-blockGrid--2up--narrow">
+			{% for item in site.data.showcase %}
+				<li>
+					{% if item.url != null %}<a href="{{ item.url }}" target="_blank">{% endif %}
+						<figure>
+							<img src="img/showcase/{{ item.img }}" alt="{{ item.name }}">
+							<figcaption>{{ item.name }}</figcaption>
+						</figure>
+					{% if item.url != null %}</a>{% endif %}
+				</li>
+			{% endfor %}
+		</ul>
+		<h3 class="text-centre">Have you used Kickoff on a project? Let us know so we can add it here.</h3>
+	</div>
+</section>
+
+<section class="statix wideBoy--bright wideBoy text-centre">
+	<div class="l-container">
+		<h1>
+			<a href="statix">Statix</a>
+		</h1>
+		<p>Makes the process of creating static HTML templates quick and easy</p>
+		<a href="" class="btn btn--primary btn--large">Documentation</a>
+		<a href="" class="btn btn--primary btn--large">Download Statix</a>
+	</div>
 </section>
