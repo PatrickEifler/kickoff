@@ -62,29 +62,29 @@ body { background-color: #f1f1f1; }
 /* Colours ========================================================================== */
 .swatch { height: 120px; padding: 15px; margin-bottom: 0.5em; }
 
-.color-text { color: #524549; }
-.color-text.bg { background-color: #524549; color: #fff; }
-.color-text.bg:after { content: "#524549"; }
+.color-text { color: #181830; }
+.color-text.bg { background-color: #181830; color: #fff; }
+.color-text.bg:after { content: "#181830"; }
 
 .color-background { color: #fff; }
 .color-background.bg { background-color: #fff; color: #444; }
 .color-background.bg:after { content: "#fff"; }
 
-.color-link { color: #e67e22; }
-.color-link.bg { background-color: #e67e22; color: #fff; }
-.color-link.bg:after { content: "#e67e22"; }
+.color-link { color: #3498db; }
+.color-link.bg { background-color: #3498db; color: #fff; }
+.color-link.bg:after { content: "#3498db"; }
 
-.color-link-hover { color: #924d10; }
-.color-link-hover.bg { background-color: #924d10; color: #fff; }
-.color-link-hover.bg:after { content: "#924d10"; }
+.color-link-hover { color: #196090; }
+.color-link-hover.bg { background-color: #196090; color: #fff; }
+.color-link-hover.bg:after { content: "#196090"; }
 
-.color-primary { color: #e67e22; }
-.color-primary.bg { background-color: #e67e22; color: #fff; }
-.color-primary.bg:after { content: "#e67e22"; }
+.color-primary { color: #181830; }
+.color-primary.bg { background-color: #181830; color: #fff; }
+.color-primary.bg:after { content: "#181830"; }
 
-.color-secondary { color: #351330; }
-.color-secondary.bg { background-color: #351330; color: #fff; }
-.color-secondary.bg:after { content: "#351330"; }
+.color-secondary { color: #e67e22; }
+.color-secondary.bg { background-color: #e67e22; color: #fff; }
+.color-secondary.bg:after { content: "#e67e22"; }
 
 .color-highlight { color: #ff9600; }
 .color-highlight.bg { background-color: #ff9600; color: #fff; }
