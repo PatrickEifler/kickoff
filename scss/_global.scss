@@ -28,14 +28,6 @@ a {
 	.lt-ie9 & {
 		min-width: #{$layout-min-width}px;
 	}
-
-	// :first-child {
-	// 	margin-top: 0;
-	// }
-
-	p a:link, ul a:link {
-		font-weight: $font-weight-bold;
-	}
 }
 
 .giant-logo {
@@ -58,9 +50,8 @@ a {
 .masthead {
 	position: relative;
 	z-index: 100;
-	background-color: $color-primary;
+	background-color: #fff;
 	color: #fff;
-	border-bottom: 3px solid darken($color-primary, 10%);
 	min-height: 50px;
 	line-height: 45px;
 
@@ -69,6 +60,7 @@ a {
 		@include font-size(30);
 		text-align: center;
 		line-height: 1.5;
+		font-weight: bold;
 	}
 
 	.g-container {
@@ -76,11 +68,7 @@ a {
 	}
 
 	a, h1, h2 {
-		color: #fff;
-	}
-
-	a:after {
-		// font-size: 30px;
+		color: $color-primary;
 	}
 
 	@include respond-min($bp-single-col) {
@@ -103,45 +91,6 @@ a {
 
 }
 
-// .masthead-home {
-// 	text-align: center;
-// 	padding: 20px 0;
-
-// 	.g-container {
-// 		padding-top: 0;
-// 	}
-
-// 	.logo {
-// 		margin-top: 0;
-// 		margin-bottom: 20px;
-// 		line-height: 1.1;
-// 	}
-
-// 	h2 {
-// 		margin-top: 10px;
-// 		margin-bottom: 10px;
-// 		@include font-size(20);
-// 		line-height: 1.1;
-// 	}
-// }
-
-// .masthead-all {
-// 	background-color: $color-primary;
-// 	color: #fff;
-// 	text-align: center;
-
-// 	.logo {
-// 		margin: 0;
-// 		@include font-size(30);
-// 		text-align: center;
-// 		line-height: 1.5;
-// 	}
-
-// 	.g-container {
-// 		padding: 5px;
-// 	}
-// }
-
 .nav {
 	a {
 		// display: inline-block;
@@ -154,15 +103,11 @@ a {
 		border: 2px solid transparent;
 
 		&:hover {
-			background-color: rgba(darken($color-primary, 10%), 0.5);
-			color: #fff;
-			border-color: darken($color-primary, 10%);
+			border-color: lighten($color-primary, 30%);
 		}
 
 		&.is-active {
-			// background-color: #fff;
-			color: #fff;
-			border-color: #fff;
+			border-color: $color-primary;
 		}
 	}
 }
@@ -201,7 +146,6 @@ a {
 			line-height: 0.4;
 		}
 	}
-
 }
 
 .sub-nav {
@@ -231,8 +175,6 @@ a {
 	}
 }
 
-.sub
-
 .github-link {
 	background-color: darken($color-primary, 20%);
 }
@@ -241,8 +183,16 @@ a {
 .footer {
 	padding-top: 20px;
 	padding: 40px 0;
-	// background-color: #E7CAA4;
-	// color: #ddd;
+	background-color: $color-primary;
+	color: #fff;
+}
+
+.footer-nav {
+	margin-bottom: 1em;
+	li {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 }
 
 .social-links a {
@@ -254,26 +204,31 @@ a {
 /* ==========================================================================
    Home page
    ========================================================================== */
-.bigBoy {
-	background-color: $color-primary;
+.wideBoy {
+	padding: 50px 0;
 
-	h1 {
-		margin-bottom: 0;
-	}
-	h2 {
-		margin-top: 0;
-		@include font-size(20);
-
-		br {
-			display: none;
+	@include respond-min($bp-mid) {
+		h1 {
+			@include font-size(51);
+		}
+		h2 {
+			@include font-size(28);
 		}
 	}
 }
 
-.wideBoy {
-	padding: 50px 0;
+.wideBoy--bright {
+	& {
+		color: $color-primary;
+	}
 
-	&, a:link, a:visited, h3, h4 {
+	a:hover,
+	a:active {
+		color: darken($color-primary, 20%)
+	}
+}
+.wideBoy--dark {
+	& {
 		color: #fff;
 	}
 
@@ -281,9 +236,38 @@ a {
 	a:active {
 		color: darken($color-primary, 20%)
 	}
+}
 
-	&.default {
-		background-color: $color-primary;
+.bigBoy {
+	h1 {
+		margin-bottom: 0;
+		font-weight: bold;
+		margin-bottom: 1em;
+	}
+	h2 {
+		margin-top: 0;
+	}
+	p {
+		font-size: 150%;
+	}
+
+	@include respond-min($bp-mid) {
+		h1 {
+			@include font-size(80);
+			margin-bottom: 0.5em;
+			// line-height: 2;
+		}
+		h2 {
+			@include font-size(28);
+		}
+	}
+}
+
+.primary {
+	background-color: $color-primary;
+	color: $blue;
+	.btn {
+		margin-top: 1em;
 	}
 }
 
@@ -297,45 +281,11 @@ a {
 	overflow: hidden;
 }
 
-.wideBoy--secondary {
-	background-color: adjust-hue($color-primary, -5deg);
-}
-/*
-   Tech stack
-   ========================================================================== */
-.wideBoy--tertiary {
-	background-color: adjust-hue($color-primary, -10deg);
-
-	:last-child {
-		margin-bottom: 0;
-	}
-}
-
-.stackLogos {
-	margin: 10px auto;
-	@include clearfix;
-	@extend .unstyled;
-	text-align: center;
-	font-weight: $font-weight-bold;
-
-	a {
-		min-width: 70px;
-		max-width: 160px;
-	}
-
-	img {
-		border-radius: 5px;
-		vertical-align: top;
-		max-height: 145px;
-		margin-bottom: 5px;
-	}
-}
-
 /*
    Showcase
    ========================================================================== */
-.wideBoy--quaternary {
-	background-color: adjust-hue($color-primary, -15deg);
+.showcase {
+	background-color: $color-secondary;
 
 	:last-child {
 		margin-bottom: 0;
@@ -344,10 +294,13 @@ a {
 
 .showcaseList {
 	text-align: center;
-
-	.wideBoy & {
 		&, & a, &:visited {
 			color: $color-link-default;
+		}
+
+	@include respond-min($bp-mid) {
+		li {
+			margin-bottom: 0px;
 		}
 	}
 
@@ -468,27 +421,31 @@ a {
 
 .sidebar-nav {
 	margin-bottom: 1em;
-
+	// border-bottom: 3px solid $blue;
+	li {
+		// margin-bottom: 0.25em;
+	}
 	a {
-		padding: 1px 4px;
-		border-radius: 2px;
+		padding: .2em .5em .3em;
+		border-left: 3px solid;
+		display: block;
 	}
 	.is-active {
 		background-color: $color-primary;
+		border-color: $color-primary;
 		color: #fff;
 	}
 }
 .sidebar-subnav {
 	margin-left: 1em;
 
-	a:link {
-		font-weight: normal;
+	// a:link {
+	// 	font-weight: normal;
 
-		&:before {
-			content:'- ';
-
-		}
-	}
+	// 	// &:before {
+	// 	// 	content:'- ';
+	// 	// }
+	// }
 }
 .docs-footer {
 	background-color: #FCFFB3;
@@ -547,120 +504,3 @@ a {
 	tab-size: 3;
 	text-align: left;
 }
-
-
-
-
-
-
-// ===========================================
-// === Media queries for responsive design ===
-// ===========================================
-
-// === $bp-narrow> ===
-@include respond-min($bp-narrow) {
-	.bigBoy {
-		h2 {
-
-			br {
-				display: inherit;
-			}
-		}
-	}
-}
-// === end $bp-narrow> ===
-
-
-
-// === $bp-mid> ===
-@include respond-min($bp-mid) {
-	// body {
-	// 	padding-top: 50px;
-
-	// 	&.page-home {
-	// 		padding-top: 0;
-	// 	}
-	// }
-
-	// .masthead-home {
-	// 	padding: 60px 0;
-
-	// 	.logo {
-	// 		margin-top: 0;
-	// 		margin-bottom: 20px;
-	// 	}
-
-	// 	h2 {
-	// 		margin-top: 20px;
-	// 		@include font-size(28);
-	// 		line-height: 1.5;
-	// 	}
-	// }
-
-	// .masthead-all {
-	// 	background-color: $color-primary;
-	// 	color: #fff;
-	// 	position: fixed;
-	// 	top: 0; right: 0; left: 0;
-
-	// 	.logo {
-	// 		float: left;
-	// 		margin: 0;
-	// 		@include font-size(30);
-	// 		text-align: left;
-	// 	}
-
-	// 	.nav {
-	// 		float: right;
-	// 	}
-
-	// 	.g-container {
-	// 		padding: 0;
-	// 		line-height: 50px;
-	// 	}
-	// }
-
-	// .main-nav {
-	// 	> li {
-	// 		&:hover {
-	// 			.sub-nav {
-	// 				display: block;
-	// 			}
-	// 		}
-	// 	}
-
-	// 	a:after {
-	// 		display: inherit;
-	// 		@include font-size(22);
-
-	// 		vertical-align: baseline;
-	// 		line-height: 0.4;
-	// 	}
-	// }
-
-	.bigBoy.wideBoy {
-		h1 {
-			@include font-size(80);
-			line-height: 3;
-		}
-		h2 {
-			@include font-size(28);
-		}
-	}
-
-	.wideBoy {
-		h1 {
-			@include font-size(51);
-		}
-		h2 {
-			@include font-size(28);
-		}
-	}
-
-	.showcaseList {
-		li {
-			margin-bottom: 0px;
-		}
-	}
-}
-// === end $bp-mid> ===

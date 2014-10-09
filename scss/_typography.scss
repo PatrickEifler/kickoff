@@ -36,6 +36,7 @@ body {
 
 	// Add ligatures
 	font-feature-settings: "liga","dlig";
+	font-variant-ligatures: contextual no-historical-ligatures common-ligatures;
 
 	// Two ways to smoothen type, they are disabled by default
 	// Enable only one of them if you need them
@@ -75,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $font-family-headings;
 	font-weight: $font-weight-headings;
 	line-height: $line-height-headings;
-	text-rendering: optimizelegibility; // Fix the character spacing for headings
+	text-rendering: optimizeLegibility; // Fix the character spacing for headings
 
 	& small {
 		font-weight: normal;
@@ -364,46 +365,5 @@ samp {
 }
 .text-right {
 	text-align: right;
-}
-
-@font-face {
-    font-family: 'entypo';
-    src: url('fonts/entypo/entypo.eot');
-    src: url('fonts/entypo/entypo.eot?#iefix') format('embedded-opentype'),
-	 url('fonts/entypo/entypo.woff') format('woff'),
-	 url('fonts/entypo/entypo.ttf') format('truetype'),
-	 url('fonts/entypo/entypo.svg#entypo') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'entypo-social';
-    src: url('fonts/entypo-social/entypo-social.eot');
-    src: url('fonts/entypo-social/entypo-social.eot?#iefix') format('embedded-opentype'),
-	 url('fonts/entypo-social/entypo-social.woff') format('woff'),
-	 url('fonts/entypo-social/entypo-social.ttf') format('truetype'),
-	 url('fonts/entypo-social/entypo-social.svg#entypo-social') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.asset-font {
-	font-family: 'entypo', 'entypo-social';
-	font-size: 2em;
-	line-height: 1;
-}
-
-[data-icon-before]:before {
-	content: attr(data-icon-before);
-	margin-right: 4px;
-	@extend .asset-font;
-	font-weight: normal;
-}
-
-[data-icon-after]:after {
-	content: attr(data-icon-after);
-	margin-left: 4px;
-	@extend .asset-font;
-	font-weight: normal;
 }
 @include text-selection($color-selection, $color-selection-bg);

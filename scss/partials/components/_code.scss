@@ -10,7 +10,6 @@ pre {
 	font-family: $font-family-mono;
 	@include font-size($type-small);
 	color: $color-code;
-	border-radius: 3px;
 	tab-size: 3;
 }
 
@@ -23,26 +22,26 @@ code {
 
 .code-lrg {
 	line-height: 1.5;
-	@include font-size(13);
+	// @include font-size(13);
 	display: block;
 	text-align: left;
-	padding: 10px 10px 10px 90px;
+	padding: 1em 1em 1em 110px;
 	margin: 10px 0;
 	position: relative;
 	word-wrap: break-word;
-	text-shadow: 0 1px 0 lighten($color-code-bg, 10%);
+	color: #fff;
+	background-color: $blueDark;
 
 	&:before {
 		content: attr(data-before);
 		position: absolute;
 		top: 0; left: 0; bottom: 0;
-		width: 70px;
-		padding: 10px 0;
-		background-color: darken($color-code-bg, 15%);
+		width: 90px;
+		padding: 1em 0;
+		background-color: $blue;
 		display: block;
 		text-align: center;
 		font-weight: $font-weight-bold;
-
 	}
 }
 
@@ -54,7 +53,6 @@ pre {
 	// line-height: $leading-base;
 	color: $color-pre;
 	background-color: $color-pre-bg;
-	border-radius: 4px;
 	white-space: pre;
 	// white-space: pre-wrap;
 	// word-break: break-all;
