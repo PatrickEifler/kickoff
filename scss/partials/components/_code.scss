@@ -50,7 +50,7 @@ code {
 pre {
 	display: block;
 	padding: $baseline / 2;
-	margin: 0 0 $baseline;
+	margin: $baseline 0;
 	// line-height: $leading-base;
 	color: $color-pre;
 	background-color: $color-pre-bg;
@@ -76,9 +76,12 @@ pre {
 }
 
 
-.highlight  { background: #ffffff;
+.highlight  {
+	background: #ffffff;
+
 	pre {
 		line-height: 1;
+		margin-top: 0;
 	}
 	code {
 		font-size: 12px;
