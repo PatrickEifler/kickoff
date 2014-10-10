@@ -8,7 +8,7 @@ $blueDark                     : #181830;
 $green                        : #2ecc71;
 $red                          : #e74c3c;
 $yellow                       : #f1c40f;
-$orange                       : #e67e22;
+$orange                       : #FF7800;
 $pink                         : #c3325f;
 $purple                       : #351330;
 $gray                         : #95a5a6;
@@ -41,7 +41,7 @@ $btn-default-bg               : $gray;
 $btn-default-bg-highlight     : darken($btn-default-bg, 10%);
 
 $btn-primary-bg               : $color-secondary;
-$btn-primary-bg-highlight     : darken($btn-primary-bg, 10%);
+$btn-primary-bg-highlight     : darken($btn-primary-bg, 5%);
 
 
 // Tabs
@@ -52,8 +52,8 @@ $active-tab                   : $orange;
 // Code
 $color-code                   : #222;
 $color-code-bg                : #f7f7f9;
-$color-pre                    : #222;
-$color-pre-bg                 : #f7f7f9;
+$color-pre                    : $color-code;
+$color-pre-bg                 : $color-code-bg;
 
 
 

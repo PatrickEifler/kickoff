@@ -85,7 +85,7 @@ pre {
 		}
 	}
 	code {
-		font-size: 12px;
+		@include font-size($type-small);
 		line-height: 1.2;
 	}
 

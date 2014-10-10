@@ -55,15 +55,15 @@ $font-weight-bold             : bold;
 
 
 /* Font stacks */
-$font-family-sans             : "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans             : "franklin-gothic-urw", "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-serif            : Georgia, "Times New Roman", Times, serif;
 $font-family-mono             : Menlo, Monaco, "Courier New", monospace;
 
 $font-family-base             : $font-family-sans;
-$font-family-alt              : $font-family-serif;
+$font-family-alt              : "purista-web", $font-family-base;
 
-$font-family-headings         : inherit; // using inherit will use $font-family-base for all headings
-$font-weight-headings         : normal;    // instead of browser default, bold
+$font-family-headings         : $font-family-alt; // using inherit will use $font-family-base for all headings
+$font-weight-headings         : bold;    // instead of browser default, bold
 $line-height-headings         : 1.1;
 
 

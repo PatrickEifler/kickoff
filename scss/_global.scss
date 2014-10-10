@@ -30,60 +30,29 @@ a {
 	}
 }
 
-.giant-logo {
-	@include font-size(1000);
-	position: fixed;
-	top: 0px; left: 0;
-	z-index: -1;
-	text-align: center;
-	font-weight: $font-weight-bold;
-	color: #fafafa;
-	@include square(0px);
-	transform-origin: 0% 0%;
-	transform: rotate(44deg);
-	user-select: none;
-}
-
 /* ==========================================================================
    Masthead
    ========================================================================== */
 .masthead {
 	position: relative;
 	z-index: 100;
-	background-color: #fff;
+	background-color: $color-primary;
 	color: #fff;
 	min-height: 50px;
 	line-height: 45px;
+	border-bottom: 3px solid #fff;
 
-	.logo {
-		margin: 0;
-		@include font-size(30);
-		text-align: center;
-		line-height: 1.5;
-		font-weight: bold;
-	}
-
-	.g-container {
-		padding: 5px;
-	}
-
-	a, h1, h2 {
-		color: $color-primary;
-	}
+	// .l-container {
+	// 	padding: 5px;
+	// }
 
 	@include respond-min($bp-single-col) {
-		.logo {
-			float: left;
-			margin: 0;
-			@include font-size(30);
-			text-align: left;
-		}
+		// position: fixed;
+		// top: 0;
+		// left: 0;
+		// right: 0;
 
-		.nav {
-			float: right;
-		}
-
-		.g-container {
+		.l-container {
 			padding: 0;
 			line-height: 50px;
 		}
@@ -91,23 +60,58 @@ a {
 
 }
 
+.logo {
+	font-weight: normal;
+	margin: 0;
+	@include font-size(30);
+	text-align: center;
+	line-height: 1.5;
+
+	@include respond-min($bp-single-col) {
+		float: left;
+		margin: 0;
+		@include font-size(30);
+		text-align: left;
+	}
+}
+
+.logoStyle {
+	font-style: italic;
+
+	&, a:link, a:visited {
+		color: #fff;
+	}
+	font-weight: normal !important;
+	letter-spacing: -0.01em;
+
+	span {
+		color: $color-secondary;
+	}
+}
 .nav {
+	font-family: $font-family-alt;
+	font-style: italic;
+
+	@include respond-min($bp-single-col) {
+		float: right;
+	}
+
 	a {
-		// display: inline-block;
-		padding: 3px 9px;
-		font-weight: $font-weight-bold;
-		margin: 0 5px;
+		display: inline-block;
+		padding: 0 .5em;
 		@include font-size(16);
-		border-radius: 3px;
-		// line-height: 1.3;
-		border: 2px solid transparent;
+		line-height: 50px;
+		height: 50px;
+
+		// border: 2px solid transparent;
 
 		&:hover {
 			border-color: lighten($color-primary, 30%);
 		}
 
 		&.is-active {
-			border-color: $color-primary;
+			background-color: #fff;
+			color: $color-primary;
 		}
 	}
 }
@@ -144,33 +148,6 @@ a {
 
 			vertical-align: baseline;
 			line-height: 0.4;
-		}
-	}
-}
-
-.sub-nav {
-	position:absolute;
-	display: none;
-	top: 100%;
-	width: 200px;
-	background-color: $color-primary;
-	@extend .unstyled;
-	border-radius: 0 0 5px 5px;
-	padding: 5px 0;
-	z-index: 100;
-	background-color: darken($color-primary, 10%);
-
-	li {
-		float: none;
-	}
-
-	a {
-		text-align: left;
-		color: #fff;
-		display: block;
-
-		&:hover {
-			border-color: darken($color-primary, 20%);
 		}
 	}
 }
@@ -216,25 +193,18 @@ a {
 		}
 	}
 }
-
+.wideBoy-title {
+	font-weight: normal;
+	font-style: italic;
+}
 .wideBoy--bright {
 	& {
 		color: $color-primary;
-	}
-
-	a:hover,
-	a:active {
-		color: darken($color-primary, 20%)
 	}
 }
 .wideBoy--dark {
 	& {
 		color: #fff;
-	}
-
-	a:hover,
-	a:active {
-		color: darken($color-primary, 20%)
 	}
 }
 
@@ -265,7 +235,8 @@ a {
 
 .primary {
 	background-color: $color-primary;
-	color: $blue;
+	color: #fff;
+
 	.btn {
 		margin-top: 1em;
 	}
@@ -313,7 +284,8 @@ a {
 	}
 
 	li {
-		margin-bottom: 20px;
+		// margin-bottom: 20px;
+		padding: 0;
 	}
 
 	figcaption {
@@ -321,12 +293,14 @@ a {
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		background-color: rgba(#000, .8);
+		background-color: rgba($color-primary, .8);
 		padding: 0.5em;
 		text-align: left;
 		color: #fff;
 		// opacity: 0;
 		@include font-size($type-small);
+		font-style: italic;
+		font-family: $font-family-alt;
 	}
 
 	img {
@@ -340,6 +314,15 @@ a {
 	}
 }
 
+.used {
+	// margin-top: $baseline;
+	background-color: darken($color-secondary, 5%);
+	padding: 1.5em;
+
+	p {
+		margin-bottom: 0;
+	}
+}
 
 
 /* ==========================================================================
@@ -416,6 +399,8 @@ a {
 }
 .entry--title {
 	margin-bottom: 0;
+	font-weight: normal;
+	font-style: italic;
 }
 
 
@@ -426,6 +411,8 @@ a {
 		// margin-bottom: 0.25em;
 	}
 	a {
+		font-family: $font-family-alt;
+		font-style: italic;
 		padding: .2em .5em .3em;
 		border-left: 3px solid;
 		display: block;
@@ -503,4 +490,43 @@ a {
 	font-size: 14px;
 	tab-size: 3;
 	text-align: left;
+}
+
+/**
+ *
+ */
+.well {
+	min-height: 90px;
+	padding: 30px;
+	background-color: #f0f0f0;
+	// margin: 0px -30px 0px;
+	color: #333;
+
+	code, pre {
+		background-color: #fff;
+		@include font-size(14);
+		white-space: pre;
+	}
+}
+
+.well--inner {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.checklistInfo {
+	margin-bottom: 15px;
+	margin-left: 30px;
+	font-size: $font-size-base-px - 3;
+
+	li {
+		margin-bottom: 0.2em;
+	}
+}
+
+.statixLogo {
+	max-width: 400px;
+	width: 80%;
+	margin: 0 auto;
+	display: block;
 }
