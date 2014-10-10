@@ -258,7 +258,7 @@ html {
 }
 
 body {
-  font-family: "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "franklin-gothic-urw", "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-size: 1rem;
   line-height: 1.4;
@@ -275,7 +275,7 @@ body {
  * Paragraphs
  */
 p {
-  font-family: "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "franklin-gothic-urw", "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-size: 1rem;
   margin-top: 0;
@@ -287,8 +287,8 @@ p {
  */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-family: inherit;
-  font-weight: normal;
+  font-family: "purista-web", "franklin-gothic-urw", "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
   line-height: 1.1;
   text-rendering: optimizeLegibility;
 }
@@ -405,7 +405,7 @@ ol ol {
 /**
  * Unstyled lists
  */
-.unstyled, .tabs, .l-tabsContent, .main-nav, .sub-nav,
+.unstyled, .tabs, .l-tabsContent, .main-nav,
 nav ul, nav ol {
   margin: 0;
   padding: 0;
@@ -667,13 +667,13 @@ samp {
 }
 
 .btn--primary {
-  background-color: #e67e22;
+  background-color: #FF7800;
 }
 .btn--primary, .btn--primary:link, .btn--primary:visited {
   color: #fff;
 }
 .btn--primary:hover, .btn--primary:active, .btn--primary:focus {
-  background-color: #bf6516;
+  background-color: #e66c00;
 }
 
 .btn--bright {
@@ -686,7 +686,7 @@ samp {
   color: #fff;
 }
 .btn--bright:hover, .btn--bright:active, .btn--bright:focus {
-  border-color: #924d10;
+  border-color: #994800;
   background-color: transparent;
 }
 
@@ -1055,7 +1055,7 @@ input[type="button"].btn--block {
   padding: 0.5em;
   font-size: 18px;
   font-size: 1rem;
-  font-family: "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "franklin-gothic-urw", "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.4;
   color: #181830;
   font-weight: normal;
@@ -1784,7 +1784,7 @@ img, object, embed, video {
 	========================================================================== */
 .tabs {
   margin-bottom: 25px;
-  border-bottom: 2px solid #e67e22;
+  border-bottom: 2px solid #FF7800;
 }
 .tabs:after {
   content: "";
@@ -1811,7 +1811,7 @@ img, object, embed, video {
   color: #fff;
 }
 .tabs a.is-active {
-  background-color: #e67e22;
+  background-color: #FF7800;
 }
 
 .l-tabsContent > li {
@@ -2098,7 +2098,8 @@ pre code {
   margin-top: 0;
 }
 .highlight code {
-  font-size: 12px;
+  font-size: 14.4px;
+  font-size: 0.8rem;
   line-height: 1.2;
 }
 
@@ -2490,88 +2491,78 @@ a {
   min-width: 1000px;
 }
 
-.giant-logo {
-  font-size: 1000px;
-  font-size: 55.55555556rem;
-  position: fixed;
-  top: 0px;
-  left: 0;
-  z-index: -1;
-  text-align: center;
-  font-weight: bold;
-  color: #fafafa;
-  height: 0px;
-  width: 0px;
-  -webkit-transform-origin: 0% 0%;
-     -moz-transform-origin: 0% 0%;
-      -ms-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-  -webkit-transform: rotate(44deg);
-     -moz-transform: rotate(44deg);
-      -ms-transform: rotate(44deg);
-          transform: rotate(44deg);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
 /* ==========================================================================
    Masthead
    ========================================================================== */
 .masthead {
   position: relative;
   z-index: 100;
-  background-color: #fff;
+  background-color: #181830;
   color: #fff;
   min-height: 50px;
   line-height: 45px;
+  border-bottom: 3px solid #fff;
 }
-.masthead .logo {
+@media screen and (min-width: 42.66666667em) {
+  .masthead .l-container {
+    padding: 0;
+    line-height: 50px;
+  }
+}
+
+.logo {
+  font-weight: normal;
   margin: 0;
   font-size: 30px;
   font-size: 1.66666667rem;
   text-align: center;
   line-height: 1.5;
-  font-weight: bold;
-}
-.masthead .g-container {
-  padding: 5px;
-}
-.masthead a, .masthead h1, .masthead h2 {
-  color: #181830;
 }
 @media screen and (min-width: 42.66666667em) {
-  .masthead .logo {
+  .logo {
     float: left;
     margin: 0;
     font-size: 30px;
     font-size: 1.66666667rem;
     text-align: left;
   }
-  .masthead .nav {
-    float: right;
-  }
-  .masthead .g-container {
-    padding: 0;
-    line-height: 50px;
-  }
 }
 
+.logoStyle {
+  font-style: italic;
+  font-weight: normal !important;
+  letter-spacing: -0.01em;
+}
+.logoStyle, .logoStyle a:link, .logoStyle a:visited {
+  color: #fff;
+}
+.logoStyle span {
+  color: #FF7800;
+}
+
+.nav {
+  font-family: "purista-web", "franklin-gothic-urw", "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+}
+@media screen and (min-width: 42.66666667em) {
+  .nav {
+    float: right;
+  }
+}
 .nav a {
-  padding: 3px 9px;
-  font-weight: bold;
-  margin: 0 5px;
+  display: inline-block;
+  padding: 0 .5em;
   font-size: 16px;
   font-size: 0.88888889rem;
-  border-radius: 3px;
-  border: 2px solid transparent;
+  line-height: 50px;
+  height: 50px;
 }
 .nav a:hover {
   border-color: #4b4b96;
 }
 .nav a.is-active {
-  border-color: #181830;
+  background-color: #fff;
+  color: #181830;
 }
 
 .main-nav:after {
@@ -2597,29 +2588,6 @@ a {
     vertical-align: baseline;
     line-height: 0.4;
   }
-}
-
-.sub-nav {
-  position: absolute;
-  display: none;
-  top: 100%;
-  width: 200px;
-  background-color: #181830;
-  border-radius: 0 0 5px 5px;
-  padding: 5px 0;
-  z-index: 100;
-  background-color: #07070e;
-}
-.sub-nav li {
-  float: none;
-}
-.sub-nav a {
-  text-align: left;
-  color: #fff;
-  display: block;
-}
-.sub-nav a:hover {
-  border-color: black;
 }
 
 .github-link {
@@ -2663,20 +2631,17 @@ a {
   }
 }
 
+.wideBoy-title {
+  font-weight: normal;
+  font-style: italic;
+}
+
 .wideBoy--bright {
   color: #181830;
-}
-.wideBoy--bright a:hover,
-.wideBoy--bright a:active {
-  color: black;
 }
 
 .wideBoy--dark {
   color: #fff;
-}
-.wideBoy--dark a:hover,
-.wideBoy--dark a:active {
-  color: black;
 }
 
 .bigBoy h1 {
@@ -2704,7 +2669,7 @@ a {
 
 .primary {
   background-color: #181830;
-  color: #3498db;
+  color: #fff;
 }
 .primary .btn, .primary .tabs a, .tabs .primary a {
   margin-top: 1em;
@@ -2723,7 +2688,7 @@ a {
    Showcase
    ========================================================================== */
 .showcase {
-  background-color: #e67e22;
+  background-color: #FF7800;
 }
 .showcase :last-child {
   margin-bottom: 0;
@@ -2748,24 +2713,34 @@ a {
   position: relative;
 }
 .showcaseList li {
-  margin-bottom: 20px;
+  padding: 0;
 }
 .showcaseList figcaption {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(24, 24, 48, 0.8);
   padding: 0.5em;
   text-align: left;
   color: #fff;
   font-size: 14.4px;
   font-size: 0.8rem;
+  font-style: italic;
+  font-family: "purista-web", "franklin-gothic-urw", "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .showcaseList img {
   display: block;
 }
 .showcaseList a:hover {
   color: #196090;
+}
+
+.used {
+  background-color: #e66c00;
+  padding: 1.5em;
+}
+.used p {
+  margin-bottom: 0;
 }
 
 /* ==========================================================================
@@ -2839,12 +2814,16 @@ a {
 
 .entry--title {
   margin-bottom: 0;
+  font-weight: normal;
+  font-style: italic;
 }
 
 .sidebar-nav {
   margin-bottom: 1em;
 }
 .sidebar-nav a {
+  font-family: "purista-web", "franklin-gothic-urw", "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
   padding: .2em .5em .3em;
   border-left: 3px solid;
   display: block;
@@ -2912,6 +2891,43 @@ a {
   -moz-tab-size: 3;
        tab-size: 3;
   text-align: left;
+}
+
+/**
+ *
+ */
+.well {
+  min-height: 90px;
+  padding: 30px;
+  background-color: #f0f0f0;
+  color: #333;
+}
+.well code, .well pre {
+  background-color: #fff;
+  font-size: 14px;
+  font-size: 0.77777778rem;
+  white-space: pre;
+}
+
+.well--inner {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.checklistInfo {
+  margin-bottom: 15px;
+  margin-left: 30px;
+  font-size: 15px;
+}
+.checklistInfo li {
+  margin-bottom: 0.2em;
+}
+
+.statixLogo {
+  max-width: 400px;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
 }
 
 /*
