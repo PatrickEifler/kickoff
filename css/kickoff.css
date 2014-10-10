@@ -2,57 +2,6 @@
 /**
  * Site dependencies
  */
-/**
- * Core variables
- * =================================
- * Edit your color palette and app vars before your begin
- */
-/**
- * Colour palette (yeah we're British!)
- */
-/**
- * Forms
- */
-/**
- * Variables
- * =================================
- * Typography
- * Breakpoints
- * Paths
- * Grid setup
- * Colour palette
- * Components
- */
-/**
- * Typography
- * =================================
- * Base sizes:
- * Set this in pixels (but do not add px),
- * the font-size mixin will convert to REMS
- */
-/* Font stacks */
-/**
- *  Breakpoints
- * =================================
- * There are no common breakpoints so these are just a suggestion
- * You'll need to define your own breakpoints to suit your design
- */
-/**
- * Path vars
- */
-/**
- * Layout setup
- * Settings here override & affect the output in scss/partials/components/grid.scss
- */
-/**
- * Tables
- * Customizes the `.table` component with basic values, each used across all table variations.
- */
-/**
- * App-specific variables
- * =================================
- * Add common vars below here
- */
 /*
  * Mixins, helpers and functions
  * =================================
@@ -139,6 +88,57 @@
    ========================================================================== */
 /* HiDPI */
 /* FORMS */
+/**
+ * Core variables
+ * =================================
+ * Edit your color palette and app vars before your begin
+ */
+/**
+ * Colour palette (yeah we're British!)
+ */
+/**
+ * Forms
+ */
+/**
+ * Variables
+ * =================================
+ * Typography
+ * Breakpoints
+ * Paths
+ * Grid setup
+ * Colour palette
+ * Components
+ */
+/**
+ * Typography
+ * =================================
+ * Base sizes:
+ * Set this in pixels (but do not add px),
+ * the font-size mixin will convert to REMS
+ */
+/* Font stacks */
+/**
+ *  Breakpoints
+ * =================================
+ * There are no common breakpoints so these are just a suggestion
+ * You'll need to define your own breakpoints to suit your design
+ */
+/**
+ * Path vars
+ */
+/**
+ * Layout setup
+ * Settings here override & affect the output in scss/partials/components/grid.scss
+ */
+/**
+ * Tables
+ * Customizes the `.table` component with basic values, each used across all table variations.
+ */
+/**
+ * App-specific variables
+ * =================================
+ * Add common vars below here
+ */
 /* CSS Reset  */
 /**
  * Kickoff reset
