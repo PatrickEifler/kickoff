@@ -428,14 +428,3 @@ prettyprint: true
 {% endhighlight %}
 	</div>
 </div>
-
-<div class="demo">
-	<div class="demo-visual">
-		<h2>Normal grid</h2>
-	</div>
-	<div class="demo-code">
-{% highlight html %}
-
-{% endhighlight %}
-	</div>
-</div>
