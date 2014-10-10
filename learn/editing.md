@@ -8,7 +8,7 @@ title: Editing this website
 ### Before you start
 Ruby v2 is needed. Update using [rvm](http://rvm.io/) then install the packages below
 
-* Install Jekyll, rdiscount and Sass globally - `sudo gem install jekyll && sudo gem install rdiscount && sudo gem install sass --pre`
+* Install Jekyll, redcarpet and Sass globally - `gem install jekyll sass redcarpet rouge`
 * Install Node from [nodejs.org](http://nodejs.org/)
 * Install Grunt CLI - `npm install -g grunt-cli`
 
@@ -26,7 +26,7 @@ Run `npm install` to install all Grunt's dependencies
 
 ### Step 4
 
-Run `grunt serve` and go to /kickoff/ in the site url
+Run `grunt serve` and a browser window will open with the site
 
 #### Please note
 
