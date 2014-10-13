@@ -4,6 +4,14 @@ title: Meet Kickoff
 subtitle:
 navgroup: docs
 navactive: docsindex
+
+next:
+ - title: Get Kickoff
+   body: Want to use <code>git pull</code>, <code>yo kickoff</code> or just download a zip. Find out how to get your hands on Kickoff here
+   link: get.html
+ - title: Use Kickoff
+   body: Find out how to get the best from Kickoff and how to get up and running as quickly as possible.
+   link: use.html
 ---
 Kickoff is a lightweight front-end framework for creating scalable, responsive sites.
 
@@ -24,27 +32,3 @@ When you do need to extend, or remove, parts Kickoff, it’s easy to do so.
 Kickoff’s CSS and JavaScript has been built in a modular way, meaning that if don’t need a feature, you can easily remove it.  Similarly, when you need a new component, adding it is as simple as including a new file.
 
 For example, Kickoff includes a simple grid system, but if you need something more complex or, heaven forbid, not use one at all, that’s not a problem; just remove it.
-
-### Next steps
-
-
-
-<ul class="l-blockGrid l-blockGrid--2up">
-	<li>
-		<a href="get.html" class="blockLink">
-			<h3>Get Kickoff</h3>
-			<p>Want to use <code>git pull</code>, <code>yo kickoff</code> or just download a zip. Find out how to get your hands on Kickoff here</p>
-		</a>
-	</li>
-	<li>
-		<a href="use.html" class="blockLink">
-			<h3>Use Kickoff</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, aperiam.</p>
-		</a>
-	</li>
-</ul>
-
-<div class="next">
-	Where next?
-
-</div>

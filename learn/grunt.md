@@ -3,6 +3,14 @@ layout: docs
 navgroup: docs
 navactive: docsgrunt
 title: "Kickoff &#10084;'s Grunt"
+
+next:
+ - title: Kickoff's CSS
+   body: Find out how Kickoff's CSS works
+   link: css.html
+ - title: Kickoff's Javascript
+   body: Find out how Kickoff's JS works
+   link: js.html
 ---
 Grunt is used extensively in Kickoff. It is the beating heart of the framework, we use it to compile our Sass, concatinate and then minify our JavaScript files, or to fire up a simple local server with LiveReload for some testing. Using Grunt has other benefits besides this; it allows any dev to pick up a project, regardless of if they've worked on it before, and get up and running in no time at all.
 

@@ -4,6 +4,14 @@ body-class: show-grid
 navgroup: demo
 navactive: democomponents
 title: Components
+
+next:
+ - title: Typography demo
+   body: See our default typography styles
+   link: typography.html
+ - title: Forms demo
+   body: See how Kickoff handles forms
+   link: forms.html
 ---
 <a name="buttons"></a>
 

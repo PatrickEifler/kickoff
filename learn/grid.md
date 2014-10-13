@@ -3,7 +3,14 @@ layout: docs
 navgroup: docs
 navactive: docsgrid
 title: The Grid
-prettyprint: true
+
+next:
+ - title: Kickoff's CSS
+   body: Find out how Kickoff's CSS works
+   link: css.html
+ - title: Kickoff's Javascript
+   body: Find out how Kickoff's JS works
+   link: js.html
 ---
 
 Kickoff's Grid is a simple, but fully responsive, grid framework developed by <a href="http://github.com/mrmartineau/">Zander Martineau</a>. The grid system uses percents instead of pixels for column widths. It has the same responsive capabilities as our fixed grid system, ensuring proper proportions for key screen resolutions and devices.

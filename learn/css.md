@@ -3,6 +3,14 @@ layout: docs
 navgroup: docs
 navactive: docscss
 title: CSS
+
+next:
+ - title: Kickoff's Javascript
+   body: Find out how Kickoff's JS works
+   link: js.html
+ - title: Understanding Grunt
+   body: See how Kickoff uses Grunt to make your life easier.
+   link: grunt.html
 ---
 
 <a name="philosophy"></a>

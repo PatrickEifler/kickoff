@@ -3,6 +3,14 @@ layout: docs
 navgroup: docs
 navactive: docsuse
 title: Use Kickoff
+
+next:
+ - title: Get Kickoff
+   body: Want to use `git pull`, `yo kickoff` or just download a zip. Find out how to get your hands on Kickoff here
+   link: get.html
+ - title: Understanding Grunt
+   body: Once you have downloaded Kickoff, it will need to be setup. Have a look at our Grunt docs here.
+   link: grunt.html
 ---
 
 Once you have [cloned or downloaded Kickoff](get.html), creating a site or app usually involves the following:
