@@ -92,12 +92,12 @@ body { background-color: #f1f1f1; }
 
 .typography .info p { -ms-word-wrap: break-word; word-wrap: break-word; }
 .typography .example { margin: 1em 0; }
-.typography .example h1:after { content: " - modular-scale(18, 4, 1.25)px"; }
-.typography .example h2:after { content: " - modular-scale(18, 3, 1.25)px"; }
-.typography .example h3:after { content: " - modular-scale(18, 2, 1.25)px"; }
+.typography .example h1:after { content: " - modular-scale(18, 3, 1.25)px"; }
+.typography .example h2:after { content: " - modular-scale(18, 2, 1.25)px"; }
+.typography .example h3:after { content: " - modular-scale(18, 1, 1.25)px"; }
 .typography .example h4:after { content: " - modular-scale(18, 0, 1.25)px"; }
-.typography .example h5:after { content: " - modular-scale(18, 1, 1.25)px"; }
-.typography .example h6:after { content: " - modular-scale(18, 1, 1.25)px"; }
+.typography .example h5:after { content: " - modular-scale(18, -1, 1.25)px"; }
+.typography .example h6:after { content: " - modular-scale(18, -1, 1.25)px"; }
 .typography .example h1:after, .typography .example h2:after, .typography .example h3:after, .typography .example h4:after, .typography .example h5:after, .typography .example h6:after { text-transform: lowercase; }
 .typography .example .interfaceType:after, .typography .example .section-heading:after, .typography .example .typeSpecimen:after { content: ""; }
 

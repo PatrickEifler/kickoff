@@ -2543,6 +2543,7 @@ a {
 .nav {
   font-family: "purista-web", "franklin-gothic-urw", "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
+  text-align: center;
 }
 @media screen and (min-width: 42.66666667em) {
   .nav {
@@ -2552,8 +2553,8 @@ a {
 .nav a {
   display: inline-block;
   padding: 0 .5em;
-  font-size: 16px;
-  font-size: 0.88888889rem;
+  font-size: 20spx;
+  font-size: 1.11111111srem;
   line-height: 50px;
   height: 50px;
 }
@@ -2572,22 +2573,6 @@ a {
 }
 .main-nav > li {
   display: inline-block;
-  position: relative;
-}
-.main-nav a:after {
-  display: none;
-}
-@media screen and (min-width: 42.66666667em) {
-  .main-nav > li:hover .sub-nav {
-    display: block;
-  }
-  .main-nav a:after {
-    display: inherit;
-    font-size: 22px;
-    font-size: 1.22222222rem;
-    vertical-align: baseline;
-    line-height: 0.4;
-  }
 }
 
 .github-link {
@@ -2839,10 +2824,9 @@ a {
 }
 
 .docs-footer {
-  background-color: #FCFFB3;
+  background-color: #FEFFDA;
   padding: 15px;
   text-align: center;
-  font-weight: bold;
 }
 
 .show-grid .grid-test .g-col {
@@ -2928,6 +2912,38 @@ a {
   width: 80%;
   margin: 0 auto;
   display: block;
+}
+
+.nextTitle {
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+  border-top: 10px solid #181830;
+  margin-bottom: 0;
+  line-height: 55px;
+  height: 70px;
+  margin-top: 50px;
+}
+
+.blockLinks {
+  background-color: #181830;
+  margin-bottom: 25px;
+}
+
+.blockLink {
+  padding: 1em;
+  display: block;
+  color: #fff;
+}
+.blockLink h3 {
+  font-weight: normal;
+  font-style: italic;
+}
+.blockLink p {
+  margin-bottom: 0;
+}
+.blockLink code {
+  background-color: #3498db;
 }
 
 /*

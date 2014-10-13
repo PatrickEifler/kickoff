@@ -91,6 +91,7 @@ a {
 .nav {
 	font-family: $font-family-alt;
 	font-style: italic;
+	text-align: center;
 
 	@include respond-min($bp-single-col) {
 		float: right;
@@ -99,7 +100,7 @@ a {
 	a {
 		display: inline-block;
 		padding: 0 .5em;
-		@include font-size(16);
+		@include font-size(20s);
 		line-height: 50px;
 		height: 50px;
 
@@ -122,33 +123,6 @@ a {
 
 	> li {
 		display: inline-block;
-		position: relative;
-
-		&:hover {
-			// background-color: darken($color-primary, 10%);
-		}
-	}
-
-	a:after {
-		display: none;
-	}
-
-	@include respond-min($bp-single-col) {
-		> li {
-			&:hover {
-				.sub-nav {
-					display: block;
-				}
-			}
-		}
-
-		a:after {
-			display: inherit;
-			@include font-size(22);
-
-			vertical-align: baseline;
-			line-height: 0.4;
-		}
 	}
 }
 
@@ -435,10 +409,9 @@ a {
 	// }
 }
 .docs-footer {
-	background-color: #FCFFB3;
+	background-color: #FEFFDA;
 	padding: 15px;
 	text-align: center;
-	font-weight: bold;
 }
 
 
@@ -529,4 +502,37 @@ a {
 	width: 80%;
 	margin: 0 auto;
 	display: block;
+}
+
+.nextTitle {
+	font-style: italic;
+	font-weight: normal;
+	text-align: center;
+	border-top: 10px solid #181830;
+	margin-bottom: 0;
+	line-height: 55px;
+	height: 70px;
+	margin-top: $baseline * 2;
+}
+.blockLinks {
+	background-color: $blueDark;
+	margin-bottom: $baseline;
+}
+.blockLink {
+	padding: 1em;
+	display: block;
+	color: #fff;
+
+	h3 {
+		font-weight: normal;
+		font-style: italic;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+	code {
+		background-color: $blue;
+	}
 }
