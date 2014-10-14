@@ -12,24 +12,62 @@ next:
    body: See how Kickoff handles forms
    link: forms.html
 ---
-<h1>Heading 1 <small>small</small></h1>
+<div class="demo">
+	<div class="demo-visual">
+		<h1>Heading 1 <small>small</small></h1>
+		<h2>Heading 2</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus perspiciatis labore quis, qui, animi hic autem est aut beatae sit!</p>
+		<h3>Heading 3</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis modi a numquam commodi provident amet.</p>
+		<h4>Heading 4</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut error voluptates optio dolores vel libero. Odit hic nostrum a tempora, facere aut, quia.</p>
+		<h5>Heading 5</h5>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, reiciendis.</p>
+		<h6>Heading 6</h6>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, repellendus illum ad.</p>
+	</div>
+	<div class="demo-code">
+{% highlight html%}
+<h1>Heading 1</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fuga ducimus dolorem suscipit.</p>
 <h2>Heading 2</h2>
-<p>Donec sed odio dui. Curabitur <a href="">blandit tempus</a> porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus perspiciatis labore quis, qui, animi hic autem est aut beatae sit!</p>
 <h3>Heading 3</h3>
-<p>Donec sed odio dui. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras <a href="">mattis consectetur purus</a> sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis modi a numquam commodi provident amet.</p>
 <h4>Heading 4</h4>
-<p>Donec sed odio dui. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante <a href="">venenatis dapibus</a> posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut error voluptates optio dolores vel libero. Odit hic nostrum a tempora, facere aut, quia.</p>
 <h5>Heading 5</h5>
-<p>Donec sed odio dui. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, reiciendis.</p>
 <h6>Heading 6</h6>
-<p>Donec sed odio dui. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, repellendus illum ad.</p>
+{% endhighlight %}
+	</div>
+</div>
+
+<div class="demo">
+	<div class="demo-visual">
+		<h3>Text utility classes</h3>
+		<p>We include some helpful utility classes if you need to align your text quickly. Use <code>.text-centre</code> or  <code>.text-center</code> to centre your text. Use <code>.text-right</code> to right align. Or use <code>.text-left</code> to left align.</p>
+
+		<p class="text-centre"><b>Centre aligned: </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit molestiae blanditiis necessitatibus ab porro!</p>
+		<p class="text-right"><b>Right aligned: </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit molestiae blanditiis necessitatibus ab porro!</p>
+		<p class="text-left"><b>Left aligned: </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit molestiae blanditiis necessitatibus ab porro!</p>
+	</div>
+	<div class="demo-code">
+{% highlight html%}
+<p class="text-centre">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit molestiae blanditiis necessitatibus ab porro!</p>
+<p class="text-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit molestiae blanditiis necessitatibus ab porro!</p>
+<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit molestiae blanditiis necessitatibus ab porro!</p>
+{% endhighlight %}
+	</div>
+</div>
 
 <hr>
 
 <h3>Text-level semantics</h3>
 
-<div class="row">
-	<div class="span6 col">
+<div class="g-row">
+	<div class="g-span6 g-col">
 		<p>
 			The <a href="#">a element</a> example<br>
 			The <abbr title="Title text">abbr element</abbr> example<br>
@@ -45,7 +83,7 @@ next:
 			The <kbd>kbd element</kbd> example
 		</p>
 	</div>
-	<div class="span6 col">
+	<div class="g-span6 g-col">
 		<p>
 			The <mark>mark element</mark> example<br>
 			The <q>q element <q>inside</q> a q element</q> example <br>
@@ -85,9 +123,31 @@ next:
 
 <hr>
 
-<h3>Ordered list</h3>
-
-<ol class="normal">
+<div class="demo">
+	<div class="demo-visual">
+		<h3>Ordered lists</h3>
+		<ol>
+			<li>list item 1</li>
+			<li>list item 1
+			<ol>
+				<li>list item 2</li>
+				<li>list item 2
+				<ol>
+					<li>list item 3</li>
+					<li>list item 3</li>
+				</ol>
+				</li>
+				<li>list item 2</li>
+				<li>list item 2</li>
+			</ol>
+			</li>
+			<li>list item 1</li>
+			<li>list item 1</li>
+		</ol>
+	</div>
+	<div class="demo-code">
+{% highlight html%}
+<ol>
 	<li>list item 1</li>
 	<li>list item 1
 	<ol>
@@ -105,34 +165,101 @@ next:
 	<li>list item 1</li>
 	<li>list item 1</li>
 </ol>
+{% endhighlight %}
+	</div>
+</div>
 
 <hr>
 
-<h3>Unordered list</h3>
-
-<ul class="normal">
-	<li>list item 1</li>
-	<li>list item 1
-	<ul>
-		<li>list item 2</li>
-		<li>list item 2
+<div class="demo">
+	<div class="demo-visual">
+		<h3>Unordered lists</h3>
 		<ul>
+			<li>list item 1</li>
+			<li>list item 2
+			<ul>
+				<li>list item 2a</li>
+				<li>list item 2b
+				<ul>
+					<li>list item 2bi</li>
+					<li>list item 2bii</li>
+				</ul>
+				</li>
+				<li>list item 2c</li>
+				<li>list item 2d</li>
+			</ul>
+			</li>
 			<li>list item 3</li>
-			<li>list item 3</li>
+			<li>list item 4</li>
+		</ul>
+	</div>
+	<div class="demo-code">
+{% highlight html%}
+<ul>
+	<li>list item 1</li>
+	<li>list item 2
+	<ul>
+		<li>list item 2a</li>
+		<li>list item 2b
+		<ul>
+			<li>list item 2bi</li>
+			<li>list item 2bii</li>
 		</ul>
 		</li>
-		<li>list item 2</li>
-		<li>list item 2</li>
+		<li>list item 2c</li>
+		<li>list item 2d</li>
 	</ul>
 	</li>
-	<li>list item 1</li>
-	<li>list item 1</li>
+	<li>list item 3</li>
+	<li>list item 4</li>
 </ul>
+{% endhighlight %}
+	</div>
+</div>
 
 <hr>
 
-<h3>Definition list</h3>
+<div class="demo">
+	<div class="demo-visual">
+		<h3>Unstyled lists</h3>
+		<p>Add an <code>.unstyled</code> class to any <code>&lt;ul></code> or <code>&lt;ol></code> to remove the default bullets/numbers.</p>
+		<ul class="unstyled">
+			<li>list item 1</li>
+			<li>list item 2</li>
+			<li>list item 3</li>
+			<li>list item 4</li>
+		</ul>
+	</div>
+	<div class="demo-code">
+{% highlight html%}
+<ul class="unstyled">
+	<li>list item 1</li>
+	<li>list item 2</li>
+	<li>list item 3</li>
+	<li>list item 4</li>
+</ul>
+{% endhighlight %}
+	</div>
+</div>
 
+<hr>
+
+<div class="demo">
+	<div class="demo-visual">
+		<h3>Definition list</h3>
+		<dl>
+			<dt>Definition name</dt>
+			<dd>Definition value</dd>
+			<dt>Definition name</dt>
+			<dd>Definition value</dd>
+			<dd>Definition value</dd>
+			<dt>Definition name</dt>
+			<dt>Definition name</dt>
+			<dd>Definition value</dd>
+		</dl>
+	</div>
+	<div class="demo-code">
+{% highlight html%}
 <dl>
 	<dt>Definition name</dt>
 	<dd>Definition value</dd>
@@ -143,3 +270,53 @@ next:
 	<dt>Definition name</dt>
 	<dd>Definition value</dd>
 </dl>
+{% endhighlight %}
+	</div>
+</div>
+
+<hr>
+
+<div class="demo">
+	<div class="demo-visual">
+		<h3>Horizontal definition list</h3>
+		<p>Add a <code>.dl-horizontal</code> class to your definition list (<code>&lt;dl></code>) to make the values (<code>&lt;dd></code>) float beside the name (<code>&lt;dt></code>)</p>
+		<dl class="dl-horizontal">
+			<dt>Definition name</dt>
+			<dd>Definition value</dd>
+			<dt>Definition name</dt>
+			<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa pariatur animi totam, amet.</dd>
+			<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus aut consequuntur, recusandae delectus voluptatibus.</dd>
+			<dt>Definition name</dt>
+			<dt>Definition name</dt>
+			<dd>Definition value</dd>
+		</dl>
+	</div>
+	<div class="demo-code">
+{% highlight html%}
+<dl class="dl-horizontal">
+	<dt>Definition name</dt>
+	<dd>Definition value</dd>
+	<dt>Definition name</dt>
+	<dd>Definition value</dd>
+	<dd>Definition value</dd>
+	<dt>Definition name</dt>
+	<dt>Definition name</dt>
+	<dd>Definition value</dd>
+</dl>
+{% endhighlight %}
+	</div>
+</div>
+
+<hr>
+
+<div class="demo">
+	<div class="demo-visual">
+		<h3>Blockquote</h3>
+
+	</div>
+	<div class="demo-code">
+{% highlight html%}
+
+{% endhighlight %}
+	</div>
+</div>
