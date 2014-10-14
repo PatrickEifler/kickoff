@@ -339,18 +339,6 @@ $next-bg-color: rgba(240, 240, 240, 1);
 		margin-bottom: 10px;
 	}
 
-.blockLink,
-.blockLink:link,
-.blockLink:visited {
-	color: inherit;
-
-	.next-subtitle {
-		color: $color-link-default;
-	}
-	&:hover .next-subtitle {
-		color: $color-link-hover;
-	}
-}
 
 /* ==========================================================================
    Demos
@@ -438,8 +426,8 @@ $next-bg-color: rgba(240, 240, 240, 1);
 		// margin-bottom: 0.25em;
 	}
 	a {
-		font-family: $font-family-alt;
-		font-style: italic;
+		//font-family: $font-family-alt;
+		//font-style: italic;
 		padding: .2em .5em .3em;
 		border-left: 3px solid;
 		display: block;

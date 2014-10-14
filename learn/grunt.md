@@ -24,7 +24,7 @@ Using Grunt has other benefits besides this.  It allows any dev to pick up a pro
 
 <a name="setup"></a>
 
-## Setting up Kickoff to use Grunt
+## Setting up Grunt
 
 Setting up Kickoff to use Grunt is extremely simple – just follow these simple steps:
 
@@ -67,15 +67,15 @@ To install them, use your terminal to `cd` into the root of the Kickoff director
 
 <a name="tasks"></a>
 
-## Use Kickoff’s grunt tasks
+## Kickoff’s Grunt tasks
 
-Kickoff comes with a number of useful Grunt tasks already setup for you to use.  These are tasks that you can run from the command line in the root directory of your Kickoff project.
+Kickoff comes with a number of useful Grunt tasks configured for you to use.  These are tasks that you can run in the command line from the root directory of your Kickoff project.
 
-Here is a guide to the tasks that are available and what each of them does:
+Here is a guide to the tasks that are available and what each of them does.
 
 <hr>
-
-#### grunt - the default task
+<a name="grunt-default"></a>
+#### grunt (the default task)
 
 Running `grunt` will carry out the following tasks on your code:
 
@@ -85,43 +85,86 @@ Running `grunt` will carry out the following tasks on your code:
 * [autoprefixer:kickoff](#task-autoprefixer) – adds vendor prefixes to your CSS
 
 <hr>
+<a name="grunt-start"></a>
+#### grunt start
 
-#### grunt dev - a task for development environments
-Run `grunt dev` to run uglify (to minify and concatinate javascript), sass:kickoff (to compile Sass) & autoprefixer:kickoff (to add vendor prefixes to the Sass)
+The very first grunt task you should run when starting a new Kickoff project.
 
-<hr>
-
-#### grunt deploy - a task for production environments
-This task is the same as **grunt dev** but minifies the CSS output as well - useful for production environments. Run `grunt deploy` to initiate this task.
+This sets up all of Kickoff’s dependencies, spins up a local server and takes you to the Kickoff docs checklist so you can follow the guidelines for first steps when starting a Kickoff project.
 
 <hr>
+<a name="grunt-dev"></a>
+#### grunt dev
 
-#### grunt watch
-The grunt watch task is incredibly powerful (it uses [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)). Run `grunt watch` to initiate this task. It is setup to watch:
+A task for development environments.  Compiles your code without minifying or optimising it.
 
-* the scss for changes (and then compile them to CSS)
-* the javascript for changes (& then to minify and concatinate using uglifyjs)
-* any svg file that is added to the 'img/src' directory (& then run svgmin & grunticon)
+Tasks carried out when **`grunt dev`** is run:
+
+* [Shimly](#task-shimly)
+* [Uglify](#task-uglify)
+* [sass:kickoff](#task-sass) - compiles Kickoff’s Sass files into native CSS
+* [autoprefixer:kickoff](#task-autoprefixer) – adds vendor prefixes to the CSS
 
 <hr>
+<a name="grunt-deploy"></a>
+#### grunt deploy
 
+A task for production environments.
+
+This task is essentially the same as **`grunt dev`** but minifies the CSS output as well ready for deployment on production environments.
+
+Tasks carried out when **`grunt deploy`** is run:
+
+* [Shimly](#task-shimly)
+* [Uglify](#task-uglify)
+* [sass:kickoff](#task-sass) - compiles Kickoff’s Sass files into native CSS
+* [autoprefixer:kickoff](#task-autoprefixer) – adds vendor prefixes to the CSS
+* [CSSO](#task-csso) – minifies CSS
+
+<hr>
+<a name="grunt-serve"></a>
 #### grunt serve
-Run `grunt serve` to create a simple static server (using [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect)) for previewing your work. This task will open your defaut browser and enable Livereload so that CSS changes are updated when you edit your Sass. This task runs uglify (to minify and concatinate javascript), sass:kickoff (to compile Sass), autoprefixer:kickoff (to add vendor prefixes to the Sass) & grunt watch (above) to monitor for changes.
+
+Running **`grunt serve`** creates a simple static server (using [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect) via [grunt-browser-sync](https://github.com/shakyShane/grunt-browser-sync)) for previewing your work.
+
+This task will open your defaut browser and enable Livereload so that CSS changes are updated when you edit your Sass.  Because Kickoff uses BrowserSync, it also keeps all of your devices in sync when connected to your local server (see [BrowserSync’s feature list for more details](https://github.com/shakyShane/browser-sync#features))
+
+Tasks carried out when **`grunt serve`** is run:
+
+* [Shimly](#task-shimly)
+* [Uglify](#task-uglify)
+* [sass:kickoff](#task-sass) - compiles Kickoff’s Sass files into native CSS
+* [autoprefixer:kickoff](#task-autoprefixer) – adds vendor prefixes to the CSS
+* [BrowserSync](#task-browsersync) – Starts local server available across multiple devices
+* [Watch](#task-watch) – watches for code changes and reacts to them on save
 
 <hr>
+<a name="grunt-watch"></a>
+#### grunt watch
 
-#### grunt icons - a task to create all icons using grunticon
-Kickoff includes [grunticon](https://github.com/filamentgroup/grunticon), a tool that makes it easy to manage SVG icons while created fallbacks & CSS for browsers that might not have support for it. Run `grunt icons` to regenerate the icons. This tasks uses [svgmin](https://github.com/sindresorhus/grunt-svgmin) (to minify SVGs) & grunticon.
+For documentation on the `grunt watch` task, [check out this section in the Kickoff task index](#task-watch)
 
 <hr>
+<a name="grunt-icons"></a>
+#### grunt icons
 
-#### grunt check
-Run `grunt jscheck` to check javascript for errors and style problems.
+A task to help you create and maintain icons using Grunticon.
+
+Running `grunt icons` carries out the [svgmin](#task-svgmin) and [Grunticon](#task-grunticon) tasks,
+generating a set of icons for you to use in the front-end of your project.
+
+<hr>
+<a name="grunt-checks"></a>
+#### grunt checks
+
+A task to help you validate your code.
+
+Running `grunt checks` will run the [JSHint](#task-jshint) task to check the projects JavaScript for errors and formatting inconsistencies.
+
+We plan to expand on the checks carried out using this task in future versions of Kickoff.
 
 <hr class="sectionSplitter">
-
 <a name="config"></a>
-
 ## Understanding Kickoff’s Grunt config
 
 Talk here about the config stored in the base Gruntfile
@@ -129,12 +172,12 @@ Talk here about the config stored in the base Gruntfile
 NEEDS DOCUMENTATION
 
 <hr class="sectionSplitter">
-
 <a name="task-appendices"></a>
-
 ## Task Index
 
-Ordered by how Kickoff’s tasks are grouped in the `_grunt-configs` directory.
+This is an exhaustive list of all the grunt tasks that Kickoff uses and what they do.
+
+They are ordered similarly to how Kickoff’s tasks are grouped in the `_grunt-configs` directory.
 
 ### CSS Tasks
 
@@ -225,7 +268,7 @@ Kickoff’s server tasks help create a local development environment for your de
 
 Using [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect), Kickoff can start a static web server for you to use when developing.
 
-<a name="task-browsersynx"></a>
+<a name="task-browsersync"></a>
 #### BrowserSync
 
 NEEDS DOCUMENTATION HERE
@@ -246,22 +289,17 @@ NEEDS DOCUMENTATION HERE
 <a name="task-watch"></a>
 ### Watch Task
 
-Kickoff’s watch task does as you may expect; it watches for changes in files you are working on and acts on any changes you make to them.
+The `grunt watch` task is incredibly powerful; it watches for changes in files you are working on and acts on any changes you make to them.
 
 For example, if you edit a Sass file, upon saving the file the watch task will run Kickoff’s Sass and autoprefixer tasks to generate your projects CSS.  It will also live reload the CSS into your web browser so that you can see the styling changes immediately.
+
+Kickoff is setup by default to watch:
+
+* The scss files for changes, compiling them to CSS when saved
+* JavaScript for changes, minifying and concatinating them when saved
+* Any SVG file that is added to the 'img/src' directory, subsequently running SVGMin & Grunticon tasks
 
 This task uses the [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch) plugin.
 
 
-<hr class="sectionSplitter">
-
-## Next steps:
-
-### Javascript
-By default Kickoff minifies, concatinates and creates a [Source Map](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) for all javascript files included in the project.
-
-To choose which javascript files you want to include, just edit the `jsFileList` array at the beginning of the file. Files in this array should be organised in the order that you need them to be run.
-
-### CSS / SCSS
-There are two main `.scss` files that get compiled by Grunt: `scss/kickoff.scss` and `scss/kickoff-old-ie.scss`. These are compiled to `css/kickoff.css` and `css/kickoff-old-ie.css`. If you need to add or amend this list, change the `dev` and `deploy` subtasks in the Gruntfile (around [line 30](https://github.com/tmwagency/kickoff/blob/master/Gruntfile.js#L32)).
 

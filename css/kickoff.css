@@ -2489,41 +2489,6 @@ a {
 .lt-ie9 .l-container {
   min-width: 1000px;
 }
-<<<<<<< HEAD
-.l-container p a:link, .l-container ul a:link {
-  font-weight: bold;
-}
-.l-container .next p a:link, .l-container .next ul a:link {
-  font-weight: normal;
-}
-
-.giant-logo {
-  font-size: 1000px;
-  font-size: 55.55555556rem;
-  position: fixed;
-  top: 0px;
-  left: 0;
-  z-index: -1;
-  text-align: center;
-  font-weight: bold;
-  color: #fafafa;
-  height: 0px;
-  width: 0px;
-  -webkit-transform-origin: 0% 0%;
-     -moz-transform-origin: 0% 0%;
-      -ms-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-  -webkit-transform: rotate(44deg);
-     -moz-transform: rotate(44deg);
-      -ms-transform: rotate(44deg);
-          transform: rotate(44deg);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-=======
->>>>>>> 54077eb67140f46606df057d5f4db1626154a532
 
 /* ==========================================================================
    Masthead
@@ -2782,22 +2747,6 @@ a {
   margin-bottom: 10px;
 }
 
-.blockLink,
-.blockLink:link,
-.blockLink:visited {
-  color: inherit;
-}
-.blockLink .next-subtitle,
-.blockLink:link .next-subtitle,
-.blockLink:visited .next-subtitle {
-  color: #e67e22;
-}
-.blockLink:hover .next-subtitle,
-.blockLink:link:hover .next-subtitle,
-.blockLink:visited:hover .next-subtitle {
-  color: #924d10;
-}
-
 /* ==========================================================================
    Demos
    ========================================================================== */
@@ -2877,8 +2826,6 @@ a {
   margin-bottom: 1em;
 }
 .sidebar-nav a {
-  font-family: "purista-web", "franklin-gothic-urw", "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
   padding: .2em .5em .3em;
   border-left: 3px solid;
   display: block;
