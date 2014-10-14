@@ -204,17 +204,6 @@ This task isn’t specified in the default Kickoff build tasks, but can be initi
 
 JSHint can take a number of options when validating your JavaScript, all of which can be managed inside a `.jshintrc` file, found in Kickoff’s root directory.
 
-<a name="task-jquery"></a>
-#### jQuery
-
-This task can be used to build a custom version of jQuery for use in your project.
-
-This means that you can generate different versions of jQuery dependent on your needs.  For more information on how to do this, see the [grunt-jquerybuilder](https://github.com/asciidisco/grunt-jquerybuilder) and [jQuery Builder](https://github.com/jgallen23/jquery-builder) documentation.
-
-To run this task and generate a new build of jQuery for use in Kickoff, run `grunt jquery`.  By default, Kickoff generates a build of jQuery 1.10.2 and includes it in the JavaScript build.
-
-Likewise, if you aren’t interested in using jQuery in your project, this can be easily removed by deleting the jQuery path in the Kickoff Grunt config.
-
 
 ### Server tasks
 
