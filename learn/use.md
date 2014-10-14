@@ -5,9 +5,11 @@ navactive: docsuse
 title: Use Kickoff
 ---
 
-Kickoff is not meant to be too prescriptive; we don't want to force developers into a certain coding style. At it's heart lies the CSS framework (built with the `.scss` version of Sass) so, if you wanted to, you could just include that.
+Kickoff is not meant to be too prescriptive; we don't want to force developers into a certain coding style.
 
-Once you have [cloned or downloaded Kickoff](get.html), creating a site or app usually involves the following:
+At it's heart lies the CSS framework (built with the `.scss` version of Sass) so, if you wanted to, you could just include that.
+
+Once you have [downloaded Kickoff](get.html), creating a site or app usually involves the following:
 
 1. Set up the basic structure of the site.
 2. Add some content, style, and functionality.
@@ -15,7 +17,7 @@ Once you have [cloned or downloaded Kickoff](get.html), creating a site or app u
 4. Optionally run a Grunt build script to automate the optimization of your site
 5. Deploy your site.
 
-What follows is a general overview of each major part and how to use them.
+What follows is a general overview of each major part of Kickoff and how to use them.
 
 ### CSS
 

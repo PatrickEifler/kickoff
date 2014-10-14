@@ -318,7 +318,7 @@ h4, .h4, .delta,
 h5, .h5, .epsilon,
 h6, .h6, .zeta {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   font-size: 14.4px;
   font-size: 0.8rem;
 }
@@ -880,9 +880,6 @@ input[type="button"].btn--block {
   padding: 0;
 }
 
-.g-col {
-  padding: 10px;
-}
 @media screen and (min-width: 42.66666667em) {
   .g-col {
     float: left;
@@ -1666,7 +1663,9 @@ img, object, embed, video {
 .l-blockGrid > li {
   display: block;
   height: auto;
-  padding: 10px;
+}
+.l-blockGrid > li :last-child {
+  margin-bottom: 0;
 }
 @media screen and (min-width: 22.22222222em) and (max-width: 42.66666667em) {
   .l-blockGrid[class*="up--narrow"] > li {
@@ -2521,6 +2520,9 @@ a {
 .l-container p a:link, .l-container ul a:link {
   font-weight: bold;
 }
+.l-container .next p a:link, .l-container .next ul a:link {
+  font-weight: normal;
+}
 
 .giant-logo {
   font-size: 1000px;
@@ -2657,7 +2659,6 @@ a {
   border-color: #924d10;
 }
 
-.sub
 .github-link {
   background-color: #924d10;
 }
@@ -2789,6 +2790,42 @@ a {
   display: block;
 }
 .showcaseList a:hover {
+  color: #924d10;
+}
+
+/* ==========================================================================
+   Next block
+   ========================================================================== */
+.next {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+.next .l-blockGrid li:nth-child(odd) {
+  padding-right: 10px;
+}
+.next .l-blockGrid li:nth-child(even) {
+  padding-left: 10px;
+}
+
+.next-subtitle {
+  margin-bottom: 10px;
+}
+
+.blockLink,
+.blockLink:link,
+.blockLink:visited {
+  color: inherit;
+}
+.blockLink .next-subtitle,
+.blockLink:link .next-subtitle,
+.blockLink:visited .next-subtitle {
+  color: #e67e22;
+}
+.blockLink:hover .next-subtitle,
+.blockLink:link:hover .next-subtitle,
+.blockLink:visited:hover .next-subtitle {
   color: #924d10;
 }
 

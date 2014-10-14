@@ -25,26 +25,22 @@ Kickoff’s CSS and JavaScript has been built in a modular way, meaning that if 
 
 For example, Kickoff includes a simple grid system, but if you need something more complex or, heaven forbid, not use one at all, that’s not a problem; just remove it.
 
-### Next steps
-
-
-
-<ul class="l-blockGrid l-blockGrid--2up">
-	<li>
-		<a href="get.html" class="blockLink">
-			<h3>Get Kickoff</h3>
-			<p>Want to use <code>git pull</code>, <code>yo kickoff</code> or just download a zip. Find out how to get your hands on Kickoff here</p>
-		</a>
-	</li>
-	<li>
-		<a href="use.html" class="blockLink">
-			<h3>Use Kickoff</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, aperiam.</p>
-		</a>
-	</li>
-</ul>
 
 <div class="next">
-	Where next?
+	<h3 class="next-title">Next steps</h3>
 
+	<ul class="l-blockGrid l-blockGrid--2up">
+		<li>
+			<a href="get.html" class="blockLink">
+				<h4 class="next-subtitle">Get Kickoff</h4>
+				<p>Find out how to get your hands on Kickoff here.</p>
+			</a>
+		</li>
+		<li>
+			<a href="use.html" class="blockLink">
+				<h4 class="next-subtitle">Use Kickoff</h4>
+				<p>Want to get started using Kickoff? You’ll want to start here.</p>
+			</a>
+		</li>
+	</ul>
 </div>
