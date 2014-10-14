@@ -43,7 +43,16 @@
 		</ul>
 		{% endif %}
 	</li>
-	<li><a href="/kickoff/learn/grid.html"{% if page.navactive == 'docsgrid' %} class="is-active"{% endif %}>The Grid</a></li>
+	<li><a href="/kickoff/learn/grid.html"{% if page.navactive == 'docsgrid' %} class="is-active"{% endif %}>The Grid</a>
+		{% if page.navactive == 'docsgrid' %}
+		<ul class="sidebar-subnav unstyled">
+			<li><a href="#gridbasic">Basic grid</a></li>
+			<li><a href="#gridnesting">Nesting columns</a></li>
+			<li><a href="#gridsourceorder">Source Ordered columns</a></li>
+			<li><a href="#gridcentred">Centred columns</a></li>
+		</ul>
+		{% endif %}
+	</li>
 </ul>
 
 <ul class="sidebar-nav unstyled">
