@@ -1,7 +1,13 @@
 <ul class="sidebar-nav unstyled">
 	<li><a href="/kickoff/learn/index.html"{% if page.navactive == 'docsindex' %} class="is-active"{% endif %}>Meet Kickoff</a></li>
 	<li><a href="/kickoff/learn/get.html"{% if page.navactive == 'docsget' %} class="is-active"{% endif %}>Get Kickoff</a></li>
-	<li><a href="/kickoff/learn/use.html"{% if page.navactive == 'docsuse' %} class="is-active"{% endif %}>Use Kickoff</a></li>
+	<li><a href="/kickoff/learn/use.html"{% if page.navactive == 'docsuse' %} class="is-active"{% endif %}>Use Kickoff</a>
+		{% if page.navactive == 'docsuse' %}
+		<ul class="sidebar-subnav unstyled">
+			<li><a href="#checklist">Checklist</a></li>
+		</ul>
+		{% endif %}
+	</li>
 </ul>
 
 <ul class="sidebar-nav unstyled">
@@ -16,12 +22,12 @@
 	<li><a href="/kickoff/learn/css.html"{% if page.navactive == 'docscss' %} class="is-active"{% endif %}>CSS</a>
 		{% if page.navactive == 'docscss' %}
 		<ul class="sidebar-subnav unstyled">
-			<li><a href="#how">How we use it</a></li>
-			<li><a href="#namingscheme">CSS Naming scheme</a></li>
+			<li><a href="#how">Philosophy</a></li>
 			<li><a href="#sass">Sass</a></li>
 			<li><a href="#structure">Structure</a></li>
 			<li><a href="#variables">Variables</a></li>
 			<li><a href="#responsive">Responsive</a></li>
+			<li><a href="#namingscheme">CSS Naming scheme</a></li>
 		</ul>
 		{% endif %}
 	</li>

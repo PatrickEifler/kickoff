@@ -3,6 +3,14 @@ layout: docs
 navgroup: docs
 navactive: docsyo
 title: Kickoff Yeoman Generator
+
+next:
+ - title: Get Kickoff
+   body: Find out the other ways to get Kickoff here
+   link: get.html
+ - title: Sublime Text snippets
+   body: Use Sublime? These handy snippets will make life with Kickoff even easier.
+   link: sublime.html
 ---
 
 We have created a Yeoman generator for Kickoff to make setting up new projects even faster. It will ask a few questions and them build a version of Kickoff for your needs.

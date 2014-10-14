@@ -3,6 +3,14 @@ layout: docs
 navgroup: docs
 navactive: docsgrunt
 title: "Kickoff &#10084;'s Grunt"
+
+next:
+ - title: Kickoff's CSS
+   body: Find out how Kickoff's CSS works
+   link: css.html
+ - title: Kickoff's Javascript
+   body: Find out how Kickoff's JS works
+   link: js.html
 ---
 
 Grunt is used extensively in Kickoff; It is the beating heart of the framework.

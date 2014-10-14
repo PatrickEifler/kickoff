@@ -3,6 +3,14 @@ layout: docs
 navgroup: docs
 navactive: docssublime
 title: Sublime Text snippets for Kickoff
+
+next:
+ - title: See some demos
+   body: View demos of all our components and modules
+   link: ../demos/components.html
+ - title: Use Yeoman
+   body: The fastest way to get Kickoff is using our yeoman generator. Find out about it here.
+   link: yeoman.html
 ---
 
 If you use Sublime Text, we have created some snippets to use with the framework.

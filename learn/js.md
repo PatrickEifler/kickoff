@@ -3,6 +3,14 @@ layout: docs
 navgroup: docs
 navactive: docsjs
 title: JavaScript
+
+next:
+ - title: Kickoff's CSS
+   body: Find out how Kickoff's CSS works
+   link: css.html
+ - title: The Kickoff Grid
+   body: Find out how the default Kickoff grid works
+   link: grid.html
 ---
 
 Information about the default JavaScript included in the project.

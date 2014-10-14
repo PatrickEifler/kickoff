@@ -3,6 +3,14 @@ layout: demo
 navgroup: demo
 navactive: demotype
 title: Typography
+
+next:
+ - title: Components demo
+   body: See the components that are included with Kickoff
+   link: components.html
+ - title: Forms demo
+   body: See how Kickoff handles forms
+   link: forms.html
 ---
 <h1>Heading 1 <small>small</small></h1>
 <h2>Heading 2</h2>

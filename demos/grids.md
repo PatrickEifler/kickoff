@@ -4,7 +4,14 @@ body-class: show-grid
 navgroup: demo
 navactive: demogrid
 title: The Kickoff Grid
-prettyprint: true
+
+next:
+ - title: Typography demo
+   body: See our default typography styles
+   link: typography.html
+ - title: Forms demo
+   body: See how Kickoff handles forms
+   link: forms.html
 ---
 
 <a name="standard"></a>
@@ -425,17 +432,6 @@ prettyprint: true
 		12
 	</div>
 </div>
-{% endhighlight %}
-	</div>
-</div>
-
-<div class="demo">
-	<div class="demo-visual">
-		<h2>Normal grid</h2>
-	</div>
-	<div class="demo-code">
-{% highlight html %}
-
 {% endhighlight %}
 	</div>
 </div>

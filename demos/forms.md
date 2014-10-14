@@ -4,6 +4,14 @@ body-class: show-grid
 navgroup: demo
 navactive: demoforms
 title: Form styling
+
+next:
+ - title: Typography demo
+   body: See our default typography styles
+   link: typography.html
+ - title: Grid demo
+   body: See the Kickoff grid in action
+   link: grids.html
 ---
 
 <a name="labelsabove"></a>

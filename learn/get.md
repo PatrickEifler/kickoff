@@ -3,6 +3,14 @@ layout: docs
 title: Get Kickoff
 navgroup: docs
 navactive: docsget
+
+next:
+ - title: Use Kickoff
+   body: Find out how to get the best from Kickoff and how to get up and running as quickly as possible.
+   link: use.html
+ - title: Understanding Grunt
+   body: Once you have downloaded Kickoff, it will need to be setup. Have a look at our Grunt docs here.
+   link: grunt.html
 ---
 ## Downloading Kickoff
 There are a few easy ways to get started with Kickoff.  Take a look below and find the way that best suits your particular needs.
@@ -37,5 +45,4 @@ To find out more about it – or what a Yeoman generator even is – and how it
 ### What next?
 
 Once you have downloaded Kickoff, take a look at our [Getting Starting Guide]() to help you find your way around the framework.
-
 
