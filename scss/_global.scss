@@ -314,43 +314,48 @@ a {
 	}
 }
 
+.statixLogo {
+	max-width: 400px;
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+}
 /* ==========================================================================
    Next block
    ========================================================================== */
+.nextTitle {
+	font-style: italic;
+	font-weight: normal;
+	text-align: center;
+	border-top: 10px solid #181830;
+	margin-bottom: 0;
+	line-height: 55px;
+	height: 70px;
+	margin-top: $baseline * 2;
+}
+.blockLinks {
+	background-color: $blueDark;
+	margin-bottom: $baseline;
+}
+.blockLink {
+	padding: 1em;
+	display: block;
+	color: #fff;
 
-$next-bg-color: rgba(240, 240, 240, 1);
-
-.next {
-	background-color: $next-bg-color;
-	padding: 20px;
-	border-radius: 6px;
-	margin-bottom: 20px;
-
-	.l-blockGrid li:nth-child(odd) {
-		padding-right: 10px;
+	h3 {
+		font-weight: normal;
+		font-style: italic;
 	}
-	.l-blockGrid li:nth-child(even) {
-		padding-left: 10px;
+
+	p {
+		margin-bottom: 0;
+	}
+
+	code {
+		background-color: $blue;
 	}
 }
-	.next-title {
-	}
-	.next-subtitle {
-		margin-bottom: 10px;
-	}
 
-.blockLink,
-.blockLink:link,
-.blockLink:visited {
-	color: inherit;
-
-	.next-subtitle {
-		color: $color-link-default;
-	}
-	&:hover .next-subtitle {
-		color: $color-link-hover;
-	}
-}
 
 /* ==========================================================================
    Demos
@@ -394,6 +399,10 @@ $next-bg-color: rgba(240, 240, 240, 1);
 		overflow: auto;
 	}
 }
+
+/**
+ * Grid demos
+ */
 .show-grid-button {
 	position: absolute;
 	top: 20px;
@@ -424,54 +433,6 @@ $next-bg-color: rgba(240, 240, 240, 1);
 		margin-bottom: 0;
 	}
 }
-
-.entry {
-	padding-top: 50px;
-}
-.entry--title {
-	margin-bottom: 0;
-	font-weight: normal;
-	font-style: italic;
-}
-
-
-.sidebar-nav {
-	margin-bottom: 1em;
-	// border-bottom: 3px solid $blue;
-	li {
-		// margin-bottom: 0.25em;
-	}
-	a {
-		font-family: $font-family-alt;
-		font-style: italic;
-		padding: .2em .5em .3em;
-		border-left: 3px solid;
-		display: block;
-	}
-	.is-active {
-		background-color: $color-primary;
-		border-color: $color-primary;
-		color: #fff;
-	}
-}
-.sidebar-subnav {
-	margin-left: 1em;
-
-	// a:link {
-	// 	font-weight: normal;
-
-	// 	// &:before {
-	// 	// 	content:'- ';
-	// 	// }
-	// }
-}
-.docs-footer {
-	background-color: #FEFFDA;
-	padding: 15px;
-	text-align: center;
-}
-
-
 // Choreographic Grid Demo
 .show-grid .grid-test .g-col {
 	background-color: rgba($color-primary,0.1);
@@ -513,17 +474,47 @@ $next-bg-color: rgba(240, 240, 240, 1);
 // 	}
 // }
 
-/*
-   Style Github Gist embeds
-   ========================================================================== */
-.gist .gist-file {
-	font-size: 14px;
-	tab-size: 3;
-	text-align: left;
+.entry {
+	padding-top: 50px;
+}
+.entry--title {
+	margin-bottom: 0;
+	font-weight: normal;
+	font-style: italic;
 }
 
 /**
- *
+ * Docs/demo sidebar navigation
+ */
+.sidebar-nav {
+	margin-bottom: 1em;
+
+	a {
+		font-family: $font-family-alt;
+		font-style: italic;
+		padding: .2em .5em .3em;
+		border-left: 3px solid;
+		display: block;
+	}
+	.is-active {
+		background-color: $color-primary;
+		border-color: $color-primary;
+		color: #fff;
+	}
+}
+.sidebar-subnav {
+	margin-left: 1em;
+}
+
+// Docs disclaimer
+.docs-footer {
+	background-color: #FEFFDA;
+	padding: 15px;
+	text-align: center;
+}
+
+/**
+ * Checklist page
  */
 .well {
 	min-height: 90px;
@@ -538,7 +529,6 @@ $next-bg-color: rgba(240, 240, 240, 1);
 		white-space: pre;
 	}
 }
-
 .well--inner {
 	margin-left: 0;
 	margin-right: 0;
@@ -551,45 +541,5 @@ $next-bg-color: rgba(240, 240, 240, 1);
 
 	li {
 		margin-bottom: 0.2em;
-	}
-}
-
-.statixLogo {
-	max-width: 400px;
-	width: 80%;
-	margin: 0 auto;
-	display: block;
-}
-
-.nextTitle {
-	font-style: italic;
-	font-weight: normal;
-	text-align: center;
-	border-top: 10px solid #181830;
-	margin-bottom: 0;
-	line-height: 55px;
-	height: 70px;
-	margin-top: $baseline * 2;
-}
-.blockLinks {
-	background-color: $blueDark;
-	margin-bottom: $baseline;
-}
-.blockLink {
-	padding: 1em;
-	display: block;
-	color: #fff;
-
-	h3 {
-		font-weight: normal;
-		font-style: italic;
-	}
-
-	p {
-		margin-bottom: 0;
-	}
-
-	code {
-		background-color: $blue;
 	}
 }
