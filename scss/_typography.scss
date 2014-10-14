@@ -107,7 +107,7 @@ h4, .h4, .delta,
 h5, .h5, .epsilon,
 h6, .h6, .zeta {
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 10px;
 	@include font-size($type-small);
 }
 

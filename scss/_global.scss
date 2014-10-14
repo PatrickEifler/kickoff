@@ -28,6 +28,21 @@ a {
 	.lt-ie9 & {
 		min-width: #{$layout-min-width}px;
 	}
+
+	// :first-child {
+	// 	margin-top: 0;
+	// }
+
+// 	p a:link, ul a:link {
+// 		font-weight: $font-weight-bold;
+// 	}
+// 	& .next {
+// 		p a:link, ul a:link {
+// 			font-weight: normal;
+// 		}
+// 	}
+// }
+
 }
 
 /* ==========================================================================
@@ -125,6 +140,7 @@ a {
 		display: inline-block;
 	}
 }
+
 
 .github-link {
 	background-color: darken($color-primary, 20%);
@@ -298,6 +314,43 @@ a {
 	}
 }
 
+/* ==========================================================================
+   Next block
+   ========================================================================== */
+
+$next-bg-color: rgba(240, 240, 240, 1);
+
+.next {
+	background-color: $next-bg-color;
+	padding: 20px;
+	border-radius: 6px;
+	margin-bottom: 20px;
+
+	.l-blockGrid li:nth-child(odd) {
+		padding-right: 10px;
+	}
+	.l-blockGrid li:nth-child(even) {
+		padding-left: 10px;
+	}
+}
+	.next-title {
+	}
+	.next-subtitle {
+		margin-bottom: 10px;
+	}
+
+.blockLink,
+.blockLink:link,
+.blockLink:visited {
+	color: inherit;
+
+	.next-subtitle {
+		color: $color-link-default;
+	}
+	&:hover .next-subtitle {
+		color: $color-link-hover;
+	}
+}
 
 /* ==========================================================================
    Demos

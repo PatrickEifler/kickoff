@@ -317,7 +317,7 @@ h4, .h4, .delta,
 h5, .h5, .epsilon,
 h6, .h6, .zeta {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   font-size: 14.4px;
   font-size: 0.8rem;
 }
@@ -848,7 +848,6 @@ input[type="button"].btn--block {
 }
 
 .g-col {
-  padding: 10px;
   float: left;
   min-height: 1px;
   position: relative;
@@ -1625,7 +1624,9 @@ img, object, embed, video {
 .l-blockGrid > li {
   display: block;
   height: auto;
-  padding: 10px;
+}
+.l-blockGrid > li :last-child {
+  margin-bottom: 0;
 }
 .l-blockGrid > li {
   display: block;
@@ -2349,6 +2350,41 @@ a {
 .lt-ie9 .l-container {
   min-width: 1000px;
 }
+<<<<<<< HEAD
+.l-container p a:link, .l-container ul a:link {
+  font-weight: bold;
+}
+.l-container .next p a:link, .l-container .next ul a:link {
+  font-weight: normal;
+}
+
+.giant-logo {
+  font-size: 1000px;
+  font-size: 55.55555556rem;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  text-align: center;
+  font-weight: bold;
+  color: #fafafa;
+  height: 0px;
+  width: 0px;
+  -webkit-transform-origin: 0% 0%;
+     -moz-transform-origin: 0% 0%;
+      -ms-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: rotate(44deg);
+     -moz-transform: rotate(44deg);
+      -ms-transform: rotate(44deg);
+          transform: rotate(44deg);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+=======
+>>>>>>> 54077eb67140f46606df057d5f4db1626154a532
 
 /* ==========================================================================
    Masthead
@@ -2424,6 +2460,32 @@ a {
   display: inline-block;
 }
 
+<<<<<<< HEAD
+.sub-nav {
+  position: absolute;
+  display: none;
+  top: 100%;
+  width: 200px;
+  background-color: #e67e22;
+  border-radius: 0 0 5px 5px;
+  padding: 5px 0;
+  z-index: 100;
+  background-color: #bf6516;
+}
+.sub-nav li {
+  float: none;
+}
+.sub-nav a {
+  text-align: left;
+  color: #fff;
+  display: block;
+}
+.sub-nav a:hover {
+  border-color: #924d10;
+}
+
+=======
+>>>>>>> 54077eb67140f46606df057d5f4db1626154a532
 .github-link {
   background-color: black;
 }
@@ -2569,6 +2631,42 @@ a {
 }
 .used p {
   margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Next block
+   ========================================================================== */
+.next {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+.next .l-blockGrid li:nth-child(odd) {
+  padding-right: 10px;
+}
+.next .l-blockGrid li:nth-child(even) {
+  padding-left: 10px;
+}
+
+.next-subtitle {
+  margin-bottom: 10px;
+}
+
+.blockLink,
+.blockLink:link,
+.blockLink:visited {
+  color: inherit;
+}
+.blockLink .next-subtitle,
+.blockLink:link .next-subtitle,
+.blockLink:visited .next-subtitle {
+  color: #e67e22;
+}
+.blockLink:hover .next-subtitle,
+.blockLink:link:hover .next-subtitle,
+.blockLink:visited:hover .next-subtitle {
+  color: #924d10;
 }
 
 /* ==========================================================================

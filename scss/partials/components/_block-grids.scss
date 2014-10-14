@@ -25,6 +25,10 @@
 		@if $grid-column-padding > 0 {
 			padding: $grid-column-padding + px;
 		}
+
+		:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	// Narrow block-grid

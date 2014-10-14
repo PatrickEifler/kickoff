@@ -11,7 +11,14 @@
 </ul>
 
 <ul class="sidebar-nav unstyled">
-	<li><a href="/kickoff/learn/grunt.html"{% if page.navactive == 'docsgrunt' %} class="is-active"{% endif %}>Grunt</a></li>
+	<li><a href="/kickoff/learn/grunt.html"{% if page.navactive == 'docsgrunt' %} class="is-active"{% endif %}>Grunt</a>
+		{% if page.navactive == 'docsgrunt' %}
+		<ul class="sidebar-subnav unstyled">
+			<li><a href="#setup">Setup</a></li>
+			<li><a href="#tasks">Grunt Tasks</a></li>
+		</ul>
+		{% endif %}
+	</li>
 	<li><a href="/kickoff/learn/css.html"{% if page.navactive == 'docscss' %} class="is-active"{% endif %}>CSS</a>
 		{% if page.navactive == 'docscss' %}
 		<ul class="sidebar-subnav unstyled">
