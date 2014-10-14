@@ -4,6 +4,9 @@ navgroup: docs
 navactive: docsuse
 title: Use Kickoff
 
+meta:
+  description: Our getting starting guide to help you find your way around the framework.
+
 next:
  - title: Get Kickoff
    body: Want to use `git pull`, `yo kickoff` or just download a zip. Find out how to get your hands on Kickoff here

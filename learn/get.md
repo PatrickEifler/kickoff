@@ -4,6 +4,9 @@ title: Get Kickoff
 navgroup: docs
 navactive: docsget
 
+meta:
+  description: Want to use git pull, yo kickoff or just download a zip. Find out how to get your hands on Kickoff here
+
 next:
  - title: Use Kickoff
    body: Once you have downloaded Kickoff, take a look at our **getting starting guide** to help you find your way around the framework. Find out how to get the best from Kickoff and how to get up and running as quickly as possible.

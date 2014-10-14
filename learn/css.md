@@ -4,6 +4,9 @@ navgroup: docs
 navactive: docscss
 title: CSS
 
+meta:
+  description: Understand how we use CSS in Kickoff
+
 next:
  - title: Kickoff's Javascript
    body: Find out how Kickoff's JS works

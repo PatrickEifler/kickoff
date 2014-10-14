@@ -4,6 +4,10 @@ navgroup: docs
 navactive: docsgrunt
 title: "Kickoff &#10084;'s Grunt"
 
+meta:
+  title: Grunt setup
+  description: Read Kickoff's Grunt documentation
+
 next:
  - title: Kickoff's CSS
    body: Find out how Kickoff's CSS works
@@ -73,7 +77,7 @@ Kickoff comes with a number of useful Grunt tasks already setup for you to use. 
 
 Here is a guide to the tasks that are available and what each of them does:
 
-<hr>
+---
 
 #### grunt - the default task
 
@@ -84,17 +88,17 @@ Running `grunt` will carry out the following tasks on your code:
 * [sass:kickoff](#task-sass) - compiles Kickoff’s Sass files into native CSS
 * [autoprefixer:kickoff](#task-autoprefixer) – adds vendor prefixes to your CSS
 
-<hr>
+---
 
 #### grunt dev - a task for development environments
 Run `grunt dev` to run uglify (to minify and concatinate javascript), sass:kickoff (to compile Sass) & autoprefixer:kickoff (to add vendor prefixes to the Sass)
 
-<hr>
+---
 
 #### grunt deploy - a task for production environments
 This task is the same as **grunt dev** but minifies the CSS output as well - useful for production environments. Run `grunt deploy` to initiate this task.
 
-<hr>
+---
 
 #### grunt watch
 The grunt watch task is incredibly powerful (it uses [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)). Run `grunt watch` to initiate this task. It is setup to watch:
@@ -103,17 +107,17 @@ The grunt watch task is incredibly powerful (it uses [grunt-contrib-watch](https
 * the javascript for changes (& then to minify and concatinate using uglifyjs)
 * any svg file that is added to the 'img/src' directory (& then run svgmin & grunticon)
 
-<hr>
+---
 
 #### grunt serve
 Run `grunt serve` to create a simple static server (using [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect)) for previewing your work. This task will open your defaut browser and enable Livereload so that CSS changes are updated when you edit your Sass. This task runs uglify (to minify and concatinate javascript), sass:kickoff (to compile Sass), autoprefixer:kickoff (to add vendor prefixes to the Sass) & grunt watch (above) to monitor for changes.
 
-<hr>
+---
 
 #### grunt icons - a task to create all icons using grunticon
 Kickoff includes [grunticon](https://github.com/filamentgroup/grunticon), a tool that makes it easy to manage SVG icons while created fallbacks & CSS for browsers that might not have support for it. Run `grunt icons` to regenerate the icons. This tasks uses [svgmin](https://github.com/sindresorhus/grunt-svgmin) (to minify SVGs) & grunticon.
 
-<hr>
+---
 
 #### grunt check
 Run `grunt jscheck` to check javascript for errors and style problems.
@@ -124,13 +128,69 @@ Run `grunt jscheck` to check javascript for errors and style problems.
 
 ## Understanding Kickoff’s Grunt config
 
-Talk here about the config stored in the base Gruntfile
+To make it easier for developers to use Kickoff and modify its Grunt options, we have provided a config object to be used like global variables. These reside near the top of the main `Gruntfile.js`.
 
-NEEDS DOCUMENTATION
+```js
+/**
+ * Grunt global vars
+ * Many of the Grunt tasks use these variables.
+ * To use a value, copy the code at the end of each line (or above if an array)
+ */
+config : {
+	src: "_grunt-configs/*.js",
+
+	css : {
+		distDir : 'css',     // <%=config.css.distDir%>
+		srcFile : 'kickoff', // <%=config.css.srcFile%>
+		scssDir : 'scss'     // <%=config.css.scssDir%>
+	},
+
+	js : {
+		distDir  : 'js/dist/',   // <%=config.js.distDir%>
+		distFile : 'app.min.js', // <%=config.js.distFile%>
+
+		// <%=config.js.fileList%>
+		fileList : [
+			// if you would like to remove jQuery from your concatenated JS, comment out the line below
+			'bower_modules/jquery/dist/jquery.js',
+
+			// if you would like some basic JS shims (when not using jQuery),
+			// uncomment the line below to compile Shimly output
+			//'js/helpers/shims.js',
+
+			'js/helpers/console.js',
+			'bower_modules/trak/dist/trak.js',
+			'bower_modules/swiftclick/js/libs/swiftclick.js',
+			'bower_modules/cookies-js/src/cookies.js',
+
+			'js/script.js'
+		]
+	},
+
+	localserver: 'kickoff.dev', // <%=config.localserver%>
+
+	testing: {
+
+		/**
+		 * These are the settings used by our visual regression testing task, Photobox
+		 */
+		visual : {
+			sizes: [ '600', '1000', '1200' ], // <%=config.testing.visual.sizes%>
+
+			// <%=config.testing.visual.urls%>
+			urls : [
+				'http://localhost:3000',
+				'http://localhost:3000/_docs/',
+				'http://localhost:3000/_docs/styleguide.html'
+			]
+		}
+	}
+}
+```
 
 <hr class="sectionSplitter">
 
-<a name="task-appendices"></a>
+<a name="taskindex"></a>
 
 ## Task Index
 
@@ -204,8 +264,9 @@ This task isn’t specified in the default Kickoff build tasks, but can be initi
 
 JSHint can take a number of options when validating your JavaScript, all of which can be managed inside a `.jshintrc` file, found in Kickoff’s root directory.
 
+---
 
-### Server tasks
+## Server tasks
 
 Kickoff’s server tasks help create a local development environment for your development.
 
@@ -221,7 +282,9 @@ Browsersync is used in our `grunt serve` task to create a simple server to previ
 See this video for a demo:
 <div class="fluidVideo"><iframe width="640" height="480" src="//www.youtube-nocookie.com/embed/heNWfzc7ufQ" frameborder="0" allowfullscreen></iframe></div>
 
-### Utility Tasks
+---
+
+## Utility Tasks
 
 <a name="task-clean"></a>
 #### Clean
@@ -230,8 +293,7 @@ The clean task uses [grunt-contrib-clean](https://github.com/gruntjs/grunt-contr
 
 <a name="task-clean"></a>
 #### Shell
-
-NEEDS DOCUMENTATION HERE
+The clean task uses [grunt-shell](https://github.com/sindresorhus/grunt-shell) to run shell commands. We use it to install bower dependencies in the `grunt start` command.
 
 <a name="task-watch"></a>
 ### Watch Task

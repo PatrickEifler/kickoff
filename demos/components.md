@@ -5,6 +5,9 @@ navgroup: demo
 navactive: democomponents
 title: Components
 
+meta:
+  description: See Kickoff's components demo
+
 next:
  - title: Typography demo
    body: See our default typography styles

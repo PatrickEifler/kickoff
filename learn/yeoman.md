@@ -4,6 +4,9 @@ navgroup: docs
 navactive: docsyo
 title: Kickoff Yeoman Generator
 
+meta:
+  description: The fastest way to get Kickoff is using our yeoman generator. Find out about it here.
+
 next:
  - title: Get Kickoff
    body: Find out the other ways to get Kickoff here

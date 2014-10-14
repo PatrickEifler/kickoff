@@ -4,6 +4,9 @@ navgroup: docs
 navactive: docsgrid
 title: The Grid
 
+meta:
+  description: Read Kickoff's Grid documentation
+
 next:
  - title: Kickoff's CSS
    body: Find out how Kickoff's CSS works

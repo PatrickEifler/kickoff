@@ -3,10 +3,13 @@ layout: docs
 navgroup: docs
 navactive: docsediting
 title: Editing this website
+
+meta:
+  description: How to edit the Kickoff documentation site
 ---
 
 ### Before you start
-Ruby v2 is needed. Update using [rvm](http://rvm.io/) then install the packages below
+Ruby v2 is needed for Sass compilation. Install it.
 
 * Install Jekyll, redcarpet and Sass globally - `gem install jekyll sass redcarpet rouge`
 * Install Node from [nodejs.org](http://nodejs.org/)

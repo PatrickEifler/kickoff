@@ -4,6 +4,9 @@ navgroup: docs
 navactive: docssublime
 title: Sublime Text snippets for Kickoff
 
+meta:
+  description: Use Sublime? These handy snippets will make life with Kickoff even easier.
+
 next:
  - title: See some demos
    body: View demos of all our components and modules
