@@ -543,3 +543,9 @@ a {
 		margin-bottom: 0.2em;
 	}
 }
+
+.sectionSplitter {
+	border-top-width: 5px;
+	border-bottom: none;
+	margin: $baseline * 2;
+}
