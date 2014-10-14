@@ -28,7 +28,7 @@ Kickoff is made with [Sass](http://sass-lang.com/) at its core, it makes develop
 
 Simply fire up Terminal (or Command Prompt on Windows) and type in this command:
 
-```sh
+```shell
 $ gem install sass
 ```
 
