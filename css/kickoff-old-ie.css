@@ -448,7 +448,7 @@ dd {
 hr {
   margin: 25px 0;
   border: 0;
-  border-top: 1px solid #b3b3b3;
+  border-top: 1px solid #3498db;
   border-bottom: 1px solid #fff;
 }
 
@@ -1925,6 +1925,7 @@ pre {
   color: #222;
   background-color: #f7f7f9;
   white-space: pre;
+  overflow: auto;
 }
 pre code {
   padding: 0;
@@ -2780,6 +2781,12 @@ a {
 }
 .checklistInfo li {
   margin-bottom: 0.2em;
+}
+
+.sectionSplitter {
+  border-top-width: 5px;
+  border-bottom: none;
+  margin: 50px;
 }
 
 /*
