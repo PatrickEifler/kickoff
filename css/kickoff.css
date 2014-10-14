@@ -490,16 +490,6 @@ blockquote small {
 blockquote small:before {
   content: '\2014 \00A0';
 }
-blockquote.pull-right {
-  float: right;
-  padding-left: 0;
-  padding-right: 10px;
-  border-left: 0;
-  border-right: 4px solid #cccccc;
-}
-blockquote.pull-right, blockquote.pull-right p, blockquote.pull-right small {
-  text-align: right;
-}
 
 q:before, q:after,
 blockquote:before,
@@ -667,13 +657,13 @@ samp {
 }
 
 .btn--primary {
-  background-color: #FF7800;
+  background-color: #FE7C08;
 }
 .btn--primary, .btn--primary:link, .btn--primary:visited {
   color: #fff;
 }
 .btn--primary:hover, .btn--primary:active, .btn--primary:focus {
-  background-color: #e66c00;
+  background-color: #ec7001;
 }
 
 .btn--bright {
@@ -686,7 +676,7 @@ samp {
   color: #fff;
 }
 .btn--bright:hover, .btn--bright:active, .btn--bright:focus {
-  border-color: #994800;
+  border-color: #9f4b01;
   background-color: transparent;
 }
 
@@ -1783,7 +1773,7 @@ img, object, embed, video {
 	========================================================================== */
 .tabs {
   margin-bottom: 25px;
-  border-bottom: 2px solid #FF7800;
+  border-bottom: 2px solid #FE7C08;
 }
 .tabs:after {
   content: "";
@@ -1810,7 +1800,7 @@ img, object, embed, video {
   color: #fff;
 }
 .tabs a.is-active {
-  background-color: #FF7800;
+  background-color: #FE7C08;
 }
 
 .l-tabsContent > li {
@@ -2489,41 +2479,6 @@ a {
 .lt-ie9 .l-container {
   min-width: 1000px;
 }
-<<<<<<< HEAD
-.l-container p a:link, .l-container ul a:link {
-  font-weight: bold;
-}
-.l-container .next p a:link, .l-container .next ul a:link {
-  font-weight: normal;
-}
-
-.giant-logo {
-  font-size: 1000px;
-  font-size: 55.55555556rem;
-  position: fixed;
-  top: 0px;
-  left: 0;
-  z-index: -1;
-  text-align: center;
-  font-weight: bold;
-  color: #fafafa;
-  height: 0px;
-  width: 0px;
-  -webkit-transform-origin: 0% 0%;
-     -moz-transform-origin: 0% 0%;
-      -ms-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-  -webkit-transform: rotate(44deg);
-     -moz-transform: rotate(44deg);
-      -ms-transform: rotate(44deg);
-          transform: rotate(44deg);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-=======
->>>>>>> 54077eb67140f46606df057d5f4db1626154a532
 
 /* ==========================================================================
    Masthead
@@ -2571,7 +2526,7 @@ a {
   color: #fff;
 }
 .logoStyle span {
-  color: #FF7800;
+  color: #FE7C08;
 }
 
 .nav {
@@ -2707,7 +2662,7 @@ a {
    Showcase
    ========================================================================== */
 .showcase {
-  background-color: #FF7800;
+  background-color: #FE7C08;
 }
 .showcase :last-child {
   margin-bottom: 0;
@@ -2755,47 +2710,53 @@ a {
 }
 
 .used {
-  background-color: #e66c00;
+  background-color: #ec7001;
   padding: 1.5em;
 }
 .used p {
   margin-bottom: 0;
 }
 
+.statixLogo {
+  max-width: 400px;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
 /* ==========================================================================
    Next block
    ========================================================================== */
-.next {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 6px;
-  margin-bottom: 20px;
-}
-.next .l-blockGrid li:nth-child(odd) {
-  padding-right: 10px;
-}
-.next .l-blockGrid li:nth-child(even) {
-  padding-left: 10px;
+.nextTitle {
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+  border-top: 10px solid #181830;
+  margin-bottom: 0;
+  line-height: 55px;
+  height: 70px;
+  margin-top: 50px;
 }
 
-.next-subtitle {
-  margin-bottom: 10px;
+.blockLinks {
+  background-color: #181830;
+  margin-bottom: 25px;
 }
 
-.blockLink,
-.blockLink:link,
-.blockLink:visited {
-  color: inherit;
+.blockLink {
+  padding: 1em;
+  display: block;
+  color: #fff;
 }
-.blockLink .next-subtitle,
-.blockLink:link .next-subtitle,
-.blockLink:visited .next-subtitle {
-  color: #e67e22;
+.blockLink h3 {
+  font-weight: normal;
+  font-style: italic;
 }
-.blockLink:hover .next-subtitle,
-.blockLink:link:hover .next-subtitle,
-.blockLink:visited:hover .next-subtitle {
-  color: #924d10;
+.blockLink p {
+  margin-bottom: 0;
+}
+.blockLink code {
+  background-color: #3498db;
 }
 
 /* ==========================================================================
@@ -2827,6 +2788,9 @@ a {
 .demo-visual h3 {
   margin-bottom: 5px;
 }
+.demo-visual code {
+  white-space: pre;
+}
 
 .demo-code pre {
   margin-bottom: 0;
@@ -2835,6 +2799,9 @@ a {
   overflow: auto;
 }
 
+/**
+ * Grid demos
+ */
 .show-grid-button {
   position: absolute;
   top: 20px;
@@ -2861,42 +2828,6 @@ a {
 }
 .grid-block-link :last-child {
   margin-bottom: 0;
-}
-
-.entry {
-  padding-top: 50px;
-}
-
-.entry--title {
-  margin-bottom: 0;
-  font-weight: normal;
-  font-style: italic;
-}
-
-.sidebar-nav {
-  margin-bottom: 1em;
-}
-.sidebar-nav a {
-  font-family: "purista-web", "franklin-gothic-urw", "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
-  padding: .2em .5em .3em;
-  border-left: 3px solid;
-  display: block;
-}
-.sidebar-nav .is-active {
-  background-color: #181830;
-  border-color: #181830;
-  color: #fff;
-}
-
-.sidebar-subnav {
-  margin-left: 1em;
-}
-
-.docs-footer {
-  background-color: #FEFFDA;
-  padding: 15px;
-  text-align: center;
 }
 
 .show-grid .grid-test .g-col {
@@ -2937,18 +2868,47 @@ a {
   display: none;
 }
 
-/*
-   Style Github Gist embeds
-   ========================================================================== */
-.gist .gist-file {
-  font-size: 14px;
-  -moz-tab-size: 3;
-       tab-size: 3;
-  text-align: left;
+.entry {
+  padding-top: 50px;
+}
+
+.entry--title {
+  margin-bottom: 0;
+  font-weight: normal;
+  font-style: italic;
 }
 
 /**
- *
+ * Docs/demo sidebar navigation
+ */
+.sidebar-nav {
+  margin-bottom: 1em;
+}
+.sidebar-nav a {
+  font-family: "purista-web", "franklin-gothic-urw", "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  padding: .2em .5em .3em;
+  border-left: 3px solid;
+  display: block;
+}
+.sidebar-nav .is-active {
+  background-color: #181830;
+  border-color: #181830;
+  color: #fff;
+}
+
+.sidebar-subnav {
+  margin-left: 1em;
+}
+
+.docs-footer {
+  background-color: #FEFFDA;
+  padding: 15px;
+  text-align: center;
+}
+
+/**
+ * Checklist page
  */
 .well {
   min-height: 90px;
@@ -2975,45 +2935,6 @@ a {
 }
 .checklistInfo li {
   margin-bottom: 0.2em;
-}
-
-.statixLogo {
-  max-width: 400px;
-  width: 80%;
-  margin: 0 auto;
-  display: block;
-}
-
-.nextTitle {
-  font-style: italic;
-  font-weight: normal;
-  text-align: center;
-  border-top: 10px solid #181830;
-  margin-bottom: 0;
-  line-height: 55px;
-  height: 70px;
-  margin-top: 50px;
-}
-
-.blockLinks {
-  background-color: #181830;
-  margin-bottom: 25px;
-}
-
-.blockLink {
-  padding: 1em;
-  display: block;
-  color: #fff;
-}
-.blockLink h3 {
-  font-weight: normal;
-  font-style: italic;
-}
-.blockLink p {
-  margin-bottom: 0;
-}
-.blockLink code {
-  background-color: #3498db;
 }
 
 /*
@@ -3130,9 +3051,6 @@ a {
 /**
  * Responsive Utilities
  */
-@-ms-viewport {
-  width: device-width;
-}
 * {
   -webkit-tap-highlight-color: #181830 !important;
 }
@@ -3142,11 +3060,20 @@ textarea[contenteditable] {
   -webkit-appearance: none;
 }
 
-@media screen and (max-width: 400px) {
-  @-ms-viewport {
-    width: 320px;
-  }
+.promote-layer {
+  /*
+  This may promote the layer to a composited
+  layer.
+
+  Replace with will-change when available
+
+  #perfmatters
+  */
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
+
 /**
  * Print styles
  */
