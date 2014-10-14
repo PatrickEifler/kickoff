@@ -227,9 +227,10 @@ Using [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect),
 
 <a name="task-browsersynx"></a>
 #### BrowserSync
+Browsersync is used in our `grunt serve` task to create a simple server to preview your static site. Not only does it live reload any style changes (without a browser plugin I might add), but it also makes your workflow faster by synchronising URLs, interactions and code changes across multiple devices.
 
-NEEDS DOCUMENTATION HERE
-
+See this video for a demo:
+<div class="fluidVideo"><iframe width="640" height="480" src="//www.youtube-nocookie.com/embed/heNWfzc7ufQ" frameborder="0" allowfullscreen></iframe></div>
 
 ### Utility Tasks
 
