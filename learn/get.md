@@ -12,7 +12,6 @@ next:
    body: Once you have downloaded Kickoff, it will need to be setup. Have a look at our Grunt docs here.
    link: grunt.html
 ---
-## Downloading Kickoff
 There are a few easy ways to quickly get started with Kickoff, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.
 
 ### Download a zip:
