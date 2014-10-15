@@ -2543,8 +2543,8 @@ a {
 .nav a {
   display: inline-block;
   padding: 0 .5em;
-  font-size: 20spx;
-  font-size: 1srem;
+  font-size: 18px;
+  font-size: 0.9rem;
   line-height: 50px;
   height: 50px;
 }
@@ -2624,8 +2624,8 @@ a {
 }
 
 .wideBoy-title {
+  font-family: "franklin-gothic-urw", "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  font-style: italic;
 }
 
 .wideBoy--bright {

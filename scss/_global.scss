@@ -115,7 +115,7 @@ a {
 	a {
 		display: inline-block;
 		padding: 0 .5em;
-		@include font-size(20s);
+		@include font-size(18);
 		line-height: 50px;
 		height: 50px;
 
@@ -206,8 +206,8 @@ a {
 	}
 }
 .wideBoy-title {
+	font-family: $font-family-base;
 	font-weight: normal;
-	font-style: italic;
 }
 .wideBoy--bright {
 	& {
