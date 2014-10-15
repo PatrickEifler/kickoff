@@ -2573,7 +2573,24 @@ a {
   padding-top: 20px;
   padding: 40px 0;
   background-color: #181830;
+}
+.footer,
+.footer a:link,
+.footer a:visited {
   color: #fff;
+}
+.footer a:link,
+.footer a:visited {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  white-space: pre;
+}
+.footer a:hover {
+  opacity: .5;
+}
+.footer p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-nav {
@@ -2663,7 +2680,7 @@ a {
    Showcase
    ========================================================================== */
 .showcase {
-  background-color: #FE7C08;
+  background-color: #3498db;
 }
 .showcase :last-child {
   margin-bottom: 0;
@@ -2688,7 +2705,7 @@ a {
   position: relative;
 }
 .showcaseList li {
-  padding: 0;
+  padding: 5px;
 }
 .showcaseList figcaption {
   position: absolute;
@@ -2706,12 +2723,15 @@ a {
 .showcaseList img {
   display: block;
 }
+.showcaseList a {
+  display: block;
+}
 .showcaseList a:hover {
   color: #196090;
 }
 
 .used {
-  background-color: #ec7001;
+  background-color: #258cd1;
   padding: 1.5em;
 }
 .used p {
@@ -2942,6 +2962,21 @@ a {
   margin: 56px;
 }
 
+.btn--secondary {
+  background-color: #181830;
+}
+.btn--secondary, .btn--secondary:link, .btn--secondary:visited {
+  color: #fff;
+}
+.btn--secondary:hover, .btn--secondary:active, .btn--secondary:focus {
+  background-color: black;
+}
+
+@media screen and (max-width: 38.4em) {
+  .github-logo {
+    display: none;
+  }
+}
 /*
    Icons
    ========================================================================== */
