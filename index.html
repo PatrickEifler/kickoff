@@ -27,11 +27,11 @@
 			<a href="#mainContent" class="btn btn--primary">Skip to main content</a>
 		</div>
 
-		<!--  ==============  -->
+		<!--  ================  -->
 		<!--  === Masthead ===  -->
-		<!--  ==============  -->
+		<!--  ================  -->
 		<header class="masthead" role="banner">
-
+			<h1>Kickoff v4.0.0</h1>
 		</header>
 
 
@@ -39,8 +39,6 @@
 		<!--  === Main content ===  -->
 		<!--  ====================  -->
 		<div id="mainContent" class="l-container" role="main">
-
-			<hr>
 			<h4>Components: form</h4>
 			<div class="g-row">
 				<div class="g-span12 g-col">
@@ -209,7 +207,7 @@
 
 							<div class="g-row">
 								<div class="form-controlGroup g-col g-span6">
-									<label for="choice" class="form-label">Choice</label>
+									<label for="choice" class="form-label">Select element</label>
 									<div class="form-controlGroup-inputWrapper">
 										<select id="choice" class="form-input form-input--select">
 											<option>1</option>
@@ -221,16 +219,31 @@
 									</div>
 								</div>
 								<div class="form-controlGroup g-col g-span6">
-									<label for="choice" class="form-label">Choice (mulitple)</label>
+									<label for="choice" class="form-label">Custom select element</label>
 									<div class="form-controlGroup-inputWrapper">
-										<select id="choicemulitple" multiple class="form-input form-input--select">
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-											<option>5</option>
-										</select>
+										<label class="form-input form-input--selectWrapper">
+											<select id="choice2" class="form-input">
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</label>
 									</div>
+								</div>
+							</div>
+
+							<div class="form-controlGroup">
+								<label for="choice" class="form-label">Choice (mulitple)</label>
+								<div class="form-controlGroup-inputWrapper">
+									<select id="choicemulitple" multiple class="form-input form-input--select">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
 								</div>
 							</div>
 
@@ -266,6 +279,20 @@
 					<li>7sdfdsfsdf</li>
 					<li>8sdfdsfsdf</li>
 			</ul>
+
+			<hr>
+
+			<h1>Heading 1 <small>small</small></h1>
+			<h2>Heading 2</h2>
+			<p>Donec sed odio dui. Curabitur <a href="">blandit tempus</a> porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+			<h3>Heading 3</h3>
+			<p>Donec sed odio dui. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras <a href="">mattis consectetur purus</a> sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+			<h4>Heading 4</h4>
+			<p>Donec sed odio dui. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante <a href="">venenatis dapibus</a> posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+			<h5>Heading 5</h5>
+			<p>Donec sed odio dui. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+			<h6>Heading 6</h6>
+			<p>Donec sed odio dui. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
 
 			<hr>
 
@@ -365,7 +392,7 @@
 
 			<h4>Tables</h4>
 
-			<table class="table table--bordered table--striped table--hover table--rounded" cellpadding="0" cellspacing="0">
+			<table class="table table--bordered table--striped table--hover table--rounded">
 				<thead>
 					<th>Table Cell</th>
 					<th>Table Cell</th>
@@ -405,9 +432,9 @@
 				</tfoot>
 			</table>
 
-			<h5>Responsive tables</h5>
+			<h5>Simple responsive tables</h5>
 			<div class="tableResponsive">
-				<table class="table" cellpadding="0" cellspacing="0">
+				<table class="table">
 					<thead>
 						<th>Table Cell</th>
 						<th>Table Cell</th>
@@ -463,14 +490,30 @@
 			</div>
 
 
+			<pre>
+&lt;table class="table">
+	&lt;tbody>
+		&lt;tr>
+			&lt;td>Table Cell&lt;/td>
+			&lt;td>Table Cell&lt;/td>
+			&lt;td>Table Cell&lt;/td>
+			&lt;td>Table Cell&lt;/td>
+			&lt;td>Table Cell&lt;/td>
+		&lt;/tr>
+	&lt;/tbody>
+&lt;/table></pre>
+
+<p>Lorem ipsum dolor sit amet, <code>consectetur adipisicing elit</code>. Repellat id dicta soluta sequi saepe!</p>
 
 
-		</div><!-- Close .g-container -->
+
+
+		</div><!-- Close .l-container -->
 
 
 		<!-- JavaScript at the bottom for fast page loading -->
 
-		<!-- If you would like to include jQuery as a separate script request, rather than using the grunt-jquery-builder task and browserify
+		<!-- If you would like to include jQuery as a separate script request, rather than using browserify
 			to compile it into one JS file (but why would you?!), then replace this comment with the code at the gist below:
 			– https://gist.github.com/ashleynolan/65596c15b31de0d160bf -->
 

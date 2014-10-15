@@ -16,26 +16,31 @@ module.exports = function (grunt) {
 		 * Choose javascript files to be uglified
 		 */
 		config : {
-			scss : {
-				cssFile : 'kickoff' // <%=config.scss.cssFile%>
+			src: "_grunt-configs/*.js",
+
+			css : {
+				distDir : 'css',     // <%=config.css.distDir%>
+				srcFile : 'kickoff', // <%=config.css.srcFile%>
+				scssDir : 'scss'     // <%=config.css.scssDir%>
 			},
 
 			js : {
-				// <%=config.js.distDir%>
-				distDir  : 'js/dist/',
+				distDir  : 'js/dist/', // <%=config.js.distDir%>
+				distFile : 'app.min.js', // <%=config.js.distFile%>
+				srcFile : 'js/script.js', // <%=config.js.srcFile%>
+			},
 
-				// <%=config.js.distFile%>
-				distFile : 'app.min.js',
+			testing: {
+				visual : {
+					sizes: [ '600', '1000', '1200' ], // <%=config.testing.visual.sizes%>
 
-				// <%=config.js.srcFile%>
-				srcFile : 'js/script.js',
-
-				// <%=config.js.watchList%>
-				fileList : [
-					'js/**/*.js',
-					'!js/dist/**/*.js',
-					'bower_components/**/*.js',
-				]
+					// <%=config.testing.visual.urls%>
+					urls : [
+						'http://localhost:3000',
+						'http://localhost:3000/_docs/',
+						'http://localhost:3000/_docs/styleguide.html'
+					]
+				}
 			}
 		}
 	};
@@ -71,7 +76,9 @@ module.exports = function (grunt) {
 		'shimly',
 		'newer:browserify:prod',
 		'newer:sass:kickoff',
-		'autoprefixer:kickoff'
+		'autoprefixer:kickoff',
+		'browserSync:serve',
+		'watch'
 	]);
 
 	/**
@@ -79,7 +86,6 @@ module.exports = function (grunt) {
 	* run jquery builder, browserify, sass and autoprefixer
 	*/
 	grunt.registerTask('start', [
-		'jquery',
 		'shell:bowerinstall',
 		'shimly',
 		'browserify:prod',
@@ -141,9 +147,8 @@ module.exports = function (grunt) {
 		'shimly',
 		'browserify:prod',
 		'sass:kickoff',
-		'sass:styleguide',
 		'autoprefixer:kickoff',
-		'connect:site',
+		'browserSync:serve',
 		'watch'
 	]);
 
@@ -160,23 +165,46 @@ module.exports = function (grunt) {
 
 
 	/**
-	 * GRUNT JSCHECK * Check js for errors and style problems
-	 * run jshint, jscs
+	 * GRUNT CHECKS * Check code for errors
+	 * run jshint
 	 */
-	// Default task
-	grunt.registerTask('jscheck', [
-		'jshint',
-		'jscs'
+	grunt.registerTask('checks', [
+		'jshint:project'
 	]);
 
 
-	//Travis CI to test build
+	/**
+	 * Travis CI to test build
+	 */
 	grunt.registerTask('travis', [
-		'jshint',
-		'browserify:prod',
-		'sass:kickoff',
-		'autoprefixer:kickoff'
+		'jshint:project',
+		'uglify',
+		'sass:kickoff'
 	]);
+
+
+	/**
+	 * GRUNT DOFILESEXIST * Check for the existence of specific files and fail if not found
+	 */
+	grunt.registerMultiTask('dofilesexist', function () {
+
+		var filePaths = this.data;
+		var numFailedFiles = 0;
+
+		if (Array.isArray(filePaths)) {
+
+			filePaths.forEach(function(path) {
+
+				if (!grunt.file.exists(path))
+				{
+					grunt.log.warn("Source file: '" + path + "' not found.");
+					numFailedFiles++;
+				}
+			});
+
+			if (numFailedFiles > 0) grunt.fail.warn("Please add the missing files.");
+		}
+	});
 
 
 	/**

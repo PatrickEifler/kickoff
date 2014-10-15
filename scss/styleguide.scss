@@ -62,7 +62,7 @@ body {
 	background-color: slategray;
 	color: #fff;
 	padding: 30px;
-	margin: -30px -30px 30px;
+	margin: 0 -30px 30px;
 
 	h1 {
 		margin-bottom: 0.2em;
@@ -118,7 +118,7 @@ body {
 			color: #444;
 		}
 
-		&::after {
+		&:after {
 			content: '#{$color}';
 		}
 	}
@@ -155,30 +155,30 @@ body {
 	.example {
 		margin: 1em 0;
 
-		h1::after {
-			content: ' - #{$h1-size}px';
+		h1:after {
+			content: ' - #{$type-largest}px';
 		}
-		h2::after {
-			content: ' - #{$h2-size}px';
+		h2:after {
+			content: ' - #{$type-larger}px';
 		}
-		h3::after {
-			content: ' - #{$h3-size}px';
+		h3:after {
+			content: ' - #{$type-large}px';
 		}
-		h4::after {
-			content: ' - #{$h4-size}px';
+		h4:after {
+			content: ' - #{$type-base}px';
 		}
-		h5::after {
-			content: ' - #{$h5-size}px';
+		h5:after {
+			content: ' - #{$type-small}px';
 		}
-		h6::after {
-			content: ' - #{$h6-size}px';
+		h6:after {
+			content: ' - #{$type-small}px';
 		}
 
-		h1::after, h2::after, h3::after, h4::after, h5::after, h6::after {
+		h1:after, h2:after, h3:after, h4:after, h5:after, h6:after {
 			text-transform: lowercase;
 		}
 
-		.interfaceType::after {
+		.interfaceType:after {
 			content: "";
 		}
 	}
@@ -190,7 +190,7 @@ body {
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 
-	&::after {
+	&:after {
 		display: block;
 		@extend .interfaceType;
 		@extend .interfaceType-subtle;
@@ -200,10 +200,10 @@ body {
 		font-weight: normal;
 	}
 }
-h1.typeSpecimen::after {
+h1.typeSpecimen:after {
 	content: "Font stack: #{$font-family-headings}";
 }
-p.typeSpecimen::after {
+p.typeSpecimen:after {
 	content: "Font stack: #{$font-family-base}";
 }
 
@@ -211,7 +211,6 @@ p.typeSpecimen::after {
 /**
  * Starter page
  */
-
 .checklistInfo {
 	margin-bottom: 15px;
 	margin-left: 30px;
@@ -224,6 +223,6 @@ p.typeSpecimen::after {
 	code,
 	pre {
 		@include font-size(14);
-		background-color: #CACACA;
+		background-color: #cacaca; /* alpha: 1 */
 	}
 }

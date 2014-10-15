@@ -24,8 +24,7 @@ module.exports.tasks = {
 
 		js: {
 			files: [
-				'<%=config.js.fileList%>',
-				'Gruntfile.js'
+				'<%=config.js.fileList%>'
 			],
 			tasks: ['browserify:dev']
 		},
@@ -44,6 +43,10 @@ module.exports.tasks = {
 				'svgmin',
 				'grunticon'
 			]
+		},
+
+		grunt: {
+			files: ['_grunt-configs/*.js', 'Gruntfile.js']
 		}
 	}
 }

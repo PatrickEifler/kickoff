@@ -28,6 +28,26 @@ module.exports.tasks = {
 				livereload: true
 			}
 		}
+	},
+
+
+	/**
+	 * browserSync
+	 * http://www.browsersync.io/docs/options/
+	 * http://www.browsersync.io/docs/grunt/
+	 */
+	browserSync: {
+		serve: {
+			bsFiles: {
+				src: ['css/*.css', '<%=config.js.distDir%>/*.js', '*.html']
+			},
+			options: {
+				watchTask: true,
+				server: {
+					baseDir: "./"
+				}
+			}
+		}
 	}
 
 }

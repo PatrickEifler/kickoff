@@ -12,51 +12,10 @@ body {
 	padding-left: #{$layout-margin}px;
 	padding-right: #{$layout-margin}px;
 	width: 95%;
-	max-width: #{$grid-max-width}px;
+	max-width: #{$layout-max-width}px;
 	margin: 0 auto;
 
 	.lt-ie9 & {
-		min-width: #{$grid-min-width}px;
+		min-width: #{$layout-min-width}px;
 	}
 }
-
-
-
-/**
- * Retina media query
- */
-@include hidpi() {
-
-}
-
-
-/**
- * Media queries for responsive design
- */
-// === $bp-narrow> ===
-@include respond-min($bp-narrow) {
-
-}
-// === end $bp-narrow> ===
-
-
-
-// === $bp-mid> ===
-@include respond-min($bp-mid) {
-
-}
-// === end $bp-mid> ===
-
-
-// === $bp-wide> ===
-@include respond-min($bp-wide) {
-
-}
-// === end $bp-wide> ===
-
-
-// === $bp-huge> ===
-@include respond-min($bp-huge) {
-
-}
-// === end $bp-huge> ===
