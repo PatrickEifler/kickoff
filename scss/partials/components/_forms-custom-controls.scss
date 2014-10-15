@@ -88,6 +88,37 @@
 
 
 /**
+ * Custom file input
+ */
+.form-input--fileWrapper--styled {
+	position: relative;
+	overflow: hidden;
+
+	&:before {
+		content: 'Choose file...';
+	}
+	&:after {
+		content:'Browse';
+		cursor: pointer;
+
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		right: -1px;
+		bottom: 0;
+
+		padding: 0.44em 1em 0;
+
+		background-color: lighten($input-border, 5%);
+	}
+
+	.form-input-file {
+		opacity: 0;
+		position: absolute;
+	}
+}
+
+/**
  * Custom select element
  * http://jsbin.com/juvixufu/165/edit
  */
@@ -181,4 +212,8 @@ x:default {
 .form-input--selectWrapper:-moz-focusring {
 	color: transparent;
 	text-shadow: 0 0 0 #000;
+}
+
+option {
+	font-weight:normal;
 }
