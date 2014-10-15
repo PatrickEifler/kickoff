@@ -259,7 +259,7 @@ The first line you encounter in the Grunt config is the `config.src` variable.
 src: "_grunt-configs/*.js"
 ```
 
-This is used to specify the path at which the rest of your Grunt config lives.  The default location for this is in the `_grunt-configs` folder, but if you’d like to rename or move this folder for any reason, make sure that you update this value in the config as well.
+This is used to specify the path at which the rest of your Grunt config lives.  The default location for this is in the [_grunt-configs](https://github.com/tmwagency/kickoff/blob/master/_grunt-configs/_grunt-configs) folder, but if you’d like to rename or move this folder for any reason, make sure that you update this value in the config as well.
 
 <hr>
 <a name="config-css"></a>
@@ -338,9 +338,9 @@ The **`config.testing.visual`** variables are used by the [Photobox](#task-photo
 
 This is an exhaustive list of all the grunt tasks that Kickoff uses and what they do.
 
-They are ordered similarly to how Kickoff’s tasks are grouped in the `_grunt-configs` directory.
+They are ordered similarly to how Kickoff’s tasks are grouped in the [_grunt-configs](https://github.com/tmwagency/kickoff/blob/master/_grunt-configs/_grunt-configs) directory.
 
-### CSS Tasks
+### CSS Tasks ([css.js](https://github.com/tmwagency/kickoff/blob/master/_grunt-configs/css.js))
 
 <a name="task-sass"></a>
 #### Sass
@@ -366,7 +366,7 @@ For more information on Autoprefixer and how it works, see it’s [Github repo a
 To minify our CSS, we use CSSO via the [grunt-csso](https://github.com/t32k/grunt-csso) plugin.
 
 
-### Icon tasks
+### Icon tasks ([icons.js](https://github.com/tmwagency/kickoff/blob/master/_grunt-configs/icons.js))
 
 The icon tasks included in Kickoff all have to be initiated separately from the default build tasks.  They are there to help with creating icons that work across devices that can be hard to manage otherwise.
 
@@ -384,8 +384,9 @@ Kickoff includes a basic config that makes it easy to get started with Grunticon
 
 This is used as a precursor to Grunticon to ensure SVG files are optimised.  For more information on `grunt-svgmin`, [check out the documentation](https://github.com/sindresorhus/grunt-svgmin).
 
+<hr class="sectionSplitter">
 
-### JavaScript Tasks
+### JavaScript Tasks ([javascript.js](https://github.com/tmwagency/kickoff/blob/master/_grunt-configs/javascript.js))
 
 <a name="task-uglify"></a>
 #### Uglify
@@ -412,7 +413,7 @@ JSHint can take a number of options when validating your JavaScript, all of whic
 
 ---
 
-## Server tasks
+## Server tasks ([server.js](https://github.com/tmwagency/kickoff/blob/master/_grunt-configs/server.js))
 
 Kickoff’s server tasks help create a local development environment for your development.
 
@@ -428,30 +429,34 @@ Browsersync is used in our `grunt serve` task to create a simple server to previ
 See this video for a demo:
 <div class="fluidVideo"><iframe width="640" height="480" src="//www.youtube-nocookie.com/embed/heNWfzc7ufQ" frameborder="0" allowfullscreen></iframe></div>
 
----
+<hr class="sectionSplitter">
 
-<a name="task-photobox"></a>
-## Visual Regression testing with Photobox
-
-We have integrated a simple visual regression testing task, [grunt-photobox](https://github.com/stefanjudis/grunt-photoBox), to help prevent deployment of broken code. The task takes screenshots, of certain urls (defined in the `config.testing.visual.urls`) variable ([see above](#config-testing-visual)), and compares them against the last screenshots taken.
-
-Usage is simple. Run the `grunt photobox` task in your terminal. If your urls are local and you're using `grunt serve` to view your site, you will need to run the task in a new tab. Once it is complete, open up the `/photobox/` directory in your site.
-
----
-
-## Utility Tasks
+## Utility Tasks ([utilities.js](https://github.com/tmwagency/kickoff/blob/master/_grunt-configs/utilities.js))
 
 <a name="task-clean"></a>
 #### Clean
 
 The clean task uses [grunt-contrib-clean](https://github.com/gruntjs/grunt-contrib-clean) to remove files from directories specified.  This is useful when copying files from one directory to another to avoid old files remaining when they may have been deleted from the original directory.
 
+---
+
 <a name="task-clean"></a>
 #### Shell
 The clean task uses [grunt-shell](https://github.com/sindresorhus/grunt-shell) to run shell commands. We use it to install bower dependencies in the `grunt start` command.
 
+---
+
+<a name="task-photobox"></a>
+#### Photobox - Visual Regression testing
+
+We have integrated a simple visual regression testing task, [grunt-photobox](https://github.com/stefanjudis/grunt-photoBox), to help prevent deployment of broken code. The task takes screenshots, of certain urls (defined in the `config.testing.visual.urls`) variable ([see above](#config-testing-visual)), and compares them against the last screenshots taken.
+
+Usage is simple. Run the `grunt photobox` task in your terminal. If your urls are local and you're using `grunt serve` to view your site, you will need to run the task in a new tab. Once it is complete, open up the `/photobox/` directory in your site.
+
+<hr class="sectionSplitter">
+
 <a name="task-watch"></a>
-### Watch Task
+## Watch Task ([watch.js](https://github.com/tmwagency/kickoff/blob/master/_grunt-configs/watch.js))
 
 The `grunt watch` task is incredibly powerful; it watches for changes in files you are working on and acts on any changes you make to them.
 
