@@ -246,16 +246,16 @@ textarea {
  *
  */
 html {
-  font-size: 16px;
+  font-size: 18px;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 body {
   font-family: "franklin-gothic-urw", "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-size: 1rem;
   line-height: 1.4;
   color: #181830;
@@ -272,10 +272,10 @@ body {
  */
 p {
   font-family: "franklin-gothic-urw", "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-size: 1rem;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 /**
@@ -293,24 +293,24 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 }
 
 h1, .h1, .alpha {
-  font-size: 35.15625px;
+  font-size: 39.0625px;
   font-size: 1.953125rem;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 56px;
 }
 
 h2, .h2, .beta {
-  font-size: 28.125px;
+  font-size: 31.25px;
   font-size: 1.5625rem;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 h3, .h3, .gamma {
-  font-size: 22.5px;
+  font-size: 25px;
   font-size: 1.25rem;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 h4, .h4, .delta,
@@ -318,12 +318,12 @@ h5, .h5, .epsilon,
 h6, .h6, .zeta {
   margin-top: 0;
   margin-bottom: 10px;
-  font-size: 14.4px;
+  font-size: 16px;
   font-size: 0.8rem;
 }
 
 h4, .h4, .delta {
-  font-size: 18px;
+  font-size: 20px;
   font-size: 1rem;
 }
 
@@ -335,7 +335,7 @@ h6, .h6, .zeta {
 * + h2, * + .h2, * + .beta,
 * + h3, * + .h3, * + .gamma,
 * + h4, * + .h4, * + .delta {
-  margin-top: 25px;
+  margin-top: 28px;
 }
 
 small {
@@ -373,12 +373,12 @@ ol {
 
 ul, ol {
   padding: 0;
-  margin: 0 0 25px 25px;
+  margin: 0 0 28px 28px;
 }
 ul ul,
 ul ol, ol ul,
 ol ol {
-  margin-left: 50px;
+  margin-left: 56px;
 }
 ul ul, ol ul {
   list-style-type: circle;
@@ -413,7 +413,7 @@ nav ul, nav ol {
  * Definition lists
  */
 dl {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 dt {
@@ -421,7 +421,7 @@ dt {
 }
 
 dd {
-  margin-left: 25px;
+  margin-left: 28px;
 }
 
 .dl-horizontal:after {
@@ -446,7 +446,7 @@ dd {
  * Miscellaneous
  */
 hr {
-  margin: 25px 0;
+  margin: 28px 0;
   border: 0;
   border-top: 1px solid #3498db;
   border-bottom: 1px solid #fff;
@@ -470,12 +470,12 @@ abbr[title] {
  */
 blockquote {
   padding-left: 10px;
-  margin: 25px;
+  margin: 28px;
   border-left: 4px solid #cccccc;
 }
 blockquote p {
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 20px;
   font-size: 1rem;
   font-weight: 300;
 }
@@ -495,7 +495,7 @@ blockquote:after {
 
 address {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   font-style: normal;
 }
 
@@ -677,7 +677,7 @@ samp {
 }
 
 .btn--large {
-  font-size: 22.5px;
+  font-size: 25px;
   font-size: 1.25rem;
   line-height: 3;
   height: 3em;
@@ -687,7 +687,7 @@ samp {
 }
 
 .btn--small {
-  font-size: 14.4px;
+  font-size: 16px;
   font-size: 0.8rem;
   line-height: 1.5;
   height: 1.5em;
@@ -975,7 +975,7 @@ input[type="button"].btn--block {
   	</div>
  */
 .form {
-  margin: 0 0 25px;
+  margin: 0 0 28px;
 }
 
 .form-fieldset {
@@ -988,8 +988,8 @@ input[type="button"].btn--block {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 25px;
-  font-size: 22.5px;
+  margin-bottom: 28px;
+  font-size: 25px;
   font-size: 1.25rem;
   line-height: 1.4;
   color: #181830;
@@ -998,7 +998,7 @@ input[type="button"].btn--block {
   white-space: normal;
 }
 .form-legend small {
-  font-size: 14.4px;
+  font-size: 16px;
   font-size: 0.8rem;
   color: #b3b3b3;
 }
@@ -1007,13 +1007,13 @@ input[type="button"].btn--block {
  * Form inputs and groups
  */
 .form-controlGroup {
-  margin-top: 12.5px;
-  margin-bottom: 12.5px;
+  margin-top: 14px;
+  margin-bottom: 14px;
   list-style-type: none;
 }
 
 .form-legend + .form-controlGroup {
-  margin-top: 25px;
+  margin-top: 28px;
   -webkit-margin-top-collapse: separate;
 }
 
@@ -1032,7 +1032,7 @@ input[type="button"].btn--block {
   width: 100%;
   height: 2.5em;
   padding: 0.5em;
-  font-size: 18px;
+  font-size: 20px;
   font-size: 1rem;
   font-family: "franklin-gothic-urw", "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.4;
@@ -1118,7 +1118,7 @@ input[type="button"].btn--block {
 .form-input-file {
   display: inline-block;
   width: 100%;
-  font-size: 18px;
+  font-size: 20px;
   font-size: 1rem;
   margin: 0;
   vertical-align: middle;
@@ -1192,9 +1192,9 @@ input[type="submit"] {
  * Form actions
  */
 .form-actions {
-  padding: 25px 20px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  padding: 28px 20px;
+  margin-top: 28px;
+  margin-bottom: 28px;
   background-color: #f5f5f5;
   border-top: 1px solid #ddd;
 }
@@ -1275,7 +1275,7 @@ input[type="submit"] {
  * Code: https://gist.github.com/mrmartineau/6712577#file-labels-inline-html
  */
 .form--horizontal .form-controlGroup {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 .form--horizontal .form-controlGroup:after {
   content: "";
@@ -1298,7 +1298,7 @@ input[type="submit"] {
   margin-left: 0;
 }
 .form--horizontal .form-helpBlock {
-  margin-top: 12.5px;
+  margin-top: 14px;
   margin-bottom: 0;
 }
 .form--horizontal .form-actions {
@@ -1681,7 +1681,7 @@ img, object, embed, video {
 	</ul>
 	========================================================================== */
 .tabs {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   border-bottom: 2px solid #FE7C08;
 }
 .tabs:after {
@@ -1733,7 +1733,7 @@ th {
 .table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   border-padding: 0;
   border-spacing: 0;
 }
@@ -1744,7 +1744,7 @@ th {
 .table > tfoot > tr > th,
 .table > tfoot > tr > td {
   padding: 8px;
-  line-height: 25px;
+  line-height: 28px;
   vertical-align: top;
   border-top: 1px solid #ddd;
 }
@@ -1880,7 +1880,7 @@ code,
 pre {
   padding: 0 3px 2px;
   font-family: Menlo, Monaco, "Courier New", monospace;
-  font-size: 14.4px;
+  font-size: 16px;
   font-size: 0.8rem;
   color: #222;
   -moz-tab-size: 3;
@@ -1920,8 +1920,8 @@ code {
 
 pre {
   display: block;
-  padding: 12.5px;
-  margin: 12.5px 0 25px;
+  padding: 14px;
+  margin: 14px 0 28px;
   color: #222;
   background-color: #f7f7f9;
   white-space: pre;
@@ -1949,7 +1949,7 @@ pre code {
   margin-top: 0;
 }
 .highlight code {
-  font-size: 14.4px;
+  font-size: 16px;
   font-size: 0.8rem;
   line-height: 1.2;
 }
@@ -2363,13 +2363,13 @@ a {
   font-weight: normal;
   margin: 0;
   font-size: 30px;
-  font-size: 1.66666667rem;
+  font-size: 1.5rem;
   text-align: center;
   line-height: 1.5;
   float: left;
   margin: 0;
   font-size: 30px;
-  font-size: 1.66666667rem;
+  font-size: 1.5rem;
   text-align: left;
 }
 
@@ -2395,7 +2395,7 @@ a {
   display: inline-block;
   padding: 0 .5em;
   font-size: 20spx;
-  font-size: 1.11111111srem;
+  font-size: 1srem;
   line-height: 50px;
   height: 50px;
 }
@@ -2424,7 +2424,24 @@ a {
   padding-top: 20px;
   padding: 40px 0;
   background-color: #181830;
+}
+.footer,
+.footer a:link,
+.footer a:visited {
   color: #fff;
+}
+.footer a:link,
+.footer a:visited {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  white-space: pre;
+}
+.footer a:hover {
+  opacity: .5;
+}
+.footer p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-nav {
@@ -2448,11 +2465,11 @@ a {
 }
 .wideBoy h1 {
   font-size: 51px;
-  font-size: 2.83333333rem;
+  font-size: 2.55rem;
 }
 .wideBoy h2 {
   font-size: 28px;
-  font-size: 1.55555556rem;
+  font-size: 1.4rem;
 }
 
 .wideBoy-title {
@@ -2481,12 +2498,12 @@ a {
 }
 .bigBoy h1 {
   font-size: 80px;
-  font-size: 4.44444444rem;
+  font-size: 4rem;
   margin-bottom: 0.5em;
 }
 .bigBoy h2 {
   font-size: 28px;
-  font-size: 1.55555556rem;
+  font-size: 1.4rem;
 }
 
 .primary {
@@ -2510,7 +2527,7 @@ a {
    Showcase
    ========================================================================== */
 .showcase {
-  background-color: #FE7C08;
+  background-color: #3498db;
 }
 .showcase :last-child {
   margin-bottom: 0;
@@ -2533,7 +2550,7 @@ a {
   position: relative;
 }
 .showcaseList li {
-  padding: 0;
+  padding: 5px;
 }
 .showcaseList figcaption {
   position: absolute;
@@ -2543,7 +2560,7 @@ a {
   padding: 0.5em;
   text-align: left;
   color: #fff;
-  font-size: 14.4px;
+  font-size: 16px;
   font-size: 0.8rem;
   font-style: italic;
   font-family: "purista-web", "franklin-gothic-urw", "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2551,12 +2568,15 @@ a {
 .showcaseList img {
   display: block;
 }
+.showcaseList a {
+  display: block;
+}
 .showcaseList a:hover {
   color: #196090;
 }
 
 .used {
-  background-color: #ec7001;
+  background-color: #258cd1;
   padding: 1.5em;
 }
 .used p {
@@ -2581,16 +2601,14 @@ a {
   margin-bottom: 0;
   line-height: 55px;
   height: 70px;
-  margin-top: 50px;
+  margin-top: 56px;
 }
 
 .blockLinks {
   background-color: #181830;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
-<<<<<<< HEAD
-=======
 .blockLink {
   padding: 1em;
   display: block;
@@ -2607,7 +2625,6 @@ a {
   background-color: #3498db;
 }
 
->>>>>>> d727acb8cad7dc7efb4ba4c691d9dd181ce92ccc
 /* ==========================================================================
    Demos
    ========================================================================== */
@@ -2617,7 +2634,7 @@ a {
 .media--link .asset-font {
   width: 200px;
   font-size: 100px;
-  font-size: 5.55555556rem;
+  font-size: 5rem;
 }
 
 .demo {
@@ -2671,7 +2688,7 @@ a {
 }
 .grid-block-link .asset-font {
   font-size: 150px;
-  font-size: 8.33333333rem;
+  font-size: 7.5rem;
   line-height: 60px;
   height: 70px;
 }
@@ -2679,43 +2696,6 @@ a {
   margin-bottom: 0;
 }
 
-<<<<<<< HEAD
-.entry {
-  padding-top: 50px;
-}
-
-.entry--title {
-  margin-bottom: 0;
-  font-weight: normal;
-  font-style: italic;
-}
-
-.sidebar-nav {
-  margin-bottom: 1em;
-}
-.sidebar-nav a {
-  padding: .2em .5em .3em;
-  border-left: 3px solid;
-  display: block;
-}
-.sidebar-nav .is-active {
-  background-color: #181830;
-  border-color: #181830;
-  color: #fff;
-}
-
-.sidebar-subnav {
-  margin-left: 1em;
-}
-
-.docs-footer {
-  background-color: #FEFFDA;
-  padding: 15px;
-  text-align: center;
-}
-
-=======
->>>>>>> d727acb8cad7dc7efb4ba4c691d9dd181ce92ccc
 .show-grid .grid-test .g-col {
   background-color: rgba(24, 24, 48, 0.1);
   box-shadow: inset 0 1px 1px rgba(24, 24, 48, 0.25);
@@ -2771,8 +2751,6 @@ a {
   margin-bottom: 1em;
 }
 .sidebar-nav a {
-  font-family: "purista-web", "franklin-gothic-urw", "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
   padding: .2em .5em .3em;
   border-left: 3px solid;
   display: block;
@@ -2805,7 +2783,7 @@ a {
 .well code, .well pre {
   background-color: #fff;
   font-size: 14px;
-  font-size: 0.77777778rem;
+  font-size: 0.7rem;
   white-space: pre;
 }
 
@@ -2817,7 +2795,7 @@ a {
 .checklistInfo {
   margin-bottom: 15px;
   margin-left: 30px;
-  font-size: 15px;
+  font-size: 17px;
 }
 .checklistInfo li {
   margin-bottom: 0.2em;
@@ -2826,7 +2804,17 @@ a {
 .sectionSplitter {
   border-top-width: 5px;
   border-bottom: none;
-  margin: 50px;
+  margin: 56px;
+}
+
+.btn--secondary {
+  background-color: #181830;
+}
+.btn--secondary, .btn--secondary:link, .btn--secondary:visited {
+  color: #fff;
+}
+.btn--secondary:hover, .btn--secondary:active, .btn--secondary:focus {
+  background-color: black;
 }
 
 /*
