@@ -165,11 +165,138 @@ We plan to expand on the checks carried out using this task in future versions o
 
 <hr class="sectionSplitter">
 <a name="config"></a>
-## Understanding Kickoff’s Grunt config
+## Kickoff config variables
 
-Talk here about the config stored in the base Gruntfile
+Kickoff’s Grunt config variables allow you to control some of the basic settings of your Kickoff project.
 
-NEEDS DOCUMENTATION
+Here we take a look at it’s structure and what each part controls.
+
+<a name="config-structure"></a>
+### Config structure
+
+Kickoff’s config variables can be [found in the `Gruntfile.js` file in the root of a Kickoff project](https://github.com/tmwagency/kickoff/blob/master/Gruntfile.js#L8-L58), and looks like the following snippet of code:
+
+	/**
+	 * Grunt global vars
+	 * Many of the Grunt tasks use these vars
+	 */
+	config : {
+		src: "_grunt-configs/*.js",
+
+		css : {
+			distDir : 'css',     // <%=config.css.distDir%>
+			srcFile : 'kickoff', // <%=config.css.srcFile%>
+			scssDir : 'scss'     // <%=config.css.scssDir%>
+		},
+
+		js : {
+			distDir  : 'js/dist/',   // <%=config.js.distDir%>
+			distFile : 'app.min.js', // <%=config.js.distFile%>
+
+			// <%=config.js.fileList%>
+			fileList : [
+				// if you would like to remove jQuery from your concatenated JS, comment out the line below
+				'bower_modules/jquery/dist/jquery.js',
+
+				// if you would like some basic JS shims (when not using jQuery),
+				// uncomment the line below to compile Shimly output
+				//'js/helpers/shims.js',
+
+				'js/helpers/console.js',
+				'bower_modules/trak/dist/trak.js',
+				'bower_modules/swiftclick/js/libs/swiftclick.js',
+				'bower_modules/cookies-js/src/cookies.js',
+
+				'js/script.js'
+			]
+		},
+
+		localserver: 'kickoff.dev', // <%=config.localserver%>
+
+		testing: {
+			visual : {
+				sizes: [ '600', '1000', '1200' ], // <%=config.testing.visual.sizes%>
+
+				// <%=config.testing.visual.urls%>
+				urls : [
+					'http://localhost:3000',
+					'http://localhost:3000/_docs/',
+					'http://localhost:3000/_docs/styleguide.html'
+				]
+			}
+		}
+	}
+
+ ### Breaking this down
+
+<a name="config-src"></a>
+#### config.src
+
+The first line you encounter in the Grunt config is the `config.src` variable.
+
+	src: "_grunt-configs/*.js"
+
+This is used to specify the path at which the rest of your Grunt config lives.  The default location for this is in the `_grunt-configs` folder, but if you’d like to rename or move this folder for any reason, make sure that you update this value in the config as well.
+
+<a name="config-css"></a>
+#### config.css
+
+	css : {
+		distDir : 'css',     // <%=config.css.distDir%>
+		srcFile : 'kickoff', // <%=config.css.srcFile%>
+		scssDir : 'scss'     // <%=config.css.scssDir%>
+	}
+
+The `config.css` variables all relate to the directories and paths of the project CSS.
+
+**`config.css.distDir`** is the directory to which the CSS files will be compiled when a Grunt build is run.  By default, this is set to the `css` folder.
+
+**`config.css.srcFile`** is the name given to the compiled CSS file when it is built from the projects SCSS files.  By default, the filename is `kickoff`.
+
+**`config.css.scssDir`** is the directory at which the projects SCSS files are stored.  By default, this is the `scss` folder, but if you want to move them, be sure to update this config variable.
+
+<a name="config-js"></a>
+#### config.js
+
+	js : {
+		distDir  : 'js/dist/',   // <%=config.js.distDir%>
+		distFile : 'app.min.js', // <%=config.js.distFile%>
+
+		// <%=config.js.fileList%>
+		fileList : [
+			// if you would like to remove jQuery from your concatenated JS, comment out the line below
+			'bower_modules/jquery/dist/jquery.js',
+
+			// if you would like some basic JS shims (when not using jQuery),
+			// uncomment the line below to compile Shimly output
+			//'js/helpers/shims.js',
+
+			'js/helpers/console.js',
+			'bower_modules/trak/dist/trak.js',
+			'bower_modules/swiftclick/js/libs/swiftclick.js',
+			'bower_modules/cookies-js/src/cookies.js',
+
+			'js/script.js'
+		]
+	}
+
+The `config.js` variables relate to the directories and paths of the project JavaScript, as well as specifying what JavaScript files are included in the project compilation.
+
+**`config.js.distDir`** is the directory to which the JavaScript files will be compiled when a Grunt build is run.  By default, this is set to the `js/dist/` folder.
+
+**`config.js.distFile`** is the name given to the compiled JavaScript file when it is built.  By default, the filename is `app.min.js`.
+
+**`config.js.fileList`** is the list of files that are included in the JavaScript build.  These are concatenated together when Grunt is run in the order specified in this list.  To find our more about what is included in the default JavaScript for Kickoff, see [Kickoff’s JavaScript documentation](js.html).
+
+<a name="config-localserver"></a>
+#### config.localserver
+
+TO BE WRITTEN
+
+<a name="config-testing"></a>
+#### config.testing
+
+TO BE WRITTEN
 
 <hr class="sectionSplitter">
 <a name="task-appendices"></a>
@@ -237,6 +364,8 @@ Uses [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify) to 
 Using the [grunt-shimly](https://github.com/nicbell/shimly) plugin, this allows you to specifiy any JavaScript shims you would like to include in your project.
 
 This allows you to then use native features such as Element.classList, with shim fallbacks for browsers that don’t implement it.
+
+Although this is built by default by Kickoff, the associated JS file needs to be [included in the file list to be compiled](#config-js).
 
 <a name="task-jshint"></a>
 #### JSHint
