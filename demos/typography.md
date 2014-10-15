@@ -309,17 +309,3 @@ next:
 {% endhighlight %}
 	</div>
 </div>
-
-<hr>
-
-<div class="demo">
-	<div class="demo-visual">
-		<h3>Blockquote</h3>
-
-	</div>
-	<div class="demo-code">
-{% highlight html%}
-
-{% endhighlight %}
-	</div>
-</div>

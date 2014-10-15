@@ -28,25 +28,30 @@ next:
 			<fieldset class="form-fieldset">
 				<legend class="form-legend">Your form</legend>
 				<div class="form-controlGroup">
-					<label for="text" class="form-label">Text</label>
+					<label class="form-label" for="text">Text</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input type="text" id="text" placeholder="Zander Martineau" class="form-input" required/>
+						<input class="form-input" type="text" id="text" placeholder="Some text" required/>
 					</div>
 				</div>
 				<div class="form-controlGroup">
 					<label for="email" class="form-label">Email</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input type="email" id="email" placeholder="zander@martineau.tv" class="form-input" required/>
+						<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" required/>
 					</div>
 				</div>
 
 				<div class="form-controlGroup">
-					<label for="comments" class="form-label">Textarea</label>
+					<label class="form-label" for="comments">Textarea</label>
 					<div class="form-controlGroup-inputWrapper">
-						<textarea id="comments" rows="3" cols="50" class="form-input form-input--textarea"></textarea>
+						<textarea class="form-input form-input--textarea" id="comments" rows="3" cols="50"></textarea>
 					</div>
 				</div>
 			</fieldset>
+
+			<div class="form-actions text_centre">
+				<input type="submit" value="Submit" class="btn btn--primary" />
+				<input type="reset" class="btn" value="Cancel" />
+			</div>
 		</form>
 	</div>
 	<div class="demo-code">
@@ -55,26 +60,30 @@ next:
 	<fieldset class="form-fieldset">
 		<legend class="form-legend">Your form</legend>
 		<div class="form-controlGroup">
-			<label for="text" class="form-label">Text</label>
+			<label class="form-label" for="text">Text</label>
 			<div class="form-controlGroup-inputWrapper">
-				<input type="text" id="text" placeholder="Zander Martineau" class="form-input" required/>
+				<input class="form-input" type="text" id="text" placeholder="Some text" required/>
 			</div>
 		</div>
 		<div class="form-controlGroup">
 			<label for="email" class="form-label">Email</label>
 			<div class="form-controlGroup-inputWrapper">
-				<input type="email" id="email" placeholder="zander@martineau.tv" class="form-input" required/>
+				<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" required/>
 			</div>
 		</div>
 
-		<!-- Single columns do not need .g-row containers -->
 		<div class="form-controlGroup">
-			<label for="comments" class="form-label">Textarea</label>
+			<label class="form-label" for="comments">Textarea</label>
 			<div class="form-controlGroup-inputWrapper">
-				<textarea id="comments" rows="3" cols="50" class="form-input form-input--textarea"></textarea>
+				<textarea class="form-input form-input--textarea" id="comments" rows="3" cols="50"></textarea>
 			</div>
 		</div>
 	</fieldset>
+
+	<div class="form-actions text_centre">
+		<input type="submit" value="Submit" class="btn btn--primary" />
+		<input type="reset" class="btn" value="Cancel" />
+	</div>
 </form>
 {% endhighlight %}
 	</div>
@@ -93,67 +102,74 @@ next:
 			<fieldset class="form-fieldset">
 				<legend class="form-legend">Your form</legend>
 				<div class="form-controlGroup">
-					<label for="text" class="form-label">Text</label>
+					<label class="form-label" for="text">Text</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input type="text" id="text" placeholder="Zander Martineau" class="form-input" required/>
+						<input class="form-input" type="text" id="text" placeholder="Some text" required/>
 					</div>
 				</div>
 				<div class="form-controlGroup">
 					<label for="email" class="form-label">Email</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input type="email" id="email" placeholder="zander@martineau.tv" class="form-input" required/>
+						<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" required/>
 					</div>
 				</div>
 				<div class="form-controlGroup">
 					<label for="password" class="form-label">Password</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input type="password" id="password" placeholder="Your password" class="form-input" />
+						<input class="form-input" type="password" id="password" placeholder="Your password" />
 					</div>
 				</div>
 
 				<div class="form-controlGroup">
-					<label for="comments" class="form-label">Textarea</label>
+					<label class="form-label" for="comments">Textarea</label>
 					<div class="form-controlGroup-inputWrapper">
-						<textarea id="comments" rows="3" cols="50" class="form-input form-input--textarea"></textarea>
+						<textarea class="form-input form-input--textarea" id="comments" rows="3" cols="50"></textarea>
 					</div>
 				</div>
 			</fieldset>
-	</form>
+
+			<div class="form-actions text_centre">
+				<input type="submit" value="Submit" class="btn btn--primary" />
+				<input type="reset" class="btn" value="Cancel" />
+			</div>
+		</form>
 	</div>
 	<div class="demo-code">
 {% highlight html%}
 <form action="#" class="form form--horizontal">
 	<fieldset class="form-fieldset">
 		<legend class="form-legend">Your form</legend>
-
 		<div class="form-controlGroup">
-			<label for="text" class="form-label">Text</label>
+			<label class="form-label" for="text">Text</label>
 			<div class="form-controlGroup-inputWrapper">
-				<input type="text" id="text" placeholder="Zander Martineau" class="form-input" required/>
+				<input class="form-input" type="text" id="text" placeholder="Some text" required/>
 			</div>
 		</div>
-
 		<div class="form-controlGroup">
 			<label for="email" class="form-label">Email</label>
 			<div class="form-controlGroup-inputWrapper">
-				<input type="email" id="email" placeholder="zander@martineau.tv" class="form-input" required/>
+				<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" required/>
 			</div>
 		</div>
-
 		<div class="form-controlGroup">
 			<label for="password" class="form-label">Password</label>
 			<div class="form-controlGroup-inputWrapper">
-				<input type="password" id="password" placeholder="Your password" class="form-input" />
+				<input class="form-input" type="password" id="password" placeholder="Your password" />
 			</div>
 		</div>
 
 		<div class="form-controlGroup">
-			<label for="comments" class="form-label">Textarea</label>
+			<label class="form-label" for="comments">Textarea</label>
 			<div class="form-controlGroup-inputWrapper">
-				<textarea id="comments" rows="3" cols="50" class="form-input form-input--textarea"></textarea>
+				<textarea class="form-input form-input--textarea" id="comments" rows="3" cols="50"></textarea>
 			</div>
 		</div>
 	</fieldset>
+
+	<div class="form-actions text_centre">
+		<input type="submit" value="Submit" class="btn btn--primary" />
+		<input type="reset" class="btn" value="Cancel" />
+	</div>
 </form>
 {% endhighlight %}
 	</div>
@@ -175,15 +191,15 @@ next:
 				<div class="g-row">
 					<!-- Add .g-col and .g-span# to the .form-controlGroup -->
 					<div class="form-controlGroup g-col g-span6">
-						<label for="text" class="form-label">Text</label>
+						<label class="form-label" for="text">Text</label>
 						<div class="form-controlGroup-inputWrapper">
-							<input type="text" id="text" placeholder="Zander Martineau" class="form-input" required/>
+							<input class="form-input" type="text" id="text" placeholder="Some text" required/>
 						</div>
 					</div>
 					<div class="form-controlGroup g-col g-span6">
 						<label for="email" class="form-label">Email</label>
 						<div class="form-controlGroup-inputWrapper">
-							<input type="email" id="email" placeholder="zander@martineau.tv" class="form-input" required/>
+							<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" required/>
 						</div>
 					</div>
 				</div>
@@ -192,21 +208,21 @@ next:
 				<div class="g-row">
 					<!-- Add .g-col and .g-span# to the .form-controlGroup -->
 					<div class="form-controlGroup g-col g-span4">
-						<label for="text" class="form-label">Label</label>
+						<label class="form-label" for="text">Label</label>
 						<div class="form-controlGroup-inputWrapper">
-							<input type="text" id="text" placeholder="Zander Martineau" class="form-input" value="A value" required/>
+							<input class="form-input" type="text" id="text" placeholder="Some text" value="A value" required/>
 						</div>
 					</div>
 					<div class="form-controlGroup g-col g-span4">
 						<label for="email" class="form-label">Label</label>
 						<div class="form-controlGroup-inputWrapper">
-							<input type="email" id="email" placeholder="zander@martineau.tv" class="form-input" value="A value" required/>
+							<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" value="A value" required/>
 						</div>
 					</div>
 					<div class="form-controlGroup g-col g-span4">
 						<label for="password" class="form-label">Label</label>
 						<div class="form-controlGroup-inputWrapper">
-							<input type="password" id="password" placeholder="Your password" class="form-input" value="A value" />
+							<input class="form-input" type="password" id="password" placeholder="Your password" value="A value" />
 						</div>
 					</div>
 				</div>
@@ -221,15 +237,15 @@ next:
 		<div class="g-row">
 			<!-- Add .g-col and .g-span# to the .form-controlGroup -->
 			<div class="form-controlGroup g-col g-span6">
-				<label for="text" class="form-label">Text</label>
+				<label class="form-label" for="text">Text</label>
 				<div class="form-controlGroup-inputWrapper">
-					<input type="text" id="text" placeholder="Zander Martineau" class="form-input" required/>
+					<input class="form-input" type="text" id="text" placeholder="Some text" required/>
 				</div>
 			</div>
 			<div class="form-controlGroup g-col g-span6">
 				<label for="email" class="form-label">Email</label>
 				<div class="form-controlGroup-inputWrapper">
-					<input type="email" id="email" placeholder="zander@martineau.tv" class="form-input" required/>
+					<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" required/>
 				</div>
 			</div>
 		</div>
@@ -237,22 +253,22 @@ next:
 		<!-- Add a grid row: .g-row -->
 		<div class="g-row">
 			<!-- Add .g-col and .g-span# to the .form-controlGroup -->
-			<div class="form-controlGroup g-col g-span4 form-controlGroup--success">
-				<label for="text" class="form-label">Label</label>
+			<div class="form-controlGroup g-col g-span4">
+				<label class="form-label" for="text">Label</label>
 				<div class="form-controlGroup-inputWrapper">
-					<input type="text" id="text" placeholder="Zander Martineau" class="form-input" value="A value" required/>
+					<input class="form-input" type="text" id="text" placeholder="Some text" value="A value" required/>
 				</div>
 			</div>
-			<div class="form-controlGroup g-col g-span4 form-controlGroup--error">
-				<label for="email" class="form-label">Error</label>
+			<div class="form-controlGroup g-col g-span4">
+				<label for="email" class="form-label">Label</label>
 				<div class="form-controlGroup-inputWrapper">
-					<input type="email" id="email" placeholder="zander@martineau.tv" class="form-input" value="A value" required/>
+					<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" value="A value" required/>
 				</div>
 			</div>
-			<div class="form-controlGroup g-col g-span4 form-controlGroup--warning">
-				<label for="password" class="form-label">Warning</label>
+			<div class="form-controlGroup g-col g-span4">
+				<label for="password" class="form-label">Label</label>
 				<div class="form-controlGroup-inputWrapper">
-					<input type="password" id="password" placeholder="Your password" class="form-input" value="A value" />
+					<input class="form-input" type="password" id="password" placeholder="Your password" value="A value" />
 				</div>
 			</div>
 		</div>
@@ -304,9 +320,9 @@ next:
 				<div class="g-row">
 					<!-- Add .form-controlGroup--success modifier class for valid or successful fields -->
 					<div class="form-controlGroup g-col g-span4 form-controlGroup--success">
-						<label for="text" class="form-label">Success</label>
+						<label class="form-label" for="text">Success</label>
 						<div class="form-controlGroup-inputWrapper">
-							<input type="text" id="text" placeholder="Zander Martineau" class="form-input" value="A value" required/>
+							<input class="form-input" type="text" id="text" placeholder="Some text" value="A value" required/>
 						</div>
 					</div>
 
@@ -314,7 +330,7 @@ next:
 					<div class="form-controlGroup g-col g-span4 form-controlGroup--error">
 						<label for="email" class="form-label">Error</label>
 						<div class="form-controlGroup-inputWrapper">
-							<input type="email" id="email" placeholder="zander@martineau.tv" class="form-input" value="A value" required/>
+							<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" value="A value" required/>
 						</div>
 					</div>
 
@@ -322,7 +338,7 @@ next:
 					<div class="form-controlGroup g-col g-span4 form-controlGroup--warning">
 						<label for="password" class="form-label">Warning</label>
 						<div class="form-controlGroup-inputWrapper">
-							<input type="password" id="password" placeholder="Your password" class="form-input" value="A value" />
+							<input class="form-input" type="password" id="password" placeholder="Your password" value="A value" />
 						</div>
 					</div>
 				</div>
@@ -336,9 +352,9 @@ next:
 		<div class="g-row">
 			<!-- Add .form-controlGroup--success modifier class for valid or successful fields -->
 			<div class="form-controlGroup g-col g-span4 form-controlGroup--success">
-				<label for="text" class="form-label">Success</label>
+				<label class="form-label" for="text">Success</label>
 				<div class="form-controlGroup-inputWrapper">
-					<input type="text" id="text" placeholder="Zander Martineau" class="form-input" value="A value" required/>
+					<input class="form-input" type="text" id="text" placeholder="Some text" value="A value" required/>
 				</div>
 			</div>
 
@@ -346,7 +362,7 @@ next:
 			<div class="form-controlGroup g-col g-span4 form-controlGroup--error">
 				<label for="email" class="form-label">Error</label>
 				<div class="form-controlGroup-inputWrapper">
-					<input type="email" id="email" placeholder="zander@martineau.tv" class="form-input" value="A value" required/>
+					<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" value="A value" required/>
 				</div>
 			</div>
 
@@ -354,7 +370,7 @@ next:
 			<div class="form-controlGroup g-col g-span4 form-controlGroup--warning">
 				<label for="password" class="form-label">Warning</label>
 				<div class="form-controlGroup-inputWrapper">
-					<input type="password" id="password" placeholder="Your password" class="form-input" value="A value" />
+					<input class="form-input" type="password" id="password" placeholder="Your password" value="A value" />
 				</div>
 			</div>
 		</div>
@@ -378,7 +394,7 @@ next:
 				<div class="g-row">
 					<!-- Custom checkboxes -->
 					<div class="form-controlGroup g-span6 g-col">
-						<label for="comments" class="form-label">Checkboxes</label>
+						<label class="form-label" for="comments">Checkboxes</label>
 						<div class="form-controlGroup-inputWrapper">
 							<!-- Wrap checkbox elements with .control.control--custom.control--checkbox <label> -->
 							<label class="control control--custom control--checkbox">
@@ -401,7 +417,7 @@ next:
 
 					<!-- Custom radio buttons -->
 					<div class="form-controlGroup g-span6 g-col">
-						<label for="comments" class="form-label">Radio buttons</label>
+						<label class="form-label" for="comments">Radio buttons</label>
 						<div class="form-controlGroup-inputWrapper">
 							<!-- Wrap radio elements with .control.control--custom.control--radio <label> -->
 							<label class="control control--custom control--radio">
@@ -425,25 +441,25 @@ next:
 
 				<!-- Custom file uploads -->
 				<div class="form-controlGroup">
-					<label for="file" class="form-label">File upload (alt)<br>
+					<label class="form-label" for="file">File upload (alt)<br>
 						<small>This version hides the default file input, you will need js to change the 'Choose file..' copy </small>
 					</label>
 
 					<div class="form-controlGroup-inputWrapper">
 						<!-- Wrap a input[type=file] element with .form-input--fileWrapper--styled -->
 						<label class="form-input form-input--fileWrapper--styled">
-							<input type="file" id="file" accept="image/*" size="14" class="form-input-file" />
+							<input class="form-input-file" type="file" id="file" accept="image/*" size="14" />
 						</label>
 					</div>
 				</div>
 
 				<!-- Custom select elements -->
 				<div class="form-controlGroup">
-					<label for="choice" class="form-label">Custom select element</label>
+					<label class="form-label" for="choice">Custom select element</label>
 					<div class="form-controlGroup-inputWrapper">
 						<!-- Wrap a select element with .form-input--selectWrapper -->
 						<label class="form-input form-input--selectWrapper">
-							<select id="choice2" class="form-input">
+							<select class="form-input" id="choice2">
 								<option>1</option>
 								<option>2</option>
 								<option>3</option>
@@ -458,12 +474,12 @@ next:
 	</div>
 	<div class="demo-code">
 {% highlight html %}
-<form action="#" class="form">
+<form class="form" action="#">
 	<fieldset class="form-fieldset">
 		<div class="g-row">
 			<!-- Custom checkboxes -->
 			<div class="form-controlGroup g-span6 g-col">
-				<label for="comments" class="form-label">Checkboxes</label>
+				<label class="form-label" for="comments">Checkboxes</label>
 				<div class="form-controlGroup-inputWrapper">
 					<!-- Wrap checkbox elements with .control.control--custom.control--checkbox <label> -->
 					<label class="control control--custom control--checkbox">
@@ -486,7 +502,7 @@ next:
 
 			<!-- Custom radio buttons -->
 			<div class="form-controlGroup g-span6 g-col">
-				<label for="comments" class="form-label">Radio buttons</label>
+				<label class="form-label" for="comments">Radio buttons</label>
 				<div class="form-controlGroup-inputWrapper">
 					<!-- Wrap radio elements with .control.control--custom.control--radio <label> -->
 					<label class="control control--custom control--radio">
@@ -510,25 +526,25 @@ next:
 
 		<!-- Custom file uploads -->
 		<div class="form-controlGroup">
-			<label for="file" class="form-label">File upload (alt)<br>
+			<label class="form-label" for="file">File upload (alt)<br>
 				<small>This version hides the default file input, you will need js to change the 'Choose file..' copy </small>
 			</label>
 
 			<div class="form-controlGroup-inputWrapper">
 				<!-- Wrap a input[type=file] element with .form-input--fileWrapper--styled -->
 				<label class="form-input form-input--fileWrapper--styled">
-					<input type="file" id="file" accept="image/*" size="14" class="form-input-file" />
+					<input class="form-input-file" type="file" id="file" accept="image/*" size="14" />
 				</label>
 			</div>
 		</div>
 
 		<!-- Custom select elements -->
 		<div class="form-controlGroup">
-			<label for="choice" class="form-label">Custom select element</label>
+			<label class="form-label" for="choice">Custom select element</label>
 			<div class="form-controlGroup-inputWrapper">
 				<!-- Wrap a select element with .form-input--selectWrapper -->
 				<label class="form-input form-input--selectWrapper">
-					<select id="choice2" class="form-input">
+					<select class="form-input" id="choice2">
 						<option>1</option>
 						<option>2</option>
 						<option>3</option>
@@ -557,80 +573,80 @@ next:
 			<fieldset class="form-fieldset">
 				<legend class="form-legend">Your form</legend>
 				<div class="form-controlGroup">
-					<label for="text" class="form-label">Text</label>
+					<label class="form-label" for="text">Text</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input type="text" id="text" placeholder="Zander Martineau" class="form-input" required/>
+						<input class="form-input" type="text" id="text" placeholder="Some text" required/>
 					</div>
 				</div>
 				<div class="form-controlGroup">
 					<label for="email" class="form-label">Email</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input type="email" id="email" placeholder="zander@martineau.tv" class="form-input" required/>
+						<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" required/>
 					</div>
 				</div>
 				<div class="form-controlGroup">
 					<label for="password" class="form-label">Password</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input type="password" id="password" placeholder="Your password" class="form-input" />
+						<input class="form-input" type="password" id="password" placeholder="Your password" />
 					</div>
 				</div>
 
 				<div class="form-controlGroup form-controlGroup--success">
-					<label for="text" class="form-label">Text (Success)</label>
+					<label class="form-label" for="text">Text (Success)</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input type="text" id="text" placeholder="Zander Martineau" class="form-input" value="A value" required/>
+						<input class="form-input" type="text" id="text" placeholder="Some text" value="A value" required/>
 					</div>
 				</div>
 				<div class="form-controlGroup form-controlGroup--error">
 					<label for="email" class="form-label">Email (Error)</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input type="email" id="email" placeholder="zander@martineau.tv" class="form-input" value="A value" required/>
+						<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" value="A value" required/>
 					</div>
 				</div>
 				<div class="form-controlGroup form-controlGroup--warning">
 					<label for="password" class="form-label">Password (Warning)</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input type="password" id="password" placeholder="Your password" class="form-input" value="A value" />
+						<input class="form-input" type="password" id="password" placeholder="Your password" value="A value" />
 					</div>
 				</div>
 
 				<div class="form-controlGroup">
-					<label for="comments" class="form-label">Textarea</label>
+					<label class="form-label" for="comments">Textarea</label>
 					<div class="form-controlGroup-inputWrapper">
-						<textarea id="comments" rows="3" cols="50" class="form-input form-input--textarea"></textarea>
+						<textarea class="form-input form-input--textarea" id="comments" rows="3" cols="50"></textarea>
 					</div>
 				</div>
 				<div class="form-controlGroup">
-					<label for="text" class="form-label">Disabled Text</label>
+					<label class="form-label" for="text">Disabled Text</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input type="text" id="text" placeholder="Zander Martineau" class="form-input" disabled/>
+						<input class="form-input" type="text" id="text" placeholder="Some text" disabled/>
 					</div>
 				</div>
 				<div class="form-controlGroup">
-					<label for="file" class="form-label">File upload <br>
+					<label class="form-label" for="file">File upload <br>
 						<small>Firefox uses the <code>size</code> attribute to determine width.</small>
 					</label>
 
 					<div class="form-controlGroup-inputWrapper">
 						<label class="form-input form-input--fileWrapper">
-							<input type="file" id="file" accept="image/*" size="14" class="form-input-file" />
+							<input class="form-input-file" type="file" id="file" accept="image/*" size="14" />
 						</label>
 					</div>
 				</div>
 				<div class="form-controlGroup">
-					<label for="file" class="form-label">File upload (alt)<br>
+					<label class="form-label" for="file">File upload (alt)<br>
 						<small>This version hides the default file input, you will need js to change the 'Choose file..' copy </small>
 					</label>
 
 					<div class="form-controlGroup-inputWrapper">
 						<label class="form-input form-input--fileWrapper--styled">
-							<input type="file" id="file" accept="image/*" size="14" class="form-input-file" />
+							<input class="form-input-file" type="file" id="file" accept="image/*" size="14" />
 						</label>
 					</div>
 				</div>
 				<div class="g-row">
 					<div class="form-controlGroup g-span6 g-col">
-						<label for="comments" class="form-label">Checkboxes</label>
+						<label class="form-label" for="comments">Checkboxes</label>
 						<div class="form-controlGroup-inputWrapper">
 							<label class="control">
 								<input type="checkbox" value="check1">
@@ -648,7 +664,7 @@ next:
 					</div>
 
 					<div class="form-controlGroup g-span6 g-col">
-						<label for="comments" class="form-label">Radio buttons</label>
+						<label class="form-label" for="comments">Radio buttons</label>
 						<div class="form-controlGroup-inputWrapper">
 							<label class="control">
 								<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
@@ -667,7 +683,7 @@ next:
 				</div>
 
 				<div class="form-controlGroup">
-					<label for="comments" class="form-label">Inline Checkboxes</label>
+					<label class="form-label" for="comments">Inline Checkboxes</label>
 					<div class="form-controlGroup-inputWrapper">
 						<label class="control control--inline">
 							<input type="checkbox" value="check1">
@@ -685,7 +701,7 @@ next:
 				</div>
 
 				<div class="form-controlGroup">
-					<label for="comments" class="form-label">Inline radio buttons</label>
+					<label class="form-label" for="comments">Inline radio buttons</label>
 					<div class="form-controlGroup-inputWrapper">
 						<label class="control control--inline">
 							<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
@@ -732,7 +748,7 @@ next:
 				<div class="form-controlGroup">
 					<label for="search" class="form-label">Search</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input type="search" id="search" placeholder="Zander Martineau" class="form-input form-input--search">
+						<input type="search" id="search" placeholder="Some text" class="form-input form-input--search">
 					</div>
 				</div>
 
@@ -751,80 +767,80 @@ next:
 	<fieldset class="form-fieldset">
 		<legend class="form-legend">Your form</legend>
 		<div class="form-controlGroup">
-			<label for="text" class="form-label">Text</label>
+			<label class="form-label" for="text">Text</label>
 			<div class="form-controlGroup-inputWrapper">
-				<input type="text" id="text" placeholder="Zander Martineau" class="form-input" required/>
+				<input class="form-input" type="text" id="text" placeholder="Some text" required/>
 			</div>
 		</div>
 		<div class="form-controlGroup">
 			<label for="email" class="form-label">Email</label>
 			<div class="form-controlGroup-inputWrapper">
-				<input type="email" id="email" placeholder="zander@martineau.tv" class="form-input" required/>
+				<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" required/>
 			</div>
 		</div>
 		<div class="form-controlGroup">
 			<label for="password" class="form-label">Password</label>
 			<div class="form-controlGroup-inputWrapper">
-				<input type="password" id="password" placeholder="Your password" class="form-input" />
+				<input class="form-input" type="password" id="password" placeholder="Your password" />
 			</div>
 		</div>
 
 		<div class="form-controlGroup form-controlGroup--success">
-			<label for="text" class="form-label">Text (Success)</label>
+			<label class="form-label" for="text">Text (Success)</label>
 			<div class="form-controlGroup-inputWrapper">
-				<input type="text" id="text" placeholder="Zander Martineau" class="form-input" value="A value" required/>
+				<input class="form-input" type="text" id="text" placeholder="Some text" value="A value" required/>
 			</div>
 		</div>
 		<div class="form-controlGroup form-controlGroup--error">
 			<label for="email" class="form-label">Email (Error)</label>
 			<div class="form-controlGroup-inputWrapper">
-				<input type="email" id="email" placeholder="zander@martineau.tv" class="form-input" value="A value" required/>
+				<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" value="A value" required/>
 			</div>
 		</div>
 		<div class="form-controlGroup form-controlGroup--warning">
 			<label for="password" class="form-label">Password (Warning)</label>
 			<div class="form-controlGroup-inputWrapper">
-				<input type="password" id="password" placeholder="Your password" class="form-input" value="A value" />
+				<input class="form-input" type="password" id="password" placeholder="Your password" value="A value" />
 			</div>
 		</div>
 
 		<div class="form-controlGroup">
-			<label for="comments" class="form-label">Textarea</label>
+			<label class="form-label" for="comments">Textarea</label>
 			<div class="form-controlGroup-inputWrapper">
-				<textarea id="comments" rows="3" cols="50" class="form-input form-input--textarea"></textarea>
+				<textarea class="form-input form-input--textarea" id="comments" rows="3" cols="50"></textarea>
 			</div>
 		</div>
 		<div class="form-controlGroup">
-			<label for="text" class="form-label">Disabled Text</label>
+			<label class="form-label" for="text">Disabled Text</label>
 			<div class="form-controlGroup-inputWrapper">
-				<input type="text" id="text" placeholder="Zander Martineau" class="form-input" disabled/>
+				<input class="form-input" type="text" id="text" placeholder="Some text" disabled/>
 			</div>
 		</div>
 		<div class="form-controlGroup">
-			<label for="file" class="form-label">File upload <br>
+			<label class="form-label" for="file">File upload <br>
 				<small>Firefox uses the <code>size</code> attribute to determine width.</small>
 			</label>
 
 			<div class="form-controlGroup-inputWrapper">
 				<label class="form-input form-input--fileWrapper">
-					<input type="file" id="file" accept="image/*" size="14" class="form-input-file" />
+					<input class="form-input-file" type="file" id="file" accept="image/*" size="14" />
 				</label>
 			</div>
 		</div>
 		<div class="form-controlGroup">
-			<label for="file" class="form-label">File upload (alt)<br>
+			<label class="form-label" for="file">File upload (alt)<br>
 				<small>This version hides the default file input, you will need js to change the 'Choose file..' copy </small>
 			</label>
 
 			<div class="form-controlGroup-inputWrapper">
 				<label class="form-input form-input--fileWrapper--styled">
-					<input type="file" id="file" accept="image/*" size="14" class="form-input-file" />
+					<input class="form-input-file" type="file" id="file" accept="image/*" size="14" />
 				</label>
 			</div>
 		</div>
 		<div class="g-row">
 			<div class="form-controlGroup g-span6 g-col">
-				<label for="comments" class="form-label">Checkboxes</label>
+				<label class="form-label" for="comments">Checkboxes</label>
 				<div class="form-controlGroup-inputWrapper">
 					<label class="control">
 						<input type="checkbox" value="check1">
@@ -842,7 +858,7 @@ next:
 			</div>
 
 			<div class="form-controlGroup g-span6 g-col">
-				<label for="comments" class="form-label">Radio buttons</label>
+				<label class="form-label" for="comments">Radio buttons</label>
 				<div class="form-controlGroup-inputWrapper">
 					<label class="control">
 						<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
@@ -861,7 +877,7 @@ next:
 		</div>
 
 		<div class="form-controlGroup">
-			<label for="comments" class="form-label">Inline Checkboxes</label>
+			<label class="form-label" for="comments">Inline Checkboxes</label>
 			<div class="form-controlGroup-inputWrapper">
 				<label class="control control--inline">
 					<input type="checkbox" value="check1">
@@ -879,7 +895,7 @@ next:
 		</div>
 
 		<div class="form-controlGroup">
-			<label for="comments" class="form-label">Inline radio buttons</label>
+			<label class="form-label" for="comments">Inline radio buttons</label>
 			<div class="form-controlGroup-inputWrapper">
 				<label class="control control--inline">
 					<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
@@ -926,7 +942,7 @@ next:
 		<div class="form-controlGroup">
 			<label for="search" class="form-label">Search</label>
 			<div class="form-controlGroup-inputWrapper">
-				<input type="search" id="search" placeholder="Zander Martineau" class="form-input form-input--search">
+				<input type="search" id="search" placeholder="Some text" class="form-input form-input--search">
 			</div>
 		</div>
 
