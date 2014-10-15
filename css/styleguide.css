@@ -92,25 +92,25 @@ body { background-color: #f1f1f1; }
 
 .typography .info p { -ms-word-wrap: break-word; word-wrap: break-word; }
 .typography .example { margin: 1em 0; }
-.typography .example h1:after { content: " - modular-scale(18, 3, 1.25)px"; }
-.typography .example h2:after { content: " - modular-scale(18, 2, 1.25)px"; }
-.typography .example h3:after { content: " - modular-scale(18, 1, 1.25)px"; }
-.typography .example h4:after { content: " - modular-scale(18, 0, 1.25)px"; }
-.typography .example h5:after { content: " - modular-scale(18, -1, 1.25)px"; }
-.typography .example h6:after { content: " - modular-scale(18, -1, 1.25)px"; }
+.typography .example h1:after { content: " - modular-scale(20, 3, 1.25)px"; }
+.typography .example h2:after { content: " - modular-scale(20, 2, 1.25)px"; }
+.typography .example h3:after { content: " - modular-scale(20, 1, 1.25)px"; }
+.typography .example h4:after { content: " - modular-scale(20, 0, 1.25)px"; }
+.typography .example h5:after { content: " - modular-scale(20, -1, 1.25)px"; }
+.typography .example h6:after { content: " - modular-scale(20, -1, 1.25)px"; }
 .typography .example h1:after, .typography .example h2:after, .typography .example h3:after, .typography .example h4:after, .typography .example h5:after, .typography .example h6:after { text-transform: lowercase; }
 .typography .example .interfaceType:after, .typography .example .section-heading:after, .typography .example .typeSpecimen:after { content: ""; }
 
 .typeSpecimen { margin-bottom: 0; margin-top: 0; -ms-word-wrap: break-word; word-wrap: break-word; }
-.typeSpecimen:after { display: block; font-size: 16px; font-size: 0.88888889rem; margin-top: 5px; border-top: 1px solid #ddd; font-weight: normal; }
+.typeSpecimen:after { display: block; font-size: 16px; font-size: 0.8rem; margin-top: 5px; border-top: 1px solid #ddd; font-weight: normal; }
 
 h1.typeSpecimen:after { content: "Font stack: purista-web, franklin-gothic-urw, freight-sans-pro, Helvetica Neue, Helvetica, Arial, sans-serif"; }
 
 p.typeSpecimen:after { content: "Font stack: franklin-gothic-urw, freight-sans-pro, Helvetica Neue, Helvetica, Arial, sans-serif"; }
 
 /** Starter page */
-.checklistInfo { margin-bottom: 15px; margin-left: 30px; font-size: 15px; }
+.checklistInfo { margin-bottom: 15px; margin-left: 30px; font-size: 17px; }
 .checklistInfo li { margin-bottom: 0.2em; }
-.checklistInfo code, .checklistInfo pre { font-size: 14px; font-size: 0.77777778rem; background-color: #cacaca; /* alpha: 1 */ }
+.checklistInfo code, .checklistInfo pre { font-size: 14px; font-size: 0.7rem; background-color: #cacaca; /* alpha: 1 */ }
 
 /*# sourceMappingURL=styleguide.css.map */

@@ -2972,6 +2972,11 @@ a {
   background-color: black;
 }
 
+@media screen and (max-width: 38.4em) {
+  .github-logo {
+    display: none;
+  }
+}
 /*
    Icons
    ========================================================================== */

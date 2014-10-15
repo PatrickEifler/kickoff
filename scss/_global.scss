@@ -590,3 +590,10 @@ a {
 		background-color: darken($color-primary, 15%);
 	}
 }
+
+@include respond-max($bp-single-col) {
+	.github-logo {
+		display: none;
+	}
+}
+
