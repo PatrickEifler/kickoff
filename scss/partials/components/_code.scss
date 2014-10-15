@@ -54,6 +54,7 @@ pre {
 	color: $color-pre;
 	background-color: $color-pre-bg;
 	white-space: pre;
+	overflow: auto;
 	// white-space: pre-wrap;
 	// word-break: break-all;
 	// word-wrap: break-word;

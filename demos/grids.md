@@ -5,6 +5,9 @@ navgroup: demo
 navactive: demogrid
 title: The Kickoff Grid
 
+meta:
+  description: See Kickoff's grid demo
+
 next:
  - title: Typography demo
    body: See our default typography styles

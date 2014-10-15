@@ -3,14 +3,36 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>{{ page.title }}</title>
-		<meta name="description" content="Kickoff is TMW's front-end framework">
+		{% if page.meta.title %}
+			{% assign title = page.meta.title %}
+		{% else %}
+			{% assign title = page.title %}
+		{% endif %}
+		{% if page.navgroup %}
+			{% if page.navgroup == 'docs' %}
+				{% assign section = ' - Kickoff Documentation' %}
+			{% endif %}
+			{% if page.navgroup == 'demo' %}
+				{% assign section = ' - Kickoff Demos' %}
+			{% endif %}
+			{% if page.navgroup == 'home' %}
+				{% assign section = ' - the best front-end framework around' %}
+			{% endif %}
+		{% endif %}
+		<title>{{ title }}{{ section }}</title>
+
+		{% if page.meta.description %}
+		<meta name="description" content="{{ page.meta.description }}">
+		{% else %}
+		<meta name="description" content="Kickoff is a lightweight front-end framework for creating scalable, responsive sites.">
+		{% endif %}
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="/kickoff/css/kickoff.css">
 		{% if page.css %}<link rel="stylesheet" href="{{ page.css }}">{% endif %}
 		<!-- <script type="text/javascript" src="//use.typekit.net/qdb7ikf.js"></script> --> <!-- TMW shared account -->
-		<!--<script src="//use.typekit.net/alt7ogo.js"></script> <!-- Zander's personal CC account
-		<script>try{Typekit.load();}catch(e){}</script>-->
+		<script src="//use.typekit.net/alt7ogo.js"></script> <!-- Zander's personal CC account
+		<script>try{Typekit.load();}catch(e){}</script>
 
 		<meta name="apple-mobile-web-app-title" content="Kickoff">
 		<link rel="shortcut icon" href="/kickoff/favicon.ico" type="image/x-icon" />

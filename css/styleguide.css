@@ -82,9 +82,9 @@ body { background-color: #f1f1f1; }
 .color-primary.bg { background-color: #181830; color: #fff; }
 .color-primary.bg:after { content: "#181830"; }
 
-.color-secondary { color: #FF7800; }
-.color-secondary.bg { background-color: #FF7800; color: #fff; }
-.color-secondary.bg:after { content: "#FF7800"; }
+.color-secondary { color: #FE7C08; }
+.color-secondary.bg { background-color: #FE7C08; color: #fff; }
+.color-secondary.bg:after { content: "#FE7C08"; }
 
 .color-highlight { color: #ff9600; }
 .color-highlight.bg { background-color: #ff9600; color: #fff; }

@@ -8,7 +8,7 @@ $blueDark                     : #181830;
 $green                        : #2ecc71;
 $red                          : #e74c3c;
 $yellow                       : #f1c40f;
-$orange                       : #FF7800;
+$orange                       : #FE7C08;
 $pink                         : #c3325f;
 $purple                       : #351330;
 $gray                         : #95a5a6;
@@ -90,4 +90,4 @@ $table-border                 : #ddd; // table and cell border
 $table-border-color           : #ddd !default; // Border color for table and cell borders.
 
 // <hr> border colour
-$hr-border                    : lighten(#000, 70%);
+$hr-border                    : $blue;

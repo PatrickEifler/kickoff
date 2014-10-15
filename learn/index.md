@@ -5,6 +5,9 @@ subtitle:
 navgroup: docs
 navactive: docsindex
 
+meta:
+  description: Kickoff framework overview
+
 next:
  - title: Get Kickoff
    body: Want to use <code>git pull</code>, <code>yo kickoff</code> or just download a zip. Find out how to get your hands on Kickoff here

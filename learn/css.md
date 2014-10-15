@@ -4,6 +4,9 @@ navgroup: docs
 navactive: docscss
 title: CSS
 
+meta:
+  description: Understand how we use CSS in Kickoff
+
 next:
  - title: Kickoff's Javascript
    body: Find out how Kickoff's JS works
@@ -28,7 +31,7 @@ Kickoff is made with [Sass](http://sass-lang.com/) at its core, it makes develop
 
 Simply fire up Terminal (or Command Prompt on Windows) and type in this command:
 
-```sh
+```shell
 $ gem install sass
 ```
 

@@ -5,6 +5,9 @@ navgroup: demo
 navactive: demoforms
 title: Form styling
 
+meta:
+  description: See Kickoff's form demo
+
 next:
  - title: Typography demo
    body: See our default typography styles
