@@ -264,6 +264,33 @@ next:
 <!-- END EXAMPLE -->
 
 <hr>
+<a name="singlefield"></a>
+
+<h2>Single form field</h2>
+<p>Multi-column forms are easy to achieve by using the existing grid. See the comments in the code below for implementation details.</p>
+
+<div class="demo">
+	<div class="demo-visual">
+		<div class="form-controlGroup">
+			<label class="form-label" for="text">Label</label>
+			<div class="form-controlGroup-inputWrapper">
+				<input class="form-input" type="text" id="text" placeholder="Some text" required/>
+			</div>
+		</div>
+	</div>
+	<div class="demo-code">
+{% highlight html%}
+<div class="form-controlGroup">
+	<label class="form-label" for="text">Label</label>
+	<div class="form-controlGroup-inputWrapper">
+		<input class="form-input" type="text" id="text" placeholder="Some text" required/>
+	</div>
+</div>
+{% endhighlight %}
+	</div>
+</div>
+
+<hr>
 
 <a name="formfieldstates"></a>
 
