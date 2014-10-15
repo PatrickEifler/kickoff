@@ -164,7 +164,8 @@ A task to help you create and maintain icons using Grunticon.
 Running `grunt icons` carries out the [svgmin](#task-svgmin) and [Grunticon](#task-grunticon) tasks,
 generating a set of icons for you to use in the front-end of your project.
 
-<hr>
+---
+
 <a name="grunt-checks"></a>
 #### grunt checks
 
@@ -226,6 +227,10 @@ config : {
 	localserver: 'kickoff.dev', // <%=config.localserver%>
 
 	testing: {
+
+		/**
+		 * These are the settings used by our visual regression testing task, Photobox
+		 */
 		visual : {
 			sizes: [ '600', '1000', '1200' ], // <%=config.testing.visual.sizes%>
 
@@ -238,28 +243,36 @@ config : {
 		}
 	}
 }
-````
+```
 
 <a name="taskindex"></a>
- ### Breaking this down
+
+### Breaking this down
 
 <a name="config-src"></a>
+
 #### config.src
 
 The first line you encounter in the Grunt config is the `config.src` variable.
 
-	src: "_grunt-configs/*.js"
+```js
+src: "_grunt-configs/*.js"
+```
 
 This is used to specify the path at which the rest of your Grunt config lives.  The default location for this is in the `_grunt-configs` folder, but if you’d like to rename or move this folder for any reason, make sure that you update this value in the config as well.
 
+<hr>
 <a name="config-css"></a>
+
 #### config.css
 
-	css : {
-		distDir : 'css',     // <%=config.css.distDir%>
-		srcFile : 'kickoff', // <%=config.css.srcFile%>
-		scssDir : 'scss'     // <%=config.css.scssDir%>
-	}
+```js
+css : {
+	distDir : 'css',     // <%=config.css.distDir%>
+	srcFile : 'kickoff', // <%=config.css.srcFile%>
+	scssDir : 'scss'     // <%=config.css.scssDir%>
+}
+```
 
 The `config.css` variables all relate to the directories and paths of the project CSS.
 
@@ -269,30 +282,34 @@ The `config.css` variables all relate to the directories and paths of the projec
 
 **`config.css.scssDir`** is the directory at which the projects SCSS files are stored.  By default, this is the `scss` folder, but if you want to move them, be sure to update this config variable.
 
+---
+
 <a name="config-js"></a>
 #### config.js
 
-	js : {
-		distDir  : 'js/dist/',   // <%=config.js.distDir%>
-		distFile : 'app.min.js', // <%=config.js.distFile%>
+```js
+js : {
+	distDir  : 'js/dist/',   // <%=config.js.distDir%>
+	distFile : 'app.min.js', // <%=config.js.distFile%>
 
-		// <%=config.js.fileList%>
-		fileList : [
-			// if you would like to remove jQuery from your concatenated JS, comment out the line below
-			'bower_modules/jquery/dist/jquery.js',
+	// <%=config.js.fileList%>
+	fileList : [
+		// if you would like to remove jQuery from your concatenated JS, comment out the line below
+		'bower_modules/jquery/dist/jquery.js',
 
-			// if you would like some basic JS shims (when not using jQuery),
-			// uncomment the line below to compile Shimly output
-			//'js/helpers/shims.js',
+		// if you would like some basic JS shims (when not using jQuery),
+		// uncomment the line below to compile Shimly output
+		//'js/helpers/shims.js',
 
-			'js/helpers/console.js',
-			'bower_modules/trak/dist/trak.js',
-			'bower_modules/swiftclick/js/libs/swiftclick.js',
-			'bower_modules/cookies-js/src/cookies.js',
+		'js/helpers/console.js',
+		'bower_modules/trak/dist/trak.js',
+		'bower_modules/swiftclick/js/libs/swiftclick.js',
+		'bower_modules/cookies-js/src/cookies.js',
 
-			'js/script.js'
-		]
-	}
+		'js/script.js'
+	]
+}
+```
 
 The `config.js` variables relate to the directories and paths of the project JavaScript, as well as specifying what JavaScript files are included in the project compilation.
 
@@ -302,18 +319,21 @@ The `config.js` variables relate to the directories and paths of the project Jav
 
 **`config.js.fileList`** is the list of files that are included in the JavaScript build.  These are concatenated together when Grunt is run in the order specified in this list.  To find our more about what is included in the default JavaScript for Kickoff, see [Kickoff’s JavaScript documentation](js.html).
 
-<a name="config-localserver"></a>
-#### config.localserver
-
-TO BE WRITTEN
+---
 
 <a name="config-testing"></a>
 #### config.testing
+The `config.testing` variables are for any testing related variables. Currently we only use `config.testing.visual` for visual regression testing.
 
-TO BE WRITTEN
+<a name="config-testing-visual"></a>
+The **`config.testing.visual`** variables are used by the [Photobox](#task-photobox) visual regression testing task.
+
+**`config.testing.visual.sizes`** defines the screen widths that Photobox uses.
+
+**`config.testing.visual.urls`** defines the urls that Photobox scans. These urls can be local or remote - please edit as you see fit.
 
 <hr class="sectionSplitter">
-<a name="task-appendices"></a>
+<a name="task-index"></a>
 ## Task Index
 
 This is an exhaustive list of all the grunt tasks that Kickoff uses and what they do.
@@ -410,6 +430,15 @@ See this video for a demo:
 
 ---
 
+<a name="task-photobox"></a>
+## Visual Regression testing with Photobox
+
+We have integrated a simple visual regression testing task, [grunt-photobox](https://github.com/stefanjudis/grunt-photoBox), to help prevent deployment of broken code. The task takes screenshots, of certain urls (defined in the `config.testing.visual.urls`) variable ([see above](#config-testing-visual)), and compares them against the last screenshots taken.
+
+Usage is simple. Run the `grunt photobox` task in your terminal. If your urls are local and you're using `grunt serve` to view your site, you will need to run the task in a new tab. Once it is complete, open up the `/photobox/` directory in your site.
+
+---
+
 ## Utility Tasks
 
 <a name="task-clean"></a>
@@ -435,6 +464,3 @@ Kickoff is setup by default to watch:
 * Any SVG file that is added to the 'img/src' directory, subsequently running SVGMin & Grunticon tasks
 
 This task uses the [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch) plugin.
-
-
-
