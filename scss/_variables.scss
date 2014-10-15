@@ -16,7 +16,7 @@
  * Set this in pixels (but do not add px),
  * the font-size mixin will convert to REMS
  */
-$font-size-base                : 18;
+$font-size-base                : 20;
 $font-size-base-px             : $font-size-base * 1px;
 $font-size-base-narrow         : $font-size-base - 2;
 $font-size-base-narrow-px      : $font-size-base-narrow * 1px;
