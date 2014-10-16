@@ -15,6 +15,9 @@ next:
    body: See how Kickoff handles forms
    link: forms.html
 ---
+
+<a name="hp"></a>
+
 <div class="demo">
 	<div class="demo-visual">
 		<h1>Heading 1 <small>small</small></h1>
@@ -47,6 +50,10 @@ next:
 	</div>
 </div>
 
+---
+
+<a name="tuc"></a>
+
 <div class="demo">
 	<div class="demo-visual">
 		<h3>Text utility classes</h3>
@@ -65,7 +72,9 @@ next:
 	</div>
 </div>
 
-<hr>
+---
+
+<a name="tls"></a>
 
 <h3>Text-level semantics</h3>
 
@@ -104,7 +113,9 @@ next:
 	</div>
 </div>
 
-<hr>
+---
+
+<a name="bq"></a>
 
 <div class="demo">
 	<div class="demo-visual">
@@ -124,7 +135,9 @@ next:
 	</div>
 </div>
 
-<hr>
+---
+
+<a name="ol"></a>
 
 <div class="demo">
 	<div class="demo-visual">
@@ -172,7 +185,9 @@ next:
 	</div>
 </div>
 
-<hr>
+---
+
+<a name="ul"></a>
 
 <div class="demo">
 	<div class="demo-visual">
@@ -220,7 +235,9 @@ next:
 	</div>
 </div>
 
-<hr>
+---
+
+<a name="uul"></a>
 
 <div class="demo">
 	<div class="demo-visual">
@@ -245,7 +262,9 @@ next:
 	</div>
 </div>
 
-<hr>
+---
+
+<a name="dl"></a>
 
 <div class="demo">
 	<div class="demo-visual">
@@ -277,7 +296,9 @@ next:
 	</div>
 </div>
 
-<hr>
+---
+
+<a name="hdl"></a>
 
 <div class="demo">
 	<div class="demo-visual">
