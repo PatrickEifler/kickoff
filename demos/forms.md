@@ -20,7 +20,7 @@ next:
 <a name="labelsabove"></a>
 
 <h2>Forms <small>with labels above inputs</small></h2>
-<p>Having forms styled like this depends on specific markup with specific class names. Please take the example code below as a guide.</p>
+<p>Having forms styled like this depends on specific markup with specific class names. Please use the example code below as a guide.</p>
 
 <div class="demo">
 	<div class="demo-visual">
@@ -95,7 +95,8 @@ next:
 <a name="labelsinline"></a>
 
 <h2>Forms <small>with inline labels</small></h2>
-<p>Assuming you use the same markup as above, all you have to do is simply add a <code>.form--horizontal</code> class to the <code>&lt;form></code> element &amp; you'll now have right aligned, inline form labels in an instant.</p>
+Assuming you use the same markup as above, simply add a `.form--horizontal` class to the `<form>` element and you'll now have right aligned, inline form labels in an instant.
+
 <div class="demo">
 	<div class="demo-visual">
 		<form action="#" class="form form--horizontal">
@@ -311,7 +312,7 @@ For left-aligned labels or standard labels (above), we use the same exact markup
 <a name="formfieldstates"></a>
 
 <h2>Form field states</h2>
-<p>You can easily update field states by adding modifier classes to <code>.form-controlGroup</code>, see the comments in the code below for implementation details.</p>
+You can easily update field states by adding modifier classes to `.form-controlGroup`. See the comments in the code below for implementation details.
 
 <div class="demo">
 	<div class="demo-visual">
