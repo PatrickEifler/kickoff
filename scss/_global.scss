@@ -404,7 +404,7 @@ a {
 	}
 }
 .demo-visual {
-	padding: 20px;
+	padding: $baseline;
 	line-height: 1.5;
 
 	h3 {
@@ -428,9 +428,8 @@ a {
  * Grid demos
  */
 .show-grid-button {
-	position: absolute;
-	top: 20px;
-	right: 20px;
+	margin: 0 auto $baseline;
+	display: block;
 }
 
 .grid-block-link {

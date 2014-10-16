@@ -2662,7 +2662,7 @@ a {
 }
 
 .demo-visual {
-  padding: 20px;
+  padding: 28px;
   line-height: 1.5;
 }
 .demo-visual h3 {
@@ -2683,9 +2683,8 @@ a {
  * Grid demos
  */
 .show-grid-button {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  margin: 0 auto 28px;
+  display: block;
 }
 
 .grid-block-link {
