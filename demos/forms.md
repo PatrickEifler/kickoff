@@ -283,7 +283,7 @@ next:
 <a name="singlefield"></a>
 
 <h2>Single form field</h2>
-<p>Multi-column forms are easy to achieve by using the existing grid. See the comments in the code below for implementation details.</p>
+For left-aligned labels or standard labels (above), we use the same exact markup.
 
 <div class="demo">
 	<div class="demo-visual">
@@ -310,7 +310,7 @@ next:
 
 <a name="formfieldstates"></a>
 
-<h2>Form field states <small>with labels above inputs</small></h2>
+<h2>Form field states</h2>
 <p>You can easily update field states by adding modifier classes to <code>.form-controlGroup</code>, see the comments in the code below for implementation details.</p>
 
 <div class="demo">
