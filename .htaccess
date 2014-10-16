@@ -361,7 +361,6 @@ FileETag None
 # </IfModule>
 
 
-
 # ----------------------------------------------------------------------
 # Built-in filename-based cache busting
 # ----------------------------------------------------------------------
@@ -531,3 +530,6 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
 <IfModule php5_module>
   php_value session.cookie_httponly true
 </IfModule>
+
+# redirect from the old docs URL to the 'learn'.
+Redirect 301 /kickoff/docs/ /kickoff/learn/
