@@ -10,15 +10,15 @@ meta:
 
 next:
  - title: Get Kickoff
-   body: Want to use <code>git pull</code>, <code>yo kickoff</code> or just download a zip. Find out how to get your hands on Kickoff here
+   body: Find out how to get your hands on Kickoff here.
    link: get.html
  - title: Use Kickoff
-   body: Find out how to get the best from Kickoff and how to get up and running as quickly as possible.
+   body: Ready to get your hands dirty?<br>We’ll show you where to start.
    link: use.html
 ---
 Kickoff is a lightweight front-end framework for creating scalable, responsive sites.
 
-As front-end developers, the type of project we work on is becoming more and more varied. Kickoff aims to help keep a consistent structure and style across all of your projects, without adding the bloat that other frameworks can lead to.
+As front-end developers, the type of project we work on is becoming more and more diverse. Kickoff aims to help keep a consistent structure and style across all of your projects, without adding the bloat that other frameworks can lead to.
 
 Kickoff tries to mitigate common problems found in web development by providing a strong starting point and a set of helpful defaults for use on almost any project.
 
@@ -26,7 +26,9 @@ Kickoff tries to mitigate common problems found in web development by providing 
 
 The main difference when comparing Kickoff with other similar frameworks is that it is not nearly as prescriptive – we’re looking at you Bootstrap and Foundation.
 
-Part of the reason we built Kickoff was because we find these frameworks a bit unwieldy in most circumstances – it’s a bit like grabbing a chainsaw when all you need it for is to cut through a toothpick.  While those frameworks define almost every aspect of a website with CSS styles and JavaScript plugins that do everything, Kickoff gives you just what you need.
+Part of the reason we built Kickoff was because we find these frameworks a bit unwieldy in most circumstances; it can feel like grabbing a chainsaw when all you want to do is cut through a toothpick.
+
+While those frameworks define almost every aspect of a website with CSS styles and JavaScript plugins that do everything, Kickoff gives you just what you need.
 
 ### Flexible and Extensible
 
