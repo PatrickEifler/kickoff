@@ -18,63 +18,110 @@ next:
 ---
 <a name="buttons"></a>
 
-<h2>Buttons</h2>
-<p>Button styles can be applied to anything with the <code>.btn</code> class applied. However, typically you'll want to apply these to only <code>&lt;a></code> and <code>&lt;button></code> elements for the best rendering.</p>
+## Buttons
+Button styles can be applied to anything with the `.btn` class applied. However, typically you'll want to apply these to only `<a>` and `<button>` elements for the best rendering.
 
-<h4>Button sizes</h4>
-<p>Fancy larger or smaller buttons? Add <code>.btn--large</code>, or <code>.btn--small</code> for additional sizes.</p>
+#### Button sizes
+Fancy larger or smaller buttons? Add `.btn--large`, or `.btn--small` for additional sizes. The colours used by this button are defined in our [colour palette](https://github.com/tmwagency/kickoff/blob/master/scss/_color-palette.scss#L38-L39) file.
 
 <div class="demo">
 	<div class="demo-visual">
-		<h3>Normal buttons</h3>
-		<a href="#" class="btn">Anchor</a>
-		<input type="submit" value="Input (submit)" class="btn" />
-		<input type="submit" value="Disabled (submit)" class="btn" disabled />
+		<h4>Normal size</h4>
+		<a href="#" class="btn">Button</a>
 
-		<h3>Larger buttons</h3>
+		<h4>Large size</h4>
 		<a href="#" class="btn btn--large">Default colour</a>
-		<a href="#" class="btn btn--large btn--primary">Primary</a>
 
-		<h3>Small buttons</h3>
-		<a href="#" class="btn btn--small">Anchor</a>
-		<input type="submit" value="Primary" class="btn btn--primary btn--small" />
-		<input type="submit" value="Disabled" class="btn btn--small" disabled />
-		<button type="reset" class="btn btn--small">Reset</button>
+		<h4>Small size</h4>
+		<a href="#" class="btn btn--small">Button</a>
 	</div>
 
 	<div class="demo-code">
 {% highlight html%}
 <!-- Normal buttons with default colour -->
-<a href="#" class="btn">Anchor</a>
-<input type="submit" value="Input (submit)" class="btn" />
-<input type="submit" value="Disabled (submit)" class="btn" disabled />
+<a href="#" class="btn">Button</a>
 
 <!-- Larger buttons use the .btn--large modifier class -->
 <a href="#" class="btn btn--large">Default colour</a>
-<a href="#" class="btn btn--large btn--primary">Primary</a>
 
 <!-- Small buttons use the .btn--small modifier class -->
-<a href="#" class="btn btn--small">Anchor</a>
-<input type="submit" value="Primary" class="btn btn--primary btn--small" />
-<input type="submit" value="Disabled" class="btn btn--small" disabled />
-<button type="reset" class="btn btn--small">Reset</button>
+<a href="#" class="btn btn--small">Button</a>
 {% endhighlight %}
 	</div>
 </div>
 
-<hr>
+---
 
-<a name="pillbuttons"></a>
+### Button styles
+We provide only one button style variant because we think you should define your own. This variant, the *primary* button, uses the `.btn--primary` modifier class. We suggest setting up your own buttons in the same way, [see here](https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_buttons.scss#L81-L95).
 
-<h2>Pill Buttons</h2>
-<p>Add the <code>.btn--pill</code> class to any <code>.btn</code>.</p>
+The colours used by this button are defined in our [colour palette](https://github.com/tmwagency/kickoff/blob/master/scss/_color-palette.scss#L41-L42) file.
+
 <div class="demo">
 	<div class="demo-visual">
-		<h4>Pill buttons</h4>
-		<a href="#" class="btn btn--pill btn--primary">Pill</a>
-		<a href="#" class="btn btn--pill">This is a Pill</a>
-		<h2>This is <a href="#" class="btn btn--primary btn--natural btn--pill"> a pill button </a> in a heading!</h2>
+		<a href="#" class="btn btn--primary">Button</a>
+	</div>
 
+	<div class="demo-code">
+{% highlight html%}
+<!-- Add .btn--primary to use the primary colours -->
+<a href="#" class="btn btn--primary">Button</a>
+{% endhighlight %}
+	</div>
+</div>
+
+---
+
+### Block-level buttons
+To make buttons span to 100% width, add the `.btn--block` modifier class. You can also see that we are using the `.btn--primary` modifier class as well as `.btn--block`.
+
+<div class="demo">
+	<div class="demo-visual">
+		<a href="#" class="btn btn--block btn--primary">Button</a>
+	</div>
+
+	<div class="demo-code">
+{% highlight html%}
+<!-- Add .btn--block to use the block colours -->
+<a href="#" class="btn btn--block btn--primary">Button</a>
+{% endhighlight %}
+	</div>
+</div>
+
+---
+
+### Natural buttons
+We have `.btn--natural` modifier class that inherits sizing from its parent. This is extremely useful when you have a button inside a paragraph or a heading.
+
+<div class="demo">
+	<div class="demo-visual">
+		<p>
+			With <code>.btn--natural</code> modifier class: <a href="#" class="btn btn--natural btn--primary">button</a>
+		</p>
+		<p>
+			Without <code>.btn--natural</code> modifier class: <a href="#" class="btn btn--primary">button</a>
+		</p>
+	</div>
+	<div class="demo-code">
+{% highlight html%}
+<a href="#" class="btn btn--natural btn--primary">With .btn--natural button</a>
+{% endhighlight %}
+	</div>
+</div>
+
+---
+
+### Pill Buttons
+Add the `.btn--pill` modifier class to any `.btn`.
+
+<div class="demo">
+	<div class="demo-visual">
+		<p>
+			<a href="#" class="btn btn--pill btn--primary">Primary pill</a>
+			<a href="#" class="btn btn--pill">Default pill</a>
+		</p>
+
+		<!-- Add the .btn--natural modifier class to fix the padding -->
 		<p>This is <a href="#" class="btn btn--primary btn--natural btn--pill"> a button </a> in a paragraph!</p>
 	</div>
 	<div class="demo-code">
@@ -83,19 +130,18 @@ next:
 <a href="#" class="btn btn--pill btn--primary">Pill</a>
 <a href="#" class="btn btn--pill">This is a Pill</a>
 
-<h2>This is <a href="#" class="btn btn--primary btn--natural btn--pill"> a button </a> in a heading!</h2>
-
 <p>This is <a href="#" class="btn btn--primary btn--natural btn--pill"> a button </a> in a paragraph!</p>
 {% endhighlight %}
 	</div>
 </div>
 
-<hr>
+---
 
 <a name="mediaobject"></a>
 
-<h2>Media Object</h2>
-<p>Place any image- and text-like content side-by-side, as per: <a href="stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code">media object</a></p>
+## Media Object
+Place any image- and text-like content side-by-side, as per: [media object](http://stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code)
+
 <div class="demo">
 	<div class="demo-visual">
 		<div class="media">
@@ -140,11 +186,11 @@ next:
 	</div>
 </div>
 
-<hr>
+---
 
 <a name="fluidvideo"></a>
 
-<h2>Fluid video</h2>
+## Fluid video
 <div class="demo">
 	<div class="demo-visual">
 		<div class="fluidVideo">
@@ -160,11 +206,11 @@ next:
 	</div>
 </div>
 
-<hr>
+---
 
 <a name="blockgrids"></a>
 
-<h2>Block grids</h2>
+## Block grids
 <div class="demo">
 	<div class="demo-visual">
 		<ul class="l-blockGrid l-blockGrid--4up l-blockGrid--2up--narrow">
@@ -190,11 +236,11 @@ next:
 	</div>
 </div>
 
-<hr>
+---
 
 <a name="lists"></a>
 
-<h2>Lists</h2>
+## Lists
 <div class="demo">
 	<div class="demo-visual">
 		<h4>Centre-aligned lists</h4>
@@ -233,11 +279,11 @@ next:
 	</div>
 </div>
 
-<hr>
+---
 
 <a name="tables"></a>
 
-<h2>Tables</h2>
+## Tables
 <div class="demo">
 	<div class="demo-visual">
 		<table class="table table--bordered table--striped table--hover table--rounded" cellpadding="0" cellspacing="0">
@@ -290,10 +336,10 @@ next:
 	</div>
 </div>
 
-<hr>
+---
 
 <a name="rwdtables"></a>
-<h2>Responsive tables</h2>
+## Responsive tables
 <div class="demo">
 	<div class="demo-visual">
 		<div class="tableResponsive">
@@ -372,11 +418,11 @@ next:
 	</div>
 </div>
 
-<hr>
+---
 
 <a name="tabs"></a>
 
-<h2>Tabs</h2>
+## Tabs
 <div class="demo">
 	<div class="demo-visual">
 		<!-- Default, left-aligned tabs -->
