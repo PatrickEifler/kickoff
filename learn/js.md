@@ -22,6 +22,7 @@ We appreciate that everyone has a preferred way of writing and structuring their
 
 While not included in the default Kickoff branch, Kickoff now includes a base setup for using Browserify.  This version of Kickoff is maintained in a separate branch, more information on which can be [found in the following documentation]().
 
+<a name="structure"></a>
 <hr class="sectionSplitter">
 ## JavaScript Structure
 
@@ -32,7 +33,7 @@ As mentioned above, Kickoff’s JavaScript is very non prescriptive.  Here we lo
 
 This file can be used to contain or reference your site/app JavaScript code.
 
-For larger projects, we recommend using [Browserify](#js-browserify) to manage your projects JavaScript dependencies.
+For larger projects, we recommend using [Browserify](#browserify) to manage your projects JavaScript dependencies.
 
 By default, Kickoff defines all of it’s JavaScript in the `KO` namespace, but this can be changed to anything you like, perhaps the name of the project. We tend to use the [singleton pattern](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#singletonpatternjavascript).
 
@@ -53,33 +54,77 @@ This folder contains a number of JavaScript helper files to be used in your proj
 
 #### `js/libs`
 
+This folder contains any 3rd party libraries used in your Kickoff project.
+
+By default, Kickoff includes [Modernizr](http://modernizr.com/) and jQuery, although removing either – or both – is very straightforward.
+
+For more information on how Kickoff uses 3rd party libraries, [checkout the documentation below](#libs).
+
 <hr class="sectionSplitter">
-<a name="js-browserify"></a>
+<a name="browserify"></a>
 ## Browserify
 
-TO BE WRITTEN
+We now maintain a [separate branch of Kickoff](https://github.com/tmwagency/kickoff/tree/browserify) that integrates Browserify into the Grunt build.
 
-<a name="js-bower"></a>
+[Browserify](http://browserify.org/) is a JavaScript dependency manager that lets you bundle together modules and encourages you to write your JavaScript in a more modular way.  It also gives you access to thousands of already created modules via [NPM (Node Package Manager)](https://www.npmjs.org/), that can be added by simply requiring them within your JavaScript.
+
+If you haven’t already, we strongly recommend you take a look at Browserify; we use it regularly on our projects at TMW and it makes dependency management a breeze, especially on medium-large scale projects.
+
+[Download Kickoff with Browserify](https://github.com/tmwagency/kickoff/tree/browserify).
+
+N.b. We’ll be continuing work on this branch of Kickoff in the future, as well as writing more detailed documentation on working with Kickoff and Browserify.
+
+<hr class="sectionSplitter">
+<a name="bower"></a>
 ## Bower
 
-Kickoff leverages Bower to manage the packages that………….
+Kickoff uses Bower, a package manager for the web, to include and manage any 3rd party dependencies that you might need for your site. A few bower packages are included with Kickoff by default, these can be found by viewing the manifest file, [bower.json](https://github.com/tmwagency/kickoff/blob/master/bower.json), and installed by running:
 
-A few bower packages are included with Kickoff by default, these can be found by viewing the [bower.json file](https://github.com/tmwagency/kickoff/blob/master/bower.json):
+```sh
+bower install
+```
+
+This assumes that you have Bower already installed. If you do not, we suggest installing [Yeoman](http://yeoman.io) because Bower is installed with it, then you have the benefit of using our [Yeoman generator](yeoman.html) :).
+
+```sh
+npm install -g yo
+```
+
+#### Default Bower dependencies
 
 * [Swiftclick](https://github.com/tmwagency/swiftclick) - Developed by our own Ivan Hayes, SwiftClick is a library created to eliminate the 300ms click event delay on touch devices.
 * [Trak.js](https://github.com/tmwagency/trak.js) - Developed by our own Zander Martineau, trak.js is a universal analytics event tracking API
 * [Cookies](https://github.com/ScottHamper/Cookies/) - Developed by Scott Hamper, Cookies is a great Cookie manipulation library
+* [jQuery](https://github.com/jquery/jquery/) - A fast, small, and feature-rich JavaScript library
 
 These packages aren’t hard dependencies and can be removed by removing them from the `config.js.fileList` [found in the grunt config](grunt.html#config-js).
 
-
+<hr class="sectionSplitter">
+<a name="shims"></a>
 ## Shims
 
 To manage JavaScript Shims, we use a Grunt plugin called [Shimly](https://github.com/nicbell/Shimly), created by  Nic Bell.  To find out more about Shimly, [check out our Grunt task documentation](grunt.html#task-shimly).
 
-
+<hr class="sectionSplitter">
+<a name="libs"></a>
 ## Libraries
 
-If you need to add any 3rd party library code, we suggest placing them in the [js/libs/](https://github.com/tmwagency/kickoff/tree/master/js/libs) folder. The latest jQuery and Modernizr libraries are included by default. You may wish to create your own [custom Modernizr build](http://www.modernizr.com/download/). Other recommended libraries include:
+If you need to add any 3rd party library code, we suggest placing it in the [js/libs/](https://github.com/tmwagency/kickoff/tree/master/js/libs) folder.
 
+By default, Kickoff includes the following libraries:
 
+### jQuery
+
+Kickoff includes jQuery by default in it’s Grunt build, and is installed via [Bower](#bower).
+
+To remove jQuery from your project, simply remove it from the [fileList config variable](grunt.html#config-js) in the [`Gruntfile.js`](https://github.com/tmwagency/kickoff/blob/master/Gruntfile.js#L28).
+
+### Modernizr
+
+The latest version of Modernizr, configured to detect some commonly used CSS features, is included by default. You may wish to create your own [custom Modernizr build](http://www.modernizr.com/download/) and replace the included version.
+
+To remove Modernizr from Kickoff, simply delete the [following line from index.html](https://github.com/tmwagency/kickoff/blob/master/index.html#L26) in the root directory:
+
+```js
+<script src="/js/libs/modernizr.min.js"></script>
+```

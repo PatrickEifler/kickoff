@@ -52,7 +52,7 @@ What follows is a general overview of each major part of Kickoff and how to use 
 		Install Bower dependencies
 	</label>
 	<div class="checklistInfo">
-		Run <code>bower install</code> to install the few <a href="js.html#js-bower">bower dependencies</a> included with the framework.
+		Run <code>bower install</code> to install the few <a href="js.html#bower">bower dependencies</a> included with the framework.
 	</div>
 
 	<label class="control">
