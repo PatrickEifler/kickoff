@@ -42,6 +42,7 @@ $ gem install sass
 Kickoff structures it's Sass files in quite a specific way. The `scss` folder contains the following directories:
 
 ```
+scss
 ┣ functions
 ┃ ┗ [...]
 ┣ mixins
@@ -66,8 +67,6 @@ The [functions](https://github.com/tmwagency/kickoff/blob/master/scss/functions/
 ### Important files
 
 It’s important to become familiar with **all of these files** so you can make full use of the framework.
-
----
 
 #### [kickoff.scss](https://github.com/tmwagency/kickoff/blob/master/scss/kickoff.scss) & [kickoff-old-ie.scss](https://github.com/tmwagency/kickoff/blob/master/scss/kickoff-old-ie.scss)
 All roads lead to here. Both these files are used and compile with Grunt. Inspecting the source of these files reveals only one `@import`, for `_dependencies.scss`. Both files require the exact same dependencies so it made sense to extract all of those into another partial.
@@ -225,3 +224,8 @@ a {
 	color: $color-primary;
 }
 ```
+
+<hr class="sectionSplitter">
+
+### Modernizr
+Kickoff includes a version of Modernizr by default. To find out how to use it, see [their documentation](http://modernizr.com) or see our [Javascript documentation](js.html) to find out where it is included.
