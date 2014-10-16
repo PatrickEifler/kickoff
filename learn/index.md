@@ -32,7 +32,7 @@ While those frameworks define almost every aspect of a website with CSS styles a
 
 ### Flexible and Extensible
 
-When you do need to extend, or remove, parts Kickoff, it’s easy to do so.
+When you need to extend, or remove, parts of Kickoff, it’s easy to do so.
 
 Kickoff’s CSS and JavaScript has been built in a modular way, meaning that if don’t need a feature, you can easily remove it.  Similarly, when you need a new component, adding it is as simple as including a new file.
 
