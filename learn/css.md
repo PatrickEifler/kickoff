@@ -32,7 +32,7 @@ Sass has two syntaxes. The most commonly used syntax is known as “SCSS” (for
 
 To start using Sass you will need to first install the Sass Ruby gem.  Simply fire up Terminal – or Command Prompt on Windows – and type in this command:
 
-```shell
+```sh
 $ gem install sass
 ```
 

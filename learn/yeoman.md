@@ -27,25 +27,25 @@ We have created a generator that once installed, allows you to create a custom b
 ### Install Yeoman
 If you haven't installed Yeoman yet, run this command in your terminal:
 
-```shell
+```sh
 npm install -g yo
 ```
 
 ### Install the generator
 To install generator-kickoff from npm, run:
 
-```shell
+```sh
 npm install -g generator-kickoff
 ```
 
 ### Install them both :)
-```shell
+```sh
 npm install -g yo generator-kickoff
 ```
 
 Finally, initiate the generator:
 
-```shell
+```sh
 yo kickoff
 ```
 

@@ -28,7 +28,7 @@ Just want the files?  No problem – just grab the Zip of Kickoff:<br>
 
 If you use Git, you can clone a version of Kickoff by entering the following into your terminal:
 
-```shell
+```sh
 git clone https://github.com/tmwagency/kickoff.git your-project-folder
 ```
 
