@@ -26,7 +26,7 @@ module.exports.tasks = {
 			src: ['<%=config.js.srcFile%>'],
 			dest: '<%=config.js.distDir%><%=config.js.distFile%>',
 			options : {
-				bundleOptions : {
+				browserifyOptions : {
 					debug: true
 				}
 			}
