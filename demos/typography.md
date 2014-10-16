@@ -54,10 +54,13 @@ next:
 
 <a name="tuc"></a>
 
+### Text utility classes
+We include some helpful utility classes if you need to align your text quickly. Use <code>.text-centre</code> or  <code>.text-center</code> to centre your text. Use <code>.text-right</code> to right align. Or use <code>.text-left</code> to left align.
+
+As we are British, we decided to include two spellings for our centred text : `.text-centre` and `.text-center` — use whichever one you prefer..
+
 <div class="demo">
 	<div class="demo-visual">
-		<h3>Text utility classes</h3>
-		<p>We include some helpful utility classes if you need to align your text quickly. Use <code>.text-centre</code> or  <code>.text-center</code> to centre your text. Use <code>.text-right</code> to right align. Or use <code>.text-left</code> to left align.</p>
 
 		<p class="text-centre"><b>Centre aligned: </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit molestiae blanditiis necessitatibus ab porro!</p>
 		<p class="text-right"><b>Right aligned: </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit molestiae blanditiis necessitatibus ab porro!</p>
