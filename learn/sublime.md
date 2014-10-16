@@ -9,10 +9,10 @@ meta:
 
 next:
  - title: See some demos
-   body: View demos of all our components and modules
+   body: View demos of all our components and modules.
    link: ../demos/components.html
  - title: Use Yeoman
-   body: The fastest way to get Kickoff is using our yeoman generator. Find out about it here.
+   body: The fastest way to get Kickoff is using our Yeoman generator. Find out about it here.
    link: yeoman.html
 ---
 
@@ -20,7 +20,7 @@ If you use Sublime Text, we have created some snippets to use with the framework
 
 ## How to install
 
-If you experience problems or editor crashes please [fill an issue](https://github.com/sergeche/emmet-sublime/issues).
+If you experience problems or editor crashes please [file an issue](https://github.com/sergeche/emmet-sublime/issues).
 
 With [Package Control](http://wbond.net/sublime_packages/package_control):
 

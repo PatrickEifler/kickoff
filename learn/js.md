@@ -9,10 +9,10 @@ meta:
 
 next:
  - title: Kickoff's CSS
-   body: Take a look at how Kickoff structures it’s CSS
+   body: Take a look at how Kickoff structures it’s CSS.
    link: css.html
  - title: The Kickoff Grid
-   body: Find out how to use the default Kickoff grid in your project
+   body: Find out how to use the default Kickoff grid in your project.
    link: grid.html
 ---
 
@@ -22,8 +22,8 @@ We appreciate that everyone has a preferred way of writing and structuring their
 
 While not included in the default Kickoff branch, Kickoff now includes a base setup for using Browserify.  This version of Kickoff is maintained in a separate branch, more information on which can be [found in the following documentation]().
 
-<a name="structure"></a>
 <hr class="sectionSplitter">
+<a name="structure"></a>
 ## JavaScript Structure
 
 As mentioned above, Kickoff’s JavaScript is very non prescriptive.  Here we look at how we structure Kickoff’s JavaScript by default as well as how this can be adapted for your own needs.

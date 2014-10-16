@@ -9,7 +9,7 @@ meta:
 
 next:
  - title: Kickoff's Javascript
-   body: Minimal and flexible, we show you how Kickoff structures it’s JS
+   body: Minimal and flexible, we show you how Kickoff structures it’s JS.
    link: js.html
  - title: Understanding Grunt
    body: We’ll take you through some Grunt basics and explain how Kickoff is configured to use it.

@@ -10,10 +10,10 @@ meta:
 
 next:
  - title: Kickoff's CSS
-   body: Take a look at how Kickoff structures it’s CSS
+   body: Take a look at how Kickoff structures it’s CSS.
    link: css.html
  - title: Kickoff's Javascript
-   body: Minimal and flexible, we show you how Kickoff structures it’s JS
+   body: Minimal and flexible, we show you how Kickoff structures it’s JS.
    link: js.html
 ---
 
@@ -290,7 +290,6 @@ config : {
 ### Breaking this down
 
 <a name="config-src"></a>
-
 #### config.src
 
 The first line you encounter in the Grunt config is the `config.src` variable.
@@ -303,7 +302,6 @@ This is used to specify the path at which the rest of your Grunt config files li
 
 ---
 <a name="config-css"></a>
-
 #### config.css
 
 ```js

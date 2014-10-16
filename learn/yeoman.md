@@ -9,18 +9,18 @@ meta:
 
 next:
  - title: Get Kickoff
-   body: Find out the other ways to get Kickoff here
+   body: Find out the other ways to get your hands on Kickoff here.
    link: get.html
  - title: Sublime Text snippets
    body: Use Sublime? These handy snippets will make life with Kickoff even easier.
    link: sublime.html
 ---
-Using our Yeoman Generator is the best and fastest way to get Kickoff each time you want to start a new project. It will ask a few questions and then build a custom version of Kickoff for your needs.
+Using our Yeoman Generator is the best and fastest way to get Kickoff each time you want to start a new project. It will ask you a few questions and then build a custom version of Kickoff for your needs.
 
 ## What is Yeoman?
 Yeoman helps you kickstart new projects, prescribing best practices and tools to help you stay productive. Yeoman is open-source but is maintained by a number of people from Google.
 
-We have created a generator that once installed, allow you create a custom build of Kickoff whenever you need.
+We have created a generator that once installed, allows you to create a custom build of Kickoff whenever you need.
 
 ## Installation
 
