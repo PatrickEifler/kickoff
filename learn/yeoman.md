@@ -38,6 +38,11 @@ To install generator-kickoff from npm, run:
 npm install -g generator-kickoff
 ```
 
+### Install them both :)
+```shell
+npm install -g yo generator-kickoff
+```
+
 Finally, initiate the generator:
 
 ```shell
