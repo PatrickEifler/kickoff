@@ -9,10 +9,10 @@ meta:
 
 next:
  - title: Get Kickoff
-   body: Want to use `git pull`, `yo kickoff` or just download a zip. Find out how to get your hands on Kickoff here
+   body: Find out how to get your hands on Kickoff here.
    link: get.html
  - title: Understanding Grunt
-   body: Once you have downloaded Kickoff, it will need to be setup. Have a look at our Grunt docs here.
+   body: We’ll take you through some Grunt basics and explain how Kickoff is configured to use it.
    link: grunt.html
 ---
 
@@ -44,7 +44,7 @@ What follows is a general overview of each major part of Kickoff and how to use 
 		Install NPM dependencies
 	</label>
 	<div class="checklistInfo">
-		Run <code>npm install</code> (or <code>sudo npm install</code>) to install and all Kickoff's Grunt dependencies. You will need <a href="http://nodejs.org">Node</a>, <a href="http://sass-lang.com/install">Sass</a> and <a href="http://gruntjs.com/getting-started">Grunt</a> installed before this.
+		Run <code>npm install</code> (or <code>sudo npm install</code>) to install all Kickoff's Grunt dependencies. You will need Node, Sass and Grunt installed before this – for help, <a href="grunt.html#setup">see our guide to setting up Grunt</a>.
 	</div>
 
 	<label class="control">
@@ -52,7 +52,7 @@ What follows is a general overview of each major part of Kickoff and how to use 
 		Install Bower dependencies
 	</label>
 	<div class="checklistInfo">
-		Run <code>bower install</code> to install the few bower dependencies included with the framework.
+		Run <code>bower install</code> to install the few <a href="js.html#js-bower">bower dependencies</a> included with the framework.
 	</div>
 
 	<label class="control">
@@ -121,16 +121,16 @@ What follows is a general overview of each major part of Kickoff and how to use 
 	</label>
 	<div class="checklistInfo">
 		<ul>
-			<li>Define your own breakpoints to suit your design, <b>the defaults here are just a suggestion</b></li>
+			<li>Define your own breakpoints to suit your design; <strong>the defaults here are just a suggestion</strong>.</li>
 			<li><code>$bp-single-col</code> is a convenience breakpoint for use when you want to switch from a single column (on mobile) to a muliple columns (on desktop).</li>
 			<li>An example usage for these might be:
 <pre class="l-mb0"><code>@include respond-min($bp-single-col) {
 // RWD code
 }</code></pre>
 			</li>
-			<li><code>$bp-block-grid-narrow</code> is used for narrow block grids</li>
-			<li><code>$bp-rwd-text</code> is used to define when text size changes (reduces) for narrower viewports</li>
-			<li>Please add more if you need!</li>
+			<li><code>$bp-block-grid-narrow</code> is used for narrow block grids.</li>
+			<li><code>$bp-rwd-text</code> is used to define when text size changes (reduces) for narrower viewports.</li>
+			<li>Please add more if you need them!</li>
 		</ul>
 	</div>
 
@@ -139,7 +139,7 @@ What follows is a general overview of each major part of Kickoff and how to use 
 		Define your path variables
 	</label>
 	<div class="checklistInfo">
-		It can be useful to save certain paths as variables to ease development, especially image paths
+		It can be useful to save certain paths as variables to ease development, especially image paths.
 	</div>
 
 	<label class="control">
