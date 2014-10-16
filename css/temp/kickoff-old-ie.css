@@ -2,63 +2,25 @@
 /**
  * Site dependencies
  */
-/**
- * Core variables
- * =================================
- * Edit your color palette and app vars before your begin
- */
-/**
- * Colour palette (yeah we're British!)
- */
-/**
- * Forms
- */
-/**
- * Variables
- * =================================
- * Typography
- * Breakpoints
- * Paths
- * Grid setup
- * Colour palette
- * Components
- */
-/**
- * Typography
- * =================================
- * Base sizes:
- * Set this in pixels (but do not add px),
- * the font-size mixin will convert to REMS
- */
-/* Font stacks */
-/**
- *  Breakpoints
- * =================================
- * There are no common breakpoints so these are just a suggestion
- * You'll need to define your own breakpoints to suit your design
- */
-/**
- * Path vars
- */
-/**
- * Layout setup
- * Settings here override & affect the output in scss/partials/components/grid.scss
- */
-/**
- * Tables
- * Customizes the `.table` component with basic values, each used across all table variations.
- */
-/**
- * App-specific variables
- * =================================
- * Add common vars below here
- */
 /*
  * Mixins, helpers and functions
  * =================================
  * Most CSS3 vendor prefixed items have a mixin,
  * but we should not need them if autoprefixer is being used
  * See mixins/css3.scss for the full list
+ */
+/**
+ * Convert pixels to ems
+ * For a relational value of 12px write em(12) when the parent is 16px
+ * If the parent is another value say 24px write em(12, 24)
+ *
+ * Usage:
+ * font-size : em(12);
+ * font-size : em(12, 24);
+ */
+/**
+ * Strips the units from a value. e.g. 12px -> 12
+ * Usage: strip-units(400px)
  */
 /* ==========================================================================
    Sass Mixins
@@ -129,7 +91,71 @@
    Typography mixins
    ========================================================================== */
 /* HiDPI */
+/**
+ * HiDPI mixin.
+ * @include hidpi-min() { ... };
+ * Default value set to 1.3 to target Google Nexus 7 (http://bjango.com/articles/min-device-pixel-ratio/)
+ */
+/**
+ * Hidpi with a minimum width media query
+ * @include hidpi-min($bp-mid, 1.5) { ... };
+ */
+/**
+ * Hidpi with a max width media query
+ * @include hidpi-max($bp-mid, 1.3) { ... };
+ */
 /* FORMS */
+/**
+ * Core variables
+ * =================================
+ * Edit your color palette and app vars before your begin
+ */
+/**
+ * Colour palette (yeah we're British!)
+ */
+/**
+ * Forms
+ */
+/**
+ * Variables
+ * =================================
+ * Typography
+ * Breakpoints
+ * Paths
+ * Grid setup
+ * Colour palette
+ * Components
+ */
+/**
+ * Typography
+ * =================================
+ * Base sizes:
+ * Set this in pixels (but do not add px),
+ * the font-size mixin will convert to REMS
+ */
+/* Font stacks */
+/**
+ *  Breakpoints
+ * =================================
+ * There are no common breakpoints so these are just a suggestions
+ * You'll need to define your own breakpoints to suit your design
+ */
+/**
+ * Path vars
+ */
+/**
+ * Layout setup
+ * Settings here override & affect the output in scss/partials/components/grid.scss
+ */
+/**
+ * Tables
+ * Customizes the `.table` component with basic values, each used across all table variations.
+ */
+/**
+ * App-specific variables
+ * =================================
+ * Add common vars below here
+ */
 /* CSS Reset  */
 /**
  * Kickoff reset
@@ -217,14 +243,15 @@ textarea {
 /**
  * Typography
  * =================================
- * Body text
  * Base
  * Paragraphs
  * Headings
- * Lists
- * Quotes
  * Links
- * Helper classes
+ * Lists
+ * Definition lists
+ * Blockquotes
+ * Misc
+ * Utilities
  *
  * Body font size, leadings etc have been set in _variables.scss
  * Resources:
@@ -244,7 +271,7 @@ body {
   font-size: 20px;
   font-size: 1rem;
   line-height: 1.4;
-  color: #444444;
+  color: #444;
   font-feature-settings: "liga","dlig";
 }
 
@@ -274,24 +301,24 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 }
 
 h1, .h1, .alpha {
-  font-size: 36px;
-  font-size: 1.8rem;
+  font-size: 39.0625px;
+  font-size: 1.953125rem;
   margin-top: 0;
   margin-bottom: 56px;
 }
 
 h2, .h2, .beta {
-  font-size: 30px;
-  font-size: 1.5rem;
+  font-size: 31.25px;
+  font-size: 1.5625rem;
   margin-top: 0;
   margin-bottom: 28px;
 }
 
 h3, .h3, .gamma {
-  font-size: 24px;
-  font-size: 1.2rem;
+  font-size: 25px;
+  font-size: 1.25rem;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 28px;
 }
 
 h4, .h4, .delta,
@@ -299,6 +326,8 @@ h5, .h5, .epsilon,
 h6, .h6, .zeta {
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 16px;
+  font-size: 0.8rem;
 }
 
 h4, .h4, .delta {
@@ -306,28 +335,19 @@ h4, .h4, .delta {
   font-size: 1rem;
 }
 
-h5, .h5, .epsilon {
-  font-size: 16px;
-  font-size: 0.8rem;
-}
-
 h6, .h6, .zeta {
-  font-size: 14px;
-  font-size: 0.7rem;
   text-transform: uppercase;
 }
 
 * + h1, * + .h1, * + .alpha,
 * + h2, * + .h2, * + .beta,
 * + h3, * + .h3, * + .gamma,
-* + h4, * + .h4, * + .delta,
-* + h5, * + .h5, * + .epsilon,
-* + h6, * + .h6, * + .zeta {
+* + h4, * + .h4, * + .delta {
   margin-top: 28px;
 }
 
 small {
-  font-size: 75%;
+  font-size: 80%;
 }
 
 /**
@@ -363,7 +383,9 @@ ul, ol {
   padding: 0;
   margin: 0 0 28px 28px;
 }
-ul ul, ul ol, ol ul, ol ol {
+ul ul,
+ul ol, ol ul,
+ol ol {
   margin-left: 56px;
 }
 ul ul, ol ul {
@@ -378,7 +400,9 @@ ul ol, ol ol {
 ul ol ol, ol ol ol {
   list-style-type: lower-roman;
 }
-ul ul, ul ol, ol ul, ol ol {
+ul ul,
+ul ol, ol ul,
+ol ol {
   margin-bottom: 0;
 }
 
@@ -408,7 +432,7 @@ dd {
   margin-left: 28px;
 }
 
-.dl-horizontal::after {
+.dl-horizontal:after {
   content: "";
   display: table;
   clear: both;
@@ -469,16 +493,6 @@ blockquote small {
 }
 blockquote small:before {
   content: '\2014 \00A0';
-}
-blockquote.pull-right {
-  float: right;
-  padding-left: 0;
-  padding-right: 10px;
-  border-left: 0;
-  border-right: 4px solid #cccccc;
-}
-blockquote.pull-right, blockquote.pull-right p, blockquote.pull-right small {
-  text-align: right;
 }
 
 q:before, q:after,
@@ -543,13 +557,13 @@ samp {
 }
 
 ::-moz-selection {
-  color: white;
+  color: #fff;
   background: #3498db;
   text-shadow: none;
 }
 
 ::selection {
-  color: white;
+  color: #fff;
   background: #3498db;
   text-shadow: none;
 }
@@ -654,8 +668,8 @@ samp {
 }
 
 .btn--large {
-  font-size: 23px;
-  font-size: 1.15rem;
+  font-size: 25px;
+  font-size: 1.25rem;
   line-height: 3;
   height: 3em;
   padding-right: 2em;
@@ -664,8 +678,8 @@ samp {
 }
 
 .btn--small {
-  font-size: 13px;
-  font-size: 0.65rem;
+  font-size: 16px;
+  font-size: 0.8rem;
   line-height: 1.5;
   height: 1.5em;
   padding-right: 0.75em;
@@ -799,7 +813,7 @@ input[type="button"].btn--block {
   width: 100%;
   margin: 0 auto;
 }
-.g-row::after {
+.g-row:after {
   content: "";
   display: table;
   clear: both;
@@ -916,7 +930,7 @@ input[type="button"].btn--block {
 		<li></li>
 	</ul>
 	========================================================================== */
-.l-list--floated::after {
+.l-list--floated:after {
   content: "";
   display: table;
   clear: both;
@@ -963,17 +977,17 @@ input[type="button"].btn--block {
   width: 100%;
   padding: 0;
   margin-bottom: 28px;
-  font-size: 30px;
-  font-size: 1.5rem;
+  font-size: 25px;
+  font-size: 1.25rem;
   line-height: 1.4;
-  color: #444444;
+  color: #444;
   border: 0;
   border-bottom: 1px solid #eee;
   white-space: normal;
 }
 .form-legend small {
-  font-size: 15px;
-  font-size: 0.75rem;
+  font-size: 16px;
+  font-size: 0.8rem;
   color: #b3b3b3;
 }
 
@@ -982,7 +996,7 @@ input[type="button"].btn--block {
  */
 .form-controlGroup {
   margin-top: 14px;
-  margin-bottom: 9px;
+  margin-bottom: 14px;
   list-style-type: none;
 }
 
@@ -993,8 +1007,7 @@ input[type="button"].btn--block {
 
 .form-label {
   display: block;
-  margin-bottom: 5px;
-  color: #444444;
+  color: #444;
   font-weight: bold;
 }
 .form-label small {
@@ -1011,11 +1024,11 @@ input[type="button"].btn--block {
   font-size: 1rem;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.4;
-  color: #444444;
+  color: #444;
   font-weight: normal;
   vertical-align: baseline;
-  background-color: white;
-  border: 2px solid #cccccc;
+  background-color: #fff;
+  border: 2px solid #ccc;
   border-radius: 5px;
   transition: border 200ms ease-in-out;
 }
@@ -1043,7 +1056,7 @@ input[type="button"].btn--block {
   padding: initial;
   line-height: initial;
   border: initial;
-  background-color: white;
+  background-color: #fff;
   background-color: initial;
 }
 .form-input[type="hidden"] {
@@ -1066,7 +1079,7 @@ input[type="button"].btn--block {
 }
 .form-input[disabled], .form-input[readonly] {
   background-color: #e6e6e6;
-  border-color: #cccccc;
+  border-color: #ccc;
   cursor: not-allowed;
 }
 
@@ -1081,7 +1094,7 @@ input[type="button"].btn--block {
 }
 
 .form-input--select {
-  background-color: white;
+  background-color: #fff;
 }
 .form-input--select[multiple], .form-input--select[size] {
   height: auto;
@@ -1100,32 +1113,6 @@ input[type="button"].btn--block {
   outline: none;
 }
 
-.form-input--fileWrapper--styled {
-  position: relative;
-  overflow: hidden;
-}
-.form-input--fileWrapper--styled:before {
-  content: 'Choose file...';
-}
-.form-input--fileWrapper--styled:after {
-  content: 'Browse';
-  cursor: pointer;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  right: -1px;
-  bottom: 0;
-  padding: 0.44em 1em 0;
-  background-color: #d9d9d9;
-}
-.form-input--fileWrapper--styled .form-input-file {
-  opacity: 0;
-  position: absolute;
-}
-
-/*
- * Unedited code below here
- */
 button,
 input[type="button"],
 input[type="reset"],
@@ -1133,25 +1120,6 @@ input[type="submit"] {
   width: auto;
   cursor: pointer;
   -webkit-appearance: button;
-}
-
-.form-legend {
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin-bottom: 28px;
-  font-size: 30px;
-  font-size: 1.5rem;
-  line-height: 1.4;
-  color: #444444;
-  border: 0;
-  border-bottom: 1px solid #eee;
-  white-space: normal;
-}
-.form-legend small {
-  font-size: 15px;
-  font-size: 0.75rem;
-  color: #b3b3b3;
 }
 
 /**
@@ -1209,10 +1177,10 @@ input[type="submit"] {
  * Form actions
  */
 .form-actions {
-  padding: 27px 20px 28px;
+  padding: 28px 20px;
   margin-top: 28px;
   margin-bottom: 28px;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   border-top: 1px solid #ddd;
 }
 .form-actions .btn, .form-actions .tabs a, .tabs .form-actions a {
@@ -1225,9 +1193,7 @@ input[type="submit"] {
 /**
  * Form field feedback states
  */
-.form-controlGroup--warning .form-label,
-.form-controlGroup--warning .help-block,
-.form-controlGroup--warning .help-inline {
+.form-controlGroup--warning .form-label {
   color: #dab10d;
 }
 .form-controlGroup--warning .form-input {
@@ -1239,9 +1205,7 @@ input[type="submit"] {
   border-color: #aa8a0a;
 }
 
-.form-controlGroup--error .form-label,
-.form-controlGroup--error .help-block,
-.form-controlGroup--error .help-inline {
+.form-controlGroup--error .form-label {
   color: #e43725;
 }
 .form-controlGroup--error .form-input {
@@ -1253,9 +1217,7 @@ input[type="submit"] {
   border-color: #bf2718;
 }
 
-.form-controlGroup--success .form-label,
-.form-controlGroup--success .help-block,
-.form-controlGroup--success .help-inline {
+.form-controlGroup--success .form-label {
   color: #2ecc71;
 }
 .form-controlGroup--success .form-input {
@@ -1284,22 +1246,6 @@ input[type="submit"] {
   color: #b3b3b3;
 }
 
-.form-helpBlock,
-.form-helpInline {
-  color: #95a5a6;
-}
-
-.form-helpBlock {
-  display: block;
-  margin-bottom: 14px;
-}
-
-.form-helpInline {
-  display: inline-block;
-  vertical-align: middle;
-  padding-left: 5px;
-}
-
 /**
  * Horizontal-specific styles
  * =================================
@@ -1310,7 +1256,7 @@ input[type="submit"] {
 .form--horizontal .form-controlGroup {
   margin-bottom: 28px;
 }
-.form--horizontal .form-controlGroup::after {
+.form--horizontal .form-controlGroup:after {
   content: "";
   display: table;
   clear: both;
@@ -1325,7 +1271,7 @@ input[type="submit"] {
   margin-left: 160px;
 }
 .form--horizontal .form-controlGroup-inputWrapper:first-child {
-  *padding-left: 160px;
+  padding-left: 160px;
 }
 .form--horizontal .form-controlGroup .form-input--fileWrapper {
   margin-left: 0;
@@ -1364,13 +1310,12 @@ input[type="submit"] {
  * ================================= */
 .control-indicator {
   position: absolute;
-  top: .25rem;
+  top: .25em;
   left: 0;
   display: block;
-  width: 1rem;
-  height: 1rem;
-  line-height: 1rem;
-  font-size: 65%;
+  width: 19px;
+  height: 19px;
+  line-height: 1;
   color: #eee;
   text-align: center;
   background-color: #ddd;
@@ -1380,18 +1325,11 @@ input[type="submit"] {
   user-select: none;
 }
 
-.control--custom input,
-.control-indicator {
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
-
 .control--custom {
   position: relative;
   display: block;
-  padding-left: 2rem;
+  padding-left: 2em;
   margin-left: 0;
-  line-height: 2.8;
   color: #555;
   cursor: pointer;
   /* Focus */
@@ -1405,7 +1343,7 @@ input[type="submit"] {
   /* Put the input behind the label so it doesn't overlay text */
 }
 .control--custom input:focus ~ .control-indicator {
-  box-shadow: 0 0 0 0.075rem white, 0 0 0 0.2rem #a3b1b2;
+  box-shadow: 0 0 0 0.075em #fff, 0 0 0 0.2em #a3b1b2;
 }
 .control--custom input:checked ~ .control-indicator {
   color: #fff;
@@ -1418,7 +1356,7 @@ input[type="submit"] {
 
 /* Checkbox modifiers */
 .control--checkbox .control-indicator {
-  border-radius: .25rem;
+  border-radius: 25%;
 }
 
 .control--checkbox input:checked ~ .control-indicator {
@@ -1432,6 +1370,122 @@ input[type="submit"] {
 
 .control--radio input:checked ~ .control-indicator {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOCA4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4IDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTQsMUMyLjMsMSwxLDIuMywxLDRzMS4zLDMsMywzczMtMS4zLDMtM1M1LjcsMSw0LDF6Ii8+DQo8L3N2Zz4NCg==);
+}
+
+/**
+ * Custom file input
+ */
+.form-input--fileWrapper--styled {
+  position: relative;
+  overflow: hidden;
+}
+.form-input--fileWrapper--styled:before {
+  content: 'Choose file...';
+}
+.form-input--fileWrapper--styled:after {
+  content: 'Browse';
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: -1px;
+  bottom: 0;
+  padding: 0.44em 1em 0;
+  background-color: #d9d9d9;
+}
+.form-input--fileWrapper--styled .form-input-file {
+  opacity: 0;
+  position: absolute;
+}
+
+/**
+ * Custom select element
+ * http://jsbin.com/juvixufu/165/edit
+ */
+.form-input--selectWrapper {
+  position: relative;
+  display: block;
+  padding: 0;
+}
+
+/* This is the native select, we're making everything the text invisible so we can see the button styles in the wrapper */
+.form-input--selectWrapper select {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  margin: 0;
+  background: none;
+  border: none;
+  outline: none;
+  /* Remove select styling */
+  appearance: none;
+  -webkit-appearance: none;
+  /* Magic font size number to prevent iOS text zoom */
+  padding: .5em;
+  height: 2.3em;
+  line-height: 1;
+}
+
+/* This hides native dropdown button arrow in IE 10/11+ so it will have the custom appearance, IE 9 and earlier get a native select */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .form-input--selectWrapper select::-ms-expand {
+    display: none;
+  }
+}
+/* Custom arrow sits on top of the select - could be an image, SVG, icon font, etc. or the arrow could just baked into the bg image on the select */
+.form-input--selectWrapper:after {
+  background: none;
+  color: #bbb;
+  content: "\25BC";
+  font-size: .7em;
+  padding: 0;
+  position: absolute;
+  right: 1.2em;
+  top: 50%;
+  margin-top: -9px;
+  z-index: 2;
+  /* These hacks make the select behind the arrow clickable in some browsers */
+  pointer-events: none;
+  background: url(#);
+}
+
+/* This selector targets Firefox only with the trick of making the select 110% but clipped by the container at 100% to hide the arrow. We have to do this because getting rid of select appearance isn't supported consistently */
+.form-input--selectWrapper,
+x:-moz-any-link,
+x:default {
+  overflow: hidden;
+  width: 100%;
+}
+
+.form-input--selectWrapper select,
+x:-moz-any-link,
+x:default {
+  width: 110%;
+  max-width: 110%;
+  min-width: 110%;
+  /* A zero right padding is needed or the native arrow can show up. Downside is the text will run over the arrow */
+  padding: .6em 0 .5em .8em;
+  /* Window is a Firefox way of hiding the arrow, sometimes works */
+  -moz-appearance: window;
+  text-indent: 0.01px;
+  text-overflow: "";
+}
+
+/* Focus style - TODO: Fix in FF */
+/* Removes the odd blue bg color behind the text in IE 10/11 and sets the text to match the focus style text */
+.form-input--selectWrapper:focus::-ms-value {
+  background: transparent;
+  color: #222;
+}
+
+/* Firefox focus has odd artifacts around the text, this kills that */
+.form-input--selectWrapper:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+option {
+  font-weight: normal;
 }
 
 /*
@@ -1523,7 +1577,7 @@ img, object, embed, video {
    Fluid width video
    * 16:9 aspect ratio by default
    * Usage:
-   * <div class="fluidVideo"><iframe src="..."/></div
+   * <div class="fluidVideo"><iframe src="..."/></div>
    ========================================================================== */
 .fluidVideo {
   position: relative;
@@ -1549,7 +1603,7 @@ img, object, embed, video {
  * </ul>
  *
  * Mobile Usage:
- * <ul class="l-blockGrid l-blockGrid--3up l-blockGrid--3up--narrow">
+ * <ul class="l-blockGrid l-blockGrid--4up l-blockGrid--2up--narrow">
  *     <li></li>
  * </ul>
  */
@@ -1558,7 +1612,7 @@ img, object, embed, video {
   list-style-type: none;
   margin: 0;
 }
-.l-blockGrid::after {
+.l-blockGrid:after {
   content: "";
   display: table;
   clear: both;
@@ -1634,7 +1688,7 @@ img, object, embed, video {
   margin-bottom: 28px;
   border-bottom: 2px solid #2ecc71;
 }
-.tabs::after {
+.tabs:after {
   content: "";
   display: table;
   clear: both;
@@ -1684,6 +1738,8 @@ th {
   width: 100%;
   max-width: 100%;
   margin-bottom: 28px;
+  border-padding: 0;
+  border-spacing: 0;
 }
 .table > thead > tr > th,
 .table > thead > tr > td,
@@ -1694,15 +1750,15 @@ th {
   padding: 8px;
   line-height: 28px;
   vertical-align: top;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #ddd;
 }
 .table > thead > tr > th,
 .table > thead > tr > td {
   vertical-align: bottom;
-  border-bottom: 2px solid #dddddd;
+  border-bottom: 2px solid #ddd;
 }
 .table > tfoot > tr > td {
-  border-top: 3px solid #dddddd;
+  border-top: 3px solid #ddd;
 }
 .table > caption + thead > tr:first-child > th,
 .table > caption + thead > tr:first-child > td,
@@ -1713,7 +1769,7 @@ th {
   border-top: 0;
 }
 .table > tbody + tbody {
-  border-top: 2px solid #dddddd;
+  border-top: 2px solid #ddd;
 }
 .table .table {
   background-color: #f1f1f1;
@@ -1733,7 +1789,7 @@ th {
  * Add borders all around the table and between all the columns.
  */
 .table--bordered {
-  border: 2px solid #dddddd;
+  border: 2px solid #ddd;
 }
 .table--bordered > thead > tr > th,
 .table--bordered > thead > tr > td,
@@ -1741,7 +1797,7 @@ th {
 .table--bordered > tbody > tr > td,
 .table--bordered > tfoot > tr > th,
 .table--bordered > tfoot > tr > td {
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
 }
 .table--bordered > thead > tr > th,
 .table--bordered > thead > tr > td {
@@ -1793,7 +1849,7 @@ th {
  */
 .table--hover > tbody > tr:hover > td,
 .table--hover > tbody > tr:hover > th {
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
 }
 
 /**
@@ -1815,7 +1871,10 @@ table th[class*="col-"] {
 
 /**
  * Responsive tables
- * Wrap your tables in `.table--responsive` and we'll make them mobile friendly by enabling horizontal scrolling. Only applies <768px. Everything above that will display normally.
+ * Wrap your tables in `.tableResponsive` and we'll make them mobile friendly by enabling horizontal scrolling. Only applies <768px. Everything above that will display normally.
+ *
+ * If you need more responsive tables, consider Tablesaw by the Filament Group:
+ * https://github.com/filamentgroup/tablesaw
  */
 /**
  * Preformatted code
@@ -1825,36 +1884,32 @@ code,
 pre {
   padding: 0 3px 2px;
   font-family: Menlo, Monaco, "Courier New", monospace;
-  font-size: 17px;
-  font-size: 0.85rem;
-  color: #444444;
+  font-size: 16px;
+  font-size: 0.8rem;
+  color: #444;
   border-radius: 3px;
   tab-size: 3;
 }
 
 code {
   padding: 2px 4px;
-  color: #444444;
-  background-color: #dddddd;
+  color: #444;
+  background-color: #ddd;
 }
 
 pre {
   display: block;
-  padding: 13.5px;
-  margin: 0 0 14px;
-  line-height: 1.4;
-  color: #444444;
-  background-color: #dddddd;
+  padding: 14px;
+  margin: 0 0 28px;
+  color: #444;
+  background-color: #ddd;
   border-radius: 4px;
   white-space: pre;
 }
-pre.prettyprint {
-  margin-bottom: 28px;
-}
 pre code {
   padding: 0;
-  color: #444444;
-  background-color: #dddddd;
+  color: #444;
+  background-color: #ddd;
   border: 0;
 }
 
@@ -1926,12 +1981,6 @@ body {
   min-width: 1000px;
 }
 
-/**
- * Retina media query
- */
-/**
- * Media queries for responsive design
- */
 /*
    Icons
    ========================================================================== */
@@ -1969,7 +2018,7 @@ body {
  * http://www.cssmojo.com/latest_new_clearfix_so_far/
  * See mixins/_utility.scss for a mixin version of this
  */
-.clearfix::after {
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
@@ -2046,9 +2095,6 @@ body {
 /**
  * Responsive Utilities
  */
-@-ms-viewport {
-  width: device-width;
-}
 * {
   -webkit-tap-highlight-color: #3498db !important;
 }
@@ -2058,11 +2104,18 @@ textarea[contenteditable] {
   -webkit-appearance: none;
 }
 
-@media screen and (max-width: 400px) {
-  @-ms-viewport {
-    width: 320px;
-  }
+.promote-layer {
+  /*
+  This may promote the layer to a composited
+  layer.
+
+  Replace with will-change when available
+
+  #perfmatters
+  */
+  backface-visibility: hidden;
 }
+
 /**
  * Print styles
  */

@@ -24,7 +24,8 @@ module.exports.tasks = {
 
 		js: {
 			files: [
-				'<%=config.js.fileList%>'
+				'js/**/*.js',
+				'!js/dist/**/*.js'
 			],
 			tasks: ['browserify:dev']
 		},
@@ -49,4 +50,4 @@ module.exports.tasks = {
 			files: ['_grunt-configs/*.js', 'Gruntfile.js']
 		}
 	}
-}
+};
