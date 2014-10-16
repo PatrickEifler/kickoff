@@ -68,6 +68,8 @@ We now maintain a [separate branch of Kickoff](https://github.com/tmwagency/kick
 
 [Browserify](http://browserify.org/) is a JavaScript dependency manager that lets you bundle together modules and encourages you to write your JavaScript in a more modular way.  It also gives you access to thousands of already created modules via [NPM (Node Package Manager)](https://www.npmjs.org/), that can be added by simply requiring them within your JavaScript.
 
+Using the Browserfy branch of Kickoff couldn’t be easier.  You can download it or [clone it](https://github.com/tmwagency/kickoff/tree/browserify) in the usual ways, or use [Kickoff’s Yeoman generator](yeoman.html) which gives you the choice to install Kickoff’s Browserify setup or the default JavaScript base.  This is the best solution if you think you may be using it on some projects, but want the default JS base on others.
+
 If you haven’t already, we strongly recommend you take a look at Browserify; we use it regularly on our projects at TMW and it makes dependency management a breeze, especially on medium-large scale projects.
 
 [Download Kickoff with Browserify](https://github.com/tmwagency/kickoff/tree/browserify).
