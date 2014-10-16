@@ -9,10 +9,10 @@ meta:
 
 next:
  - title: Kickoff's CSS
-   body: Find out how Kickoff's CSS works
+   body: Take a look at how Kickoff structures it’s CSS
    link: css.html
  - title: The Kickoff Grid
-   body: Find out how the default Kickoff grid works
+   body: Find out how to use the default Kickoff grid in your project
    link: grid.html
 ---
 
@@ -22,10 +22,12 @@ We appreciate that everyone has a preferred way of writing and structuring their
 
 While not included in the default Kickoff branch, Kickoff now includes a base setup for using Browserify.  This version of Kickoff is maintained in a separate branch, more information on which can be [found in the following documentation]().
 
+<hr class="sectionSplitter">
 ## JavaScript Structure
 
 As mentioned above, Kickoff’s JavaScript is very non prescriptive.  Here we look at how we structure Kickoff’s JavaScript by default as well as how this can be adapted for your own needs.
 
+---
 ### script.js
 
 This file can be used to contain or reference your site/app JavaScript code.
@@ -34,14 +36,24 @@ For larger projects, we recommend using [Browserify](#js-browserify) to manage y
 
 By default, Kickoff defines all of it’s JavaScript in the `KO` namespace, but this can be changed to anything you like, perhaps the name of the project. We tend to use the [singleton pattern](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#singletonpatternjavascript).
 
+---
 ### Folder Structure
 
-Kickoff has a very simple folder structure for it’s JavaScript.
+Kickoff has a very simple folder structure for it’s JavaScript; as a base Kickoff contains `helpers` and `libs` directories.
 
-The **js/helpers** directory………
+#### `js/helpers`
 
-The **js/libs** directory…………
+This folder contains a number of JavaScript helper files to be used in your project.
 
+* **console.js** – a shim for console.log in browsers that don’t support it
+* **helpers.js** – a set of helper JavaScript methods to extend JavaScripts native feature set (such as Array.remove).
+* **log.js** – for lazy developers.  Write `log()` to write to the console instead of `console.log()`.
+* **shims.js** – file compiled by [Shimly](grunt.html#task-shimly).  Anything added to this file will be overriden by Shimly, so either add the functionality you need to Shimly via pull request, or instead add the code into **helpers.js**.
+
+
+#### `js/libs`
+
+<hr class="sectionSplitter">
 <a name="js-browserify"></a>
 ## Browserify
 
