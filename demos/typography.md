@@ -62,15 +62,15 @@ As we are British, we decided to include two spellings for our centred text : `.
 <div class="demo">
 	<div class="demo-visual">
 
-		<p class="text-centre"><b>Centre aligned: </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit molestiae blanditiis necessitatibus ab porro!</p>
-		<p class="text-right"><b>Right aligned: </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit molestiae blanditiis necessitatibus ab porro!</p>
-		<p class="text-left"><b>Left aligned: </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit molestiae blanditiis necessitatibus ab porro!</p>
+		<p class="text-left"><b>Left aligned: </b>Lorem ipsum dolor sit amet.</p>
+		<p class="text-centre"><b>Centre aligned: </b>Lorem ipsum dolor sit amet.</p>
+		<p class="text-right"><b>Right aligned: </b>Lorem ipsum dolor sit amet.</p>
 	</div>
 	<div class="demo-code">
 {% highlight html%}
-<p class="text-centre">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit molestiae blanditiis necessitatibus ab porro!</p>
-<p class="text-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit molestiae blanditiis necessitatibus ab porro!</p>
-<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit molestiae blanditiis necessitatibus ab porro!</p>
+<p class="text-left">Lorem ipsum dolor sit amet.</p>
+<p class="text-centre">Lorem ipsum dolor sit amet.</p>
+<p class="text-right">Lorem ipsum dolor sit amet.</p>
 {% endhighlight %}
 	</div>
 </div>
@@ -241,17 +241,22 @@ As we are British, we decided to include two spellings for our centred text : `.
 ---
 
 <a name="uul"></a>
-
+<h3>Unstyled [un]ordered lists</h3>
+<p>Add an <code>.unstyled</code> class to any <code>&lt;ul></code> or <code>&lt;ol></code> to remove the default bullets, numbering and margins.</p>
 <div class="demo">
 	<div class="demo-visual">
-		<h3>Unstyled lists</h3>
-		<p>Add an <code>.unstyled</code> class to any <code>&lt;ul></code> or <code>&lt;ol></code> to remove the default bullets/numbers.</p>
 		<ul class="unstyled">
-			<li>list item 1</li>
-			<li>list item 2</li>
-			<li>list item 3</li>
-			<li>list item 4</li>
+			<li>ul list item 1</li>
+			<li>ul list item 2</li>
+			<li>ul list item 3</li>
+			<li>ul list item 4</li>
 		</ul>
+		<ol class="unstyled">
+			<li>ol list item 1</li>
+			<li>ol list item 2</li>
+			<li>ol list item 3</li>
+			<li>ol list item 4</li>
+		</ol>
 	</div>
 	<div class="demo-code">
 {% highlight html%}
@@ -261,6 +266,13 @@ As we are British, we decided to include two spellings for our centred text : `.
 	<li>list item 3</li>
 	<li>list item 4</li>
 </ul>
+
+<ol class="unstyled">
+	<li>list item 1</li>
+	<li>list item 2</li>
+	<li>list item 3</li>
+	<li>list item 4</li>
+</ol>
 {% endhighlight %}
 	</div>
 </div>
@@ -268,10 +280,10 @@ As we are British, we decided to include two spellings for our centred text : `.
 ---
 
 <a name="dl"></a>
+<h3>Definition list</h3>
 
 <div class="demo">
 	<div class="demo-visual">
-		<h3>Definition list</h3>
 		<dl>
 			<dt>Definition name</dt>
 			<dd>Definition value</dd>
@@ -302,11 +314,11 @@ As we are British, we decided to include two spellings for our centred text : `.
 ---
 
 <a name="hdl"></a>
+<h3>Horizontal definition list</h3>
+<p>Add a <code>.dl-horizontal</code> class to your definition list (<code>&lt;dl></code>) to make the values (<code>&lt;dd></code>) float beside the name (<code>&lt;dt></code>)</p>
 
 <div class="demo">
 	<div class="demo-visual">
-		<h3>Horizontal definition list</h3>
-		<p>Add a <code>.dl-horizontal</code> class to your definition list (<code>&lt;dl></code>) to make the values (<code>&lt;dd></code>) float beside the name (<code>&lt;dt></code>)</p>
 		<dl class="dl-horizontal">
 			<dt>Definition name</dt>
 			<dd>Definition value</dd>
