@@ -251,6 +251,7 @@ As we are British, we decided to include two spellings for our centred text : `.
 			<li>ul list item 3</li>
 			<li>ul list item 4</li>
 		</ul>
+		<br>
 		<ol class="unstyled">
 			<li>ol list item 1</li>
 			<li>ol list item 2</li>
