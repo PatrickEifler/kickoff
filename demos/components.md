@@ -30,7 +30,7 @@ Fancy larger or smaller buttons? Add `.btn--large`, or `.btn--small` for additio
 		<a href="#" class="btn">Button</a>
 
 		<h4>Large size</h4>
-		<a href="#" class="btn btn--large">Default colour</a>
+		<a href="#" class="btn btn--large">Button</a>
 
 		<h4>Small size</h4>
 		<a href="#" class="btn btn--small">Button</a>
@@ -42,7 +42,7 @@ Fancy larger or smaller buttons? Add `.btn--large`, or `.btn--small` for additio
 <a href="#" class="btn">Button</a>
 
 <!-- Larger buttons use the .btn--large modifier class -->
-<a href="#" class="btn btn--large">Default colour</a>
+<a href="#" class="btn btn--large">Button</a>
 
 <!-- Small buttons use the .btn--small modifier class -->
 <a href="#" class="btn btn--small">Button</a>
@@ -191,6 +191,8 @@ Place any image- and text-like content side-by-side, as per: [media object](http
 <a name="fluidvideo"></a>
 
 ## Fluid video
+Wrap any iframed video embed (from Youtube or Vimeo etc) in a `.fluidVideo` container. We assume 16:9 ratio so if you need anything else you will have to modify the [source](https://github.com/tmwagency/kickoff/blob/c3d6bbe23aa9fc51c66e11d6e13f40af16651510/scss/partials/components/_fluid-video.scss) or use a script like [fitvid.js](http://fitvidsjs.com/).
+
 <div class="demo">
 	<div class="demo-visual">
 		<div class="fluidVideo">
@@ -211,8 +213,24 @@ Place any image- and text-like content side-by-side, as per: [media object](http
 <a name="blockgrids"></a>
 
 ## Block grids
+Block grids give you a way to evenly split contents of a list within the grid. If you wanted to create a row of five images or paragraphs that need to stay evenly spaced no matter the screen size, the block grid is for you.
+
+Add the `.l-blockGrid` class to any unordered list, the add the `.l-blockGrid--#up` class to determine how many grid columns appear in a row.
+
+### Narrow block grids
+There is also a narrow option for the block grid which allows you to choose a different column count on narrower viewports. Add the `.l-blockGrid--#up--narrow` modifier class to make use of this.
+
 <div class="demo">
 	<div class="demo-visual">
+		<ul class="l-blockGrid l-blockGrid--6up">
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+			<li>Item 6</li>
+		</ul>
+		<br>
 		<ul class="l-blockGrid l-blockGrid--4up l-blockGrid--2up--narrow">
 			<li>Item 1</li>
 			<li>Item 2</li>
@@ -226,6 +244,17 @@ Place any image- and text-like content side-by-side, as per: [media object](http
 	</div>
 	<div class="demo-code">
 {% highlight html%}
+<!-- 8 columns on wide screen, then 1 column (stacked) when we are below the $bp-single-col breakpoint -->
+<ul class="l-blockGrid l-blockGrid--6up">
+	<li>Item 1</li>
+	<li>Item 2</li>
+	<li>Item 3</li>
+	<li>Item 4</li>
+	<li>Item 5</li>
+	<li>Item 6</li>
+</ul>
+
+<!-- 4 columns on wide screen, then 2 columns when we are below the $bp-single-col</code> breakpoint but above the $bp-block-grid-narrow breakpoint, then 1 when we are below the $bp-block-grid-narrow breakpoint -->
 <ul class="l-blockGrid l-blockGrid--4up l-blockGrid--2up--narrow">
 	<li>Item 1</li>
 	<li>Item 2</li>
@@ -241,6 +270,8 @@ Place any image- and text-like content side-by-side, as per: [media object](http
 <a name="lists"></a>
 
 ## Lists
+For centred lists, add the `.l-list--centred` class to an [un]ordered list. For floated lists, add the `.l-list--floated` class.
+
 <div class="demo">
 	<div class="demo-visual">
 		<h4>Centre-aligned lists</h4>
@@ -284,6 +315,123 @@ Place any image- and text-like content side-by-side, as per: [media object](http
 <a name="tables"></a>
 
 ## Tables
+All tables should use the `.table` class name. We have included many options, so see the demos below.
+
+### Default table
+<div class="demo">
+	<div class="demo-visual">
+		<table class="table" cellpadding="0" cellspacing="0">
+			<thead>
+				<th>Table head</th>
+				<th>Table head</th>
+				<th>Table head</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+				</tr>
+				<tr>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<td>Table foot</td>
+				<td>Table foot</td>
+				<td>Table foot</td>
+			</tfoot>
+		</table>
+	</div>
+	<div class="demo-code">
+{% highlight html%}
+<table class="table" cellpadding="0" cellspacing="0">
+	<thead>
+		<th>Table head</th>
+		<th>Table head</th>
+		<th>Table head</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Table cell</td>
+			<td>Table cell</td>
+			<td>Table cell</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<td>Table foot</td>
+		<td>Table foot</td>
+		<td>Table foot</td>
+	</tfoot>
+</table>
+{% endhighlight %}
+	</div>
+</div>
+
+### Bordered table
+To add a table border, add the `.table--bordered` modifier class
+
+<div class="demo">
+	<div class="demo-visual">
+		<table class="table table--bordered" cellpadding="0" cellspacing="0">
+			<thead>
+				<th>Table head</th>
+				<th>Table head</th>
+				<th>Table head</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+				</tr>
+				<tr>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<td>Table foot</td>
+				<td>Table foot</td>
+				<td>Table foot</td>
+			</tfoot>
+		</table>
+	</div>
+	<div class="demo-code">
+{% highlight html%}
+<table class="table table--bordered" cellpadding="0" cellspacing="0">
+	<thead>
+		<th>Table head</th>
+		<th>Table head</th>
+		<th>Table head</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Table cell</td>
+			<td>Table cell</td>
+			<td>Table cell</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<td>Table foot</td>
+		<td>Table foot</td>
+		<td>Table foot</td>
+	</tfoot>
+</table>
+{% endhighlight %}
+	</div>
+</div>
+
+### Table with all the styles
+The table below has many different styles.
+
+* To add rounded corners, add the `.table--rounded` modifier class
+* To add even/odd stripes, add the `.table--striped` modifier class
+* To add a row hover effect, add the `.table--hover` modifier class
+
 <div class="demo">
 	<div class="demo-visual">
 		<table class="table table--bordered table--striped table--hover table--rounded" cellpadding="0" cellspacing="0">
@@ -293,6 +441,11 @@ Place any image- and text-like content side-by-side, as per: [media object](http
 				<th>Table head</th>
 			</thead>
 			<tbody>
+				<tr>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+				</tr>
 				<tr>
 					<td>Table cell</td>
 					<td>Table cell</td>
