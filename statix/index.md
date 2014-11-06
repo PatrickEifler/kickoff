@@ -4,7 +4,6 @@ title: Statix
 subtitle:
 navgroup: statix
 ---
-[Download Statix](https://github.com/tmwagency/statix)
 
 ## Why do I need Statix in my life?
 
@@ -13,6 +12,12 @@ Have you ever wanted the power of reusing snippets in your HTML but don’t know
 Do you want a good base front-end structure for your project without throwing the whole of Bootstrap it?
 
 Statix has your back.
+
+---
+
+## Download  Statix
+
+[Download the source files here](https://github.com/tmwagency/statix)
 
 ---
 
