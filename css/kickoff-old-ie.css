@@ -2365,6 +2365,12 @@ a {
   font-size: 1.4rem;
 }
 
+.version {
+  font-size: 90% !important;
+  margin-top: 28px;
+  margin-bottom: 0;
+}
+
 .primary {
   background-color: #181830;
   color: #fff;
