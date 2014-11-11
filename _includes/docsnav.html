@@ -44,6 +44,14 @@
 		</ul>
 		{% endif %}
 	</li>
+	<li><a href="/kickoff/learn/html.html"{% if page.navactive == 'docshtml' %} class="is-active"{% endif %}>HTML</a>
+		{% if page.navactive == 'docshtml' %}
+		<ul class="sidebar-subnav unstyled">
+			<li><a href="#svg">SVG icons</a></li>
+			<li><a href="#skip">Skip content link</a></li>
+		</ul>
+		{% endif %}
+	</li>
 	<li><a href="/kickoff/learn/grid.html"{% if page.navactive == 'docsgrid' %} class="is-active"{% endif %}>The Grid</a>
 		{% if page.navactive == 'docsgrid' %}
 		<ul class="sidebar-subnav unstyled">
