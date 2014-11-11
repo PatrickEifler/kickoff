@@ -23,8 +23,12 @@
 
 		{% if page.meta.description %}
 		<meta name="description" content="{{ page.meta.description }}">
+		<meta name="twitter:description" content="{{ page.meta.description }}" />
+		<meta property="og:description" content="{{ page.meta.description }}" />
 		{% else %}
 		<meta name="description" content="Kickoff is a lightweight front-end framework for creating scalable, responsive sites.">
+		<meta name="twitter:description" content="Kickoff is a lightweight front-end framework for creating scalable, responsive sites." />
+		<meta property="og:description" content="Kickoff is a lightweight front-end framework for creating scalable, responsive sites." />
 		{% endif %}
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,4 +55,17 @@
 		<link rel="icon" type="image/png" href="/kickoff/favicon-32x32.png" sizes="32x32">
 		<meta name="msapplication-TileColor" content="#181830">
 		<meta name="msapplication-TileImage" content="/kickoff/mstile-144x144.png">
+
+		<!-- Twitter -->
+		<meta name="twitter:site" content="@tmwKickoff">
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="{{ title }}" />
+		<meta name="twitter:image" content="http://tmwagency.github.io/kickoff/apple-touch-icon-152x152.png" />
+		<meta name="twitter:url" content="http://tmwagency.github.io{{page.url}}" />
+
+		<!-- Open Graph data -->
+		<meta property="og:title" content="{{ title }}" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="http://tmwagency.github.io{{page.url}}" />
+		<meta property="og:image" content="http://tmwagency.github.io/kickoff/apple-touch-icon-152x152.png" />
 	</head>
