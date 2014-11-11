@@ -196,13 +196,13 @@ Wrap any iframed video embed (from Youtube or Vimeo etc) in a `.fluidVideo` cont
 <div class="demo">
 	<div class="demo-visual">
 		<div class="fluidVideo">
-			<iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/CjB_oVeq8Lo" frameborder="0" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/-5Ae-LhMIG0" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div>
 	<div class="demo-code">
 {% highlight html%}
 <div class="fluidVideo">
-	<iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/CjB_oVeq8Lo" frameborder="0" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/-5Ae-LhMIG0" frameborder="0" allowfullscreen></iframe>
 </div>
 {% endhighlight %}
 	</div>
@@ -244,7 +244,7 @@ There is also a narrow option for the block grid which allows you to choose a di
 	</div>
 	<div class="demo-code">
 {% highlight html%}
-<!-- 8 columns on wide screen, then 1 column (stacked) when we are below the $bp-single-col breakpoint -->
+<!-- 6 columns on wide screen, then 1 column (stacked) when we are below the $bp-single-col breakpoint -->
 <ul class="l-blockGrid l-blockGrid--6up">
 	<li>Item 1</li>
 	<li>Item 2</li>
@@ -493,6 +493,10 @@ The table below has many different styles.
 
 <a name="rwdtables"></a>
 ## Responsive tables
+We have included a simple way to make your tables responsive, wrap your tables in `.tableResponsive` and we'll make them mobile friendly by enabling horizontal scrolling. Only applies below the `$bp-single-col` scss variable. Everything above that will display normally.
+
+If you need more responsive tables, consider [Tablesaw](https://github.com/filamentgroup/tablesaw) by the Filament Group.
+
 <div class="demo">
 	<div class="demo-visual">
 		<div class="tableResponsive">
@@ -576,6 +580,8 @@ The table below has many different styles.
 <a name="tabs"></a>
 
 ## Tabs
+Add a `.tabs` class to any unordered list to create some simple tabs. These will be aligned to the left as you can see below. If you need to align them to the centre, add the `.tabs--alignCenter` modifier class or to the right with the `.tabs--alignRight` modifier. Note, we use `float: right;` for the right-aligned tabs so the order is reversed.
+
 <div class="demo">
 	<div class="demo-visual">
 		<!-- Default, left-aligned tabs -->
