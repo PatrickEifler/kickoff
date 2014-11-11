@@ -245,6 +245,12 @@ a {
 	}
 }
 
+.version {
+	font-size: 90% !important;
+	margin-top: $baseline;
+	margin-bottom: 0;
+}
+
 .primary {
 	background-color: $color-primary;
 	color: #fff;
