@@ -22,6 +22,7 @@ TMW.SiteSetup = {
 
 	init : function () {
 		TMW.Demos.init();
+		TMW.Kickoff.init();
 	}
 };
 
@@ -55,6 +56,30 @@ TMW.Demos = {
 			}
 		});
 	}
+};
 
+TMW.Kickoff = {
 
-}
+	init : function() {
+		this.getPackageJSON();
+	},
+
+	getPackageJSON : function() {
+		var that = this;
+		$.ajax({
+			url: 'https://cdn.rawgit.com/tmwagency/kickoff/master/package.json',
+			type: 'GET',
+			dataType: 'json',
+		})
+		.done(function(data) {
+			// console.log("success", data, that);
+
+			that.setVersion(data.version);
+		});
+	},
+
+	setVersion : function(version) {
+		$('.currentVersion').text(version);
+	}
+
+};
