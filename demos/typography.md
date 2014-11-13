@@ -8,12 +8,12 @@ meta:
   description: See Kickoff's typography demo
 
 next:
- - title: Components demo
-   body: See the components that are included with Kickoff
-   link: components.html
- - title: Forms demo
-   body: See how Kickoff handles forms
-   link: forms.html
+ - title: Get Kickoff
+   body: Find out how to get your hands on Kickoff here.
+   link: get.html
+ - title: Use Kickoff
+   body: Ready to get your hands dirty?<br>We’ll show you where to start.
+   link: use.html
 ---
 
 <a name="hp"></a>
