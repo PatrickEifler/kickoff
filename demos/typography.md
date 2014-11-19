@@ -19,6 +19,8 @@ next:
 <a name="hp"></a>
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/_typography.scss" class="demo-src">_typography.scss</a>
+
 	<div class="demo-visual">
 		<h1>Heading 1 <small>small</small></h1>
 		<h2>Heading 2</h2>
@@ -60,6 +62,8 @@ We include some helpful utility classes if you need to align your text quickly. 
 As we are British, we decided to include two spellings for our centred text : `.text-centre` and `.text-center` — use whichever one you prefer..
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/_typography.scss" class="demo-src">_typography.scss</a>
+
 	<div class="demo-visual">
 
 		<p class="text-left"><b>Left aligned: </b>Lorem ipsum dolor sit amet.</p>
@@ -121,6 +125,8 @@ As we are British, we decided to include two spellings for our centred text : `.
 <a name="bq"></a>
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/_typography.scss" class="demo-src">_typography.scss</a>
+
 	<div class="demo-visual">
 		<h3>Blockquote</h3>
 		<blockquote>
@@ -143,6 +149,8 @@ As we are British, we decided to include two spellings for our centred text : `.
 <a name="ol"></a>
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/_typography.scss" class="demo-src">_typography.scss</a>
+
 	<div class="demo-visual">
 		<h3>Ordered lists</h3>
 		<ol>
@@ -193,6 +201,8 @@ As we are British, we decided to include two spellings for our centred text : `.
 <a name="ul"></a>
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/_typography.scss" class="demo-src">_typography.scss</a>
+
 	<div class="demo-visual">
 		<h3>Unordered lists</h3>
 		<ul>
@@ -244,6 +254,8 @@ As we are British, we decided to include two spellings for our centred text : `.
 <h3>Unstyled [un]ordered lists</h3>
 <p>Add an <code>.unstyled</code> class to any <code>&lt;ul></code> or <code>&lt;ol></code> to remove the default bullets, numbering and margins.</p>
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/_typography.scss" class="demo-src">_typography.scss</a>
+
 	<div class="demo-visual">
 		<ul class="unstyled">
 			<li>ul list item 1</li>
@@ -284,6 +296,8 @@ As we are British, we decided to include two spellings for our centred text : `.
 <h3>Definition list</h3>
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/_typography.scss" class="demo-src">_typography.scss</a>
+
 	<div class="demo-visual">
 		<dl>
 			<dt>Definition name</dt>
@@ -319,6 +333,8 @@ As we are British, we decided to include two spellings for our centred text : `.
 <p>Add a <code>.dl-horizontal</code> class to your definition list (<code>&lt;dl></code>) to make the values (<code>&lt;dd></code>) float beside the name (<code>&lt;dt></code>)</p>
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/_typography.scss" class="demo-src">_typography.scss</a>
+
 	<div class="demo-visual">
 		<dl class="dl-horizontal">
 			<dt>Definition name</dt>

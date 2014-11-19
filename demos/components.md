@@ -25,6 +25,8 @@ Button styles can be applied to anything with the `.btn` class applied. However,
 Fancy larger or smaller buttons? Add `.btn--large`, or `.btn--small` for additional sizes. The colours used by this button are defined in our [colour palette](https://github.com/tmwagency/kickoff/blob/master/scss/_color-palette.scss#L38-L39) file.
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_buttons.scss" class="demo-src">_buttons.scss</a>
+
 	<div class="demo-visual">
 		<h4>Normal size</h4>
 		<a href="#" class="btn">Button</a>
@@ -58,6 +60,8 @@ We provide only one button style variant because we think you should define your
 The colours used by this button are defined in our [colour palette](https://github.com/tmwagency/kickoff/blob/master/scss/_color-palette.scss#L41-L42) file.
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_buttons.scss" class="demo-src">_buttons.scss</a>
+
 	<div class="demo-visual">
 		<a href="#" class="btn btn--primary">Button</a>
 	</div>
@@ -76,6 +80,8 @@ The colours used by this button are defined in our [colour palette](https://gith
 To make buttons span to 100% width, add the `.btn--block` modifier class. You can also see that we are using the `.btn--primary` modifier class as well as `.btn--block`.
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_buttons.scss" class="demo-src">_buttons.scss</a>
+
 	<div class="demo-visual">
 		<a href="#" class="btn btn--block btn--primary">Button</a>
 	</div>
@@ -94,6 +100,8 @@ To make buttons span to 100% width, add the `.btn--block` modifier class. You ca
 We have `.btn--natural` modifier class that inherits sizing from its parent. This is extremely useful when you have a button inside a paragraph or a heading.
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_buttons.scss" class="demo-src">_buttons.scss</a>
+
 	<div class="demo-visual">
 		<p>
 			With <code>.btn--natural</code> modifier class: <a href="#" class="btn btn--natural btn--primary">button</a>
@@ -115,6 +123,8 @@ We have `.btn--natural` modifier class that inherits sizing from its parent. Thi
 Add the `.btn--pill` modifier class to any `.btn`.
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_buttons.scss" class="demo-src">_buttons.scss</a>
+
 	<div class="demo-visual">
 		<p>
 			<a href="#" class="btn btn--pill btn--primary">Primary pill</a>
@@ -143,6 +153,8 @@ Add the `.btn--pill` modifier class to any `.btn`.
 Place any image- and text-like content side-by-side, as per: [media object](http://stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code)
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_media-object.scss" class="demo-src">_media-object.scss</a>
+
 	<div class="demo-visual">
 		<div class="media">
 			<div class="media-img">
@@ -194,6 +206,8 @@ Place any image- and text-like content side-by-side, as per: [media object](http
 Wrap any iframed video embed (from Youtube or Vimeo etc) in a `.fluidVideo` container. We assume 16:9 ratio so if you need anything else you will have to modify the [source](https://github.com/tmwagency/kickoff/blob/c3d6bbe23aa9fc51c66e11d6e13f40af16651510/scss/partials/components/_fluid-video.scss) or use a script like [fitvid.js](http://fitvidsjs.com/).
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_fluid-video.scss" class="demo-src">_fluid-video.scss</a>
+
 	<div class="demo-visual">
 		<div class="fluidVideo">
 			<iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/-5Ae-LhMIG0" frameborder="0" allowfullscreen></iframe>
@@ -221,6 +235,8 @@ Add the `.l-blockGrid` class to any unordered list, the add the `.l-blockGrid--#
 There is also a narrow option for the block grid which allows you to choose a different column count on narrower viewports. Add the `.l-blockGrid--#up--narrow` modifier class to make use of this.
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_block-grids.scss" class="demo-src">_block-grids.scss</a>
+
 	<div class="demo-visual">
 		<ul class="l-blockGrid l-blockGrid--6up">
 			<li>Item 1</li>
@@ -273,6 +289,8 @@ There is also a narrow option for the block grid which allows you to choose a di
 For centred lists, add the `.l-list--centred` class to an [un]ordered list. For floated lists, add the `.l-list--floated` class.
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_lists_.scss" class="demo-src">_lists_.scss</a>
+
 	<div class="demo-visual">
 		<h4>Centre-aligned lists</h4>
 		<ul class="l-list--centred">
@@ -319,6 +337,8 @@ All tables should use the `.table` class name. We have included many options, so
 
 ### Default table
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_tables_.scss" class="demo-src">_tables_.scss</a>
+
 	<div class="demo-visual">
 		<table class="table" cellpadding="0" cellspacing="0">
 			<thead>
@@ -374,6 +394,8 @@ All tables should use the `.table` class name. We have included many options, so
 To add a table border, add the `.table--bordered` modifier class
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_tables_.scss" class="demo-src">_tables_.scss</a>
+
 	<div class="demo-visual">
 		<table class="table table--bordered" cellpadding="0" cellspacing="0">
 			<thead>
@@ -433,6 +455,8 @@ The table below has many different styles.
 * To add a row hover effect, add the `.table--hover` modifier class
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_tables_.scss" class="demo-src">_tables_.scss</a>
+
 	<div class="demo-visual">
 		<table class="table table--bordered table--striped table--hover table--rounded" cellpadding="0" cellspacing="0">
 			<thead>
@@ -498,6 +522,8 @@ We have included a simple way to make your tables responsive, wrap your tables i
 If you need more responsive tables, consider [Tablesaw](https://github.com/filamentgroup/tablesaw) by the Filament Group.
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_tables_.scss" class="demo-src">_tables_.scss</a>
+
 	<div class="demo-visual">
 		<div class="tableResponsive">
 			<table class="table" cellpadding="0" cellspacing="0">
@@ -583,6 +609,8 @@ If you need more responsive tables, consider [Tablesaw](https://github.com/filam
 Add a `.tabs` class to any unordered list to create some simple tabs. These will be aligned to the left as you can see below. If you need to align them to the centre, add the `.tabs--alignCenter` modifier class or to the right with the `.tabs--alignRight` modifier. Note, we use `float: right;` for the right-aligned tabs so the order is reversed.
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_tabs.scss" class="demo-src">_tabs.scss</a>
+
 	<div class="demo-visual">
 		<!-- Default, left-aligned tabs -->
 		<ul class="tabs">

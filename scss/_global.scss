@@ -401,14 +401,34 @@ a {
 
 .demo {
 	border: 1px solid #ddd;
-	border-radius: 5px;
-	overflow: hidden;
 	position: relative;
 
 	& + & {
 		margin-top: 50px;
 	}
 }
+
+.demo-src {
+	position: absolute;
+	top: 0;
+	right: 0;
+	@include font-size($type-smaller);
+	text-align: right;
+	padding: 1px 5px;
+	display: inline-block;
+
+	&,
+	&:link,
+	&:visited {
+		color: #a0a0a0;
+		background-color: #f0f0f0;
+	}
+
+	&:hover {
+		background-color: #ddd;
+	}
+}
+
 .demo-visual {
 	padding: $baseline;
 	line-height: 1.5;
@@ -421,10 +441,11 @@ a {
 		white-space: pre;
 	}
 }
+
 .demo-code {
 	pre {
 		margin-bottom: 0;
-		border-radius: 0;
+		// border-radius: 0;
 		max-height: 400px;
 		overflow: auto;
 	}
