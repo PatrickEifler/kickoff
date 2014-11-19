@@ -10,9 +10,9 @@ meta:
 <section class="wideBoy wideBoy--dark bigBoy primary text-centre">
 	<div class="l-container">
 		<h1 class="logoStyle entry--title">Kick<span>off</span></h1>
-		<p>A lightweight front-end framework for creating scalable, responsive&nbsp;sites.<br><a href="learn/">Want to know more?</a></p>
+		<p>A lightweight front-end framework for creating scalable, responsive&nbsp;sites.<br><a href="learn/" data-trak='{"category":"Home page","action":"Know more?"}'>Want to know more?</a></p>
 
-		<a href="learn/get.html" class="btn btn--primary btn--large">Download Kickoff</a>
+		<a href="learn/get.html" class="btn btn--primary btn--large" data-trak='{"category":"Home page","action":"Download Kickoff CTA","label":"CTA"}'>Download Kickoff</a>
 		<p class="version">Current version: <span class="currentVersion"></span></p>
 	</div>
 </section>
@@ -34,7 +34,7 @@ meta:
 				<p class="l-mb0 text-right">
 					Find other ways to get Kickoff <a href="learn/get.html">in our documentation.</a>
 					<br>
-					Follow <a href="http://twitter.com/tmwkickoff">@tmwkickoff</a> for updates.
+					Follow <a href="http://twitter.com/tmwkickoff" data-trak='{"category":"Home page","action":"Follow on Twitter","label":"Social"}'>@tmwkickoff</a> for updates.
 				</p>
 			</div>
 		</div>
@@ -48,7 +48,7 @@ meta:
 		<ul class="showcaseList l-blockGrid l-blockGrid--4up  l-blockGrid--2up--narrow">
 			{% for item in site.data.showcase %}
 				<li>
-					{% if item.url != null %}<a href="{{ item.url }}" target="_blank">{% endif %}
+					{% if item.url != null %}<a href="{{ item.url }}" target="_blank" data-trak='{"category":"Home page","action":"Showcase item click","label":"{{ item.name }}"}'>{% endif %}
 						<figure>
 							<img src="img/showcase/{{ item.img }}" alt="{{ item.name }}">
 							<figcaption>{{ item.name }}</figcaption>
@@ -68,7 +68,7 @@ meta:
 					<p>Let us know so we can add it here.</p>
 			</div>
 			<div class="g-span4 g-col">
-				<a href="mailto:tech@tmw.co.uk" class="btn btn--secondary">Email us your story</a>
+				<a href="mailto:tech@tmw.co.uk" class="btn btn--secondary" data-trak='{"category":"Home page","action":"Email us","label":"CTA"}'>Email us your story</a>
 			</div>
 		</div>
 	</div>
@@ -105,6 +105,6 @@ meta:
 			</a>
 		</h1>
 		<p>Makes the process of creating static HTML templates quick and easy</p>
-		<a href="https://github.com/tmwagency/statix" class="btn btn--primary btn--large">Find out more</a>
+		<a href="https://github.com/tmwagency/statix" class="btn btn--primary btn--large" data-trak='{"category":"Home page","action":"Statix info","label":"CTA"}'>Find out more</a>
 	</div>
 </section>
