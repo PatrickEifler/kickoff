@@ -69,7 +69,7 @@ TMW.Kickoff = {
 	getPackageJSON : function() {
 		var that = this;
 		$.ajax({
-			url: 'https://cdn.rawgit.com/tmwagency/kickoff/master/package.json',
+			url: 'https://rawgit.com/tmwagency/kickoff/master/package.json',
 			type: 'GET',
 			dataType: 'json',
 		})
