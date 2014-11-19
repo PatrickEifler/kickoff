@@ -62,6 +62,8 @@ TMW.Kickoff = {
 
 	init : function() {
 		this.getPackageJSON();
+		trak.start();
+		// trak.options.debug = true;
 	},
 
 	getPackageJSON : function() {

@@ -29,6 +29,7 @@ module.exports = function (grunt) {
 
 				// <%=config.js.fileList%>
 				fileList : [
+					'bower_components/trak/dist/trak.js',
 					'js/libs/plugins/skeleton.tabs.js',
 					'js/script.js'
 				]
