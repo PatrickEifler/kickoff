@@ -289,7 +289,7 @@ There is also a narrow option for the block grid which allows you to choose a di
 For centred lists, add the `.l-list--centred` class to an [un]ordered list. For floated lists, add the `.l-list--floated` class.
 
 <div class="demo">
-	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_lists_.scss" class="demo-src">_lists_.scss</a>
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_lists.scss" class="demo-src">_lists.scss</a>
 
 	<div class="demo-visual">
 		<h4>Centre-aligned lists</h4>
@@ -337,7 +337,7 @@ All tables should use the `.table` class name. We have included many options, so
 
 ### Default table
 <div class="demo">
-	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_tables_.scss" class="demo-src">_tables_.scss</a>
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_tables.scss" class="demo-src">_tables.scss</a>
 
 	<div class="demo-visual">
 		<table class="table" cellpadding="0" cellspacing="0">
@@ -394,7 +394,7 @@ All tables should use the `.table` class name. We have included many options, so
 To add a table border, add the `.table--bordered` modifier class
 
 <div class="demo">
-	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_tables_.scss" class="demo-src">_tables_.scss</a>
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_tables.scss" class="demo-src">_tables.scss</a>
 
 	<div class="demo-visual">
 		<table class="table table--bordered" cellpadding="0" cellspacing="0">
@@ -455,7 +455,7 @@ The table below has many different styles.
 * To add a row hover effect, add the `.table--hover` modifier class
 
 <div class="demo">
-	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_tables_.scss" class="demo-src">_tables_.scss</a>
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_tables.scss" class="demo-src">_tables.scss</a>
 
 	<div class="demo-visual">
 		<table class="table table--bordered table--striped table--hover table--rounded" cellpadding="0" cellspacing="0">
@@ -522,7 +522,7 @@ We have included a simple way to make your tables responsive, wrap your tables i
 If you need more responsive tables, consider [Tablesaw](https://github.com/filamentgroup/tablesaw) by the Filament Group.
 
 <div class="demo">
-	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_tables_.scss" class="demo-src">_tables_.scss</a>
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_tables.scss" class="demo-src">_tables.scss</a>
 
 	<div class="demo-visual">
 		<div class="tableResponsive">

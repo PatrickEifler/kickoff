@@ -2262,6 +2262,11 @@ pre code {
   background-color: #EAF2F5;
 }
 
+.highlight {
+  color: #333;
+  background: #fff;
+}
+
 /**
  * Skip to main content link
  * <div class="skipToContent"><a href="#mainContent" class="btn btn--primary">Skip to main content</a></div>
