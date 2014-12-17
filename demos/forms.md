@@ -23,6 +23,8 @@ next:
 <p>Having forms styled like this depends on specific markup with specific class names. Please use the example code below as a guide.</p>
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_forms.scss" class="demo-src">_forms.scss</a>
+
 	<div class="demo-visual">
 		<form action="#" class="form">
 			<fieldset class="form-fieldset">
@@ -98,6 +100,8 @@ next:
 Assuming you use the same markup as above, simply add a `.form--horizontal` class to the `<form>` element and you'll now have right aligned, inline form labels in an instant.
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_forms.scss" class="demo-src">_forms.scss</a>
+
 	<div class="demo-visual">
 		<form action="#" class="form form--horizontal">
 			<fieldset class="form-fieldset">
@@ -185,6 +189,8 @@ Assuming you use the same markup as above, simply add a `.form--horizontal` clas
 <p>Multi-column forms are easy to achieve by using the existing grid. See the comments in the code below for implementation details.</p>
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_forms.scss" class="demo-src">_forms.scss</a>
+
 	<div class="demo-visual">
 		<form action="#" class="form">
 			<fieldset class="form-fieldset">
@@ -287,6 +293,8 @@ Assuming you use the same markup as above, simply add a `.form--horizontal` clas
 For left-aligned labels or standard labels (above), we use the same exact markup.
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_forms.scss" class="demo-src">_forms.scss</a>
+
 	<div class="demo-visual">
 		<div class="form-controlGroup">
 			<label class="form-label" for="text">Label</label>
@@ -315,6 +323,8 @@ For left-aligned labels or standard labels (above), we use the same exact markup
 You can easily update field states by adding modifier classes to `.form-controlGroup`. See the comments in the code below for implementation details.
 
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_forms.scss" class="demo-src">_forms.scss</a>
+
 	<div class="demo-visual">
 		<form action="#" class="form">
 			<fieldset class="form-fieldset">
@@ -389,6 +399,8 @@ You can easily update field states by adding modifier classes to `.form-controlG
 <h2>Custom field elements</h2>
 <p>Improved styling for checkboxes, radios &amp; file upload</p>
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_forms-custom-controls.scss" class="demo-src">_forms-custom-controls.scss</a>
+
 	<div class="demo-visual">
 		<form action="#" class="form">
 			<fieldset class="form-fieldset">
@@ -569,6 +581,8 @@ You can easily update field states by adding modifier classes to `.form-controlG
 <h2>All Form Elements</h2>
 <p>All the form elements you could need.</p>
 <div class="demo">
+	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/partials/components/_forms.scss" class="demo-src">_forms.scss</a>
+
 	<div class="demo-visual">
 		<form action="#" class="form">
 			<fieldset class="form-fieldset">
