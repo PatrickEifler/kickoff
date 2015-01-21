@@ -113,9 +113,9 @@ Assuming you use the same markup as above, simply add a `.form--horizontal` clas
 					</div>
 				</div>
 				<div class="form-controlGroup">
-					<label for="email" class="form-label">Email</label>
+					<label for="fi-email" class="form-label">Email</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" required/>
+						<input class="form-input" type="email" id="fi-email" placeholder="tech@tmw.co.uk" required/>
 					</div>
 				</div>
 				<div class="form-controlGroup">
