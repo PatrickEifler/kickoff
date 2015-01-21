@@ -107,9 +107,9 @@ Assuming you use the same markup as above, simply add a `.form--horizontal` clas
 			<fieldset class="form-fieldset">
 				<legend class="form-legend">Your form</legend>
 				<div class="form-controlGroup">
-					<label class="form-label" for="text">Text</label>
+					<label class="form-label" for="fi-text">Text</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input class="form-input" type="text" id="text" placeholder="Some text" required/>
+						<input class="form-input" type="text" id="fi-text" placeholder="Some text" required/>
 					</div>
 				</div>
 				<div class="form-controlGroup">
@@ -119,16 +119,16 @@ Assuming you use the same markup as above, simply add a `.form--horizontal` clas
 					</div>
 				</div>
 				<div class="form-controlGroup">
-					<label for="password" class="form-label">Password</label>
+					<label for="fi-password" class="form-label">Password</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input class="form-input" type="password" id="password" placeholder="Your password" />
+						<input class="form-input" type="password" id="fi-password" placeholder="Your password" />
 					</div>
 				</div>
 
 				<div class="form-controlGroup">
-					<label class="form-label" for="comments">Textarea</label>
+					<label class="form-label" for="fi-comments">Textarea</label>
 					<div class="form-controlGroup-inputWrapper">
-						<textarea class="form-input form-input--textarea" id="comments" rows="3" cols="50"></textarea>
+						<textarea class="form-input form-input--textarea" id="fi-comments" rows="3" cols="50"></textarea>
 					</div>
 				</div>
 			</fieldset>
@@ -198,15 +198,15 @@ Assuming you use the same markup as above, simply add a `.form--horizontal` clas
 				<div class="g-row">
 					<!-- Add .g-col and .g-span# to the .form-controlGroup -->
 					<div class="form-controlGroup g-col g-span6">
-						<label class="form-label" for="text">Text</label>
+						<label class="form-label" for="fm-text">Text</label>
 						<div class="form-controlGroup-inputWrapper">
-							<input class="form-input" type="text" id="text" placeholder="Some text" required/>
+							<input class="form-input" type="text" id="fm-text" placeholder="Some text" required/>
 						</div>
 					</div>
 					<div class="form-controlGroup g-col g-span6">
-						<label for="email" class="form-label">Email</label>
+						<label for="fm-email" class="form-label">Email</label>
 						<div class="form-controlGroup-inputWrapper">
-							<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" required/>
+							<input class="form-input" type="email" id="fm-email" placeholder="tech@tmw.co.uk" required/>
 						</div>
 					</div>
 				</div>
@@ -215,21 +215,21 @@ Assuming you use the same markup as above, simply add a `.form--horizontal` clas
 				<div class="g-row">
 					<!-- Add .g-col and .g-span# to the .form-controlGroup -->
 					<div class="form-controlGroup g-col g-span4">
-						<label class="form-label" for="text">Label</label>
+						<label class="form-label" for="fm-label1">Label</label>
 						<div class="form-controlGroup-inputWrapper">
-							<input class="form-input" type="text" id="text" placeholder="Some text" value="A value" required/>
+							<input class="form-input" type="text" id="fm-label1" placeholder="Some text" value="A value" required/>
 						</div>
 					</div>
 					<div class="form-controlGroup g-col g-span4">
-						<label for="email" class="form-label">Label</label>
+						<label for="fm-label2" class="form-label">Label</label>
 						<div class="form-controlGroup-inputWrapper">
-							<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" value="A value" required/>
+							<input class="form-input" type="email" id="fm-label2" placeholder="tech@tmw.co.uk" value="A value" required/>
 						</div>
 					</div>
 					<div class="form-controlGroup g-col g-span4">
-						<label for="password" class="form-label">Label</label>
+						<label for="fm-label3" class="form-label">Label</label>
 						<div class="form-controlGroup-inputWrapper">
-							<input class="form-input" type="password" id="password" placeholder="Your password" value="A value" />
+							<input class="form-input" type="password" id="fm-label3" placeholder="Your password" value="A value" />
 						</div>
 					</div>
 				</div>
@@ -244,15 +244,15 @@ Assuming you use the same markup as above, simply add a `.form--horizontal` clas
 		<div class="g-row">
 			<!-- Add .g-col and .g-span# to the .form-controlGroup -->
 			<div class="form-controlGroup g-col g-span6">
-				<label class="form-label" for="text">Text</label>
+				<label class="form-label" for="fm-text">Text</label>
 				<div class="form-controlGroup-inputWrapper">
-					<input class="form-input" type="text" id="text" placeholder="Some text" required/>
+					<input class="form-input" type="text" id="fm-text" placeholder="Some text" required/>
 				</div>
 			</div>
 			<div class="form-controlGroup g-col g-span6">
-				<label for="email" class="form-label">Email</label>
+				<label for="fm-email" class="form-label">Email</label>
 				<div class="form-controlGroup-inputWrapper">
-					<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" required/>
+					<input class="form-input" type="email" id="fm-email" placeholder="tech@tmw.co.uk" required/>
 				</div>
 			</div>
 		</div>
@@ -261,21 +261,21 @@ Assuming you use the same markup as above, simply add a `.form--horizontal` clas
 		<div class="g-row">
 			<!-- Add .g-col and .g-span# to the .form-controlGroup -->
 			<div class="form-controlGroup g-col g-span4">
-				<label class="form-label" for="text">Label</label>
+				<label class="form-label" for="fm-text1">Label</label>
 				<div class="form-controlGroup-inputWrapper">
-					<input class="form-input" type="text" id="text" placeholder="Some text" value="A value" required/>
+					<input class="form-input" type="text" id="fm-text1" placeholder="Some text" value="A value" required/>
 				</div>
 			</div>
 			<div class="form-controlGroup g-col g-span4">
-				<label for="email" class="form-label">Label</label>
+				<label for="fm-text2" class="form-label">Label</label>
 				<div class="form-controlGroup-inputWrapper">
-					<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" value="A value" required/>
+					<input class="form-input" type="email" id="fm-text2" placeholder="tech@tmw.co.uk" value="A value" required/>
 				</div>
 			</div>
 			<div class="form-controlGroup g-col g-span4">
-				<label for="password" class="form-label">Label</label>
+				<label for="fm-text3" class="form-label">Label</label>
 				<div class="form-controlGroup-inputWrapper">
-					<input class="form-input" type="password" id="password" placeholder="Your password" value="A value" />
+					<input class="form-input" type="password" id="fm-text3" placeholder="Your password" value="A value" />
 				</div>
 			</div>
 		</div>
@@ -297,18 +297,18 @@ For left-aligned labels or standard labels (above), we use the same exact markup
 
 	<div class="demo-visual">
 		<div class="form-controlGroup">
-			<label class="form-label" for="text">Label</label>
+			<label class="form-label" for="sf-text">Label</label>
 			<div class="form-controlGroup-inputWrapper">
-				<input class="form-input" type="text" id="text" placeholder="Some text" required/>
+				<input class="form-input" type="text" id="sf-text" placeholder="Some text" required/>
 			</div>
 		</div>
 	</div>
 	<div class="demo-code">
 {% highlight html%}
 <div class="form-controlGroup">
-	<label class="form-label" for="text">Label</label>
+	<label class="form-label" for="sf-text">Label</label>
 	<div class="form-controlGroup-inputWrapper">
-		<input class="form-input" type="text" id="text" placeholder="Some text" required/>
+		<input class="form-input" type="text" id="sf-text" placeholder="Some text" required/>
 	</div>
 </div>
 {% endhighlight %}
@@ -331,25 +331,25 @@ You can easily update field states by adding modifier classes to `.form-controlG
 				<div class="g-row">
 					<!-- Add .form-controlGroup--success modifier class for valid or successful fields -->
 					<div class="form-controlGroup g-col g-span4 form-controlGroup--success">
-						<label class="form-label" for="text">Success</label>
+						<label class="form-label" for="st-success">Success</label>
 						<div class="form-controlGroup-inputWrapper">
-							<input class="form-input" type="text" id="text" placeholder="Some text" value="A value" required/>
+							<input class="form-input" type="text" id="st-success" placeholder="Some text" value="A value" required/>
 						</div>
 					</div>
 
 					<!-- Add .form-controlGroup--error modifier class for invalid or unsuccessful fields -->
 					<div class="form-controlGroup g-col g-span4 form-controlGroup--error">
-						<label for="email" class="form-label">Error</label>
+						<label for="st-error" class="form-label">Error</label>
 						<div class="form-controlGroup-inputWrapper">
-							<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" value="A value" required/>
+							<input class="form-input" type="email" id="st-error" placeholder="tech@tmw.co.uk" value="A value" required/>
 						</div>
 					</div>
 
 					<!-- Add .form-controlGroup--warning modifier class to give warning -->
 					<div class="form-controlGroup g-col g-span4 form-controlGroup--warning">
-						<label for="password" class="form-label">Warning</label>
+						<label for="st-password" class="form-label">Warning</label>
 						<div class="form-controlGroup-inputWrapper">
-							<input class="form-input" type="password" id="password" placeholder="Your password" value="A value" />
+							<input class="form-input" type="password" id="st-password" placeholder="Your password" value="A value" />
 						</div>
 					</div>
 				</div>
@@ -363,25 +363,25 @@ You can easily update field states by adding modifier classes to `.form-controlG
 		<div class="g-row">
 			<!-- Add .form-controlGroup--success modifier class for valid or successful fields -->
 			<div class="form-controlGroup g-col g-span4 form-controlGroup--success">
-				<label class="form-label" for="text">Success</label>
+				<label class="form-label" for="st-success">Success</label>
 				<div class="form-controlGroup-inputWrapper">
-					<input class="form-input" type="text" id="text" placeholder="Some text" value="A value" required/>
+					<input class="form-input" type="text" id="st-success" placeholder="Some text" value="A value" required/>
 				</div>
 			</div>
 
 			<!-- Add .form-controlGroup--error modifier class for invalid or unsuccessful fields -->
 			<div class="form-controlGroup g-col g-span4 form-controlGroup--error">
-				<label for="email" class="form-label">Error</label>
+				<label for="st-email" class="form-label">Error</label>
 				<div class="form-controlGroup-inputWrapper">
-					<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" value="A value" required/>
+					<input class="form-input" type="email" id="st-email" placeholder="tech@tmw.co.uk" value="A value" required/>
 				</div>
 			</div>
 
 			<!-- Add .form-controlGroup--warning modifier class to give warning -->
 			<div class="form-controlGroup g-col g-span4 form-controlGroup--warning">
-				<label for="password" class="form-label">Warning</label>
+				<label for="st-password" class="form-label">Warning</label>
 				<div class="form-controlGroup-inputWrapper">
-					<input class="form-input" type="password" id="password" placeholder="Your password" value="A value" />
+					<input class="form-input" type="password" id="st-password" placeholder="Your password" value="A value" />
 				</div>
 			</div>
 		</div>
@@ -407,7 +407,7 @@ You can easily update field states by adding modifier classes to `.form-controlG
 				<div class="g-row">
 					<!-- Custom checkboxes -->
 					<div class="form-controlGroup g-span6 g-col">
-						<label class="form-label" for="comments">Checkboxes</label>
+						<label class="form-label">Checkboxes</label>
 						<div class="form-controlGroup-inputWrapper">
 							<!-- Wrap checkbox elements with .control.control--custom.control--checkbox <label> -->
 							<label class="control control--custom control--checkbox">
@@ -430,7 +430,7 @@ You can easily update field states by adding modifier classes to `.form-controlG
 
 					<!-- Custom radio buttons -->
 					<div class="form-controlGroup g-span6 g-col">
-						<label class="form-label" for="comments">Radio buttons</label>
+						<label class="form-label">Radio buttons</label>
 						<div class="form-controlGroup-inputWrapper">
 							<!-- Wrap radio elements with .control.control--custom.control--radio <label> -->
 							<label class="control control--custom control--radio">
@@ -468,11 +468,11 @@ You can easily update field states by adding modifier classes to `.form-controlG
 
 				<!-- Custom select elements -->
 				<div class="form-controlGroup">
-					<label class="form-label" for="choice">Custom select element</label>
+					<label class="form-label" for="cs-choice">Custom select element</label>
 					<div class="form-controlGroup-inputWrapper">
 						<!-- Wrap a select element with .form-input--selectWrapper -->
 						<label class="form-input form-input--selectWrapper">
-							<select class="form-input" id="choice2">
+							<select class="form-input" id="cs-choice">
 								<option>1</option>
 								<option>2</option>
 								<option>3</option>
@@ -492,7 +492,7 @@ You can easily update field states by adding modifier classes to `.form-controlG
 		<div class="g-row">
 			<!-- Custom checkboxes -->
 			<div class="form-controlGroup g-span6 g-col">
-				<label class="form-label" for="comments">Checkboxes</label>
+				<label class="form-label">Checkboxes</label>
 				<div class="form-controlGroup-inputWrapper">
 					<!-- Wrap checkbox elements with .control.control--custom.control--checkbox <label> -->
 					<label class="control control--custom control--checkbox">
@@ -515,7 +515,7 @@ You can easily update field states by adding modifier classes to `.form-controlG
 
 			<!-- Custom radio buttons -->
 			<div class="form-controlGroup g-span6 g-col">
-				<label class="form-label" for="comments">Radio buttons</label>
+				<label class="form-label">Radio buttons</label>
 				<div class="form-controlGroup-inputWrapper">
 					<!-- Wrap radio elements with .control.control--custom.control--radio <label> -->
 					<label class="control control--custom control--radio">
@@ -553,11 +553,11 @@ You can easily update field states by adding modifier classes to `.form-controlG
 
 		<!-- Custom select elements -->
 		<div class="form-controlGroup">
-			<label class="form-label" for="choice">Custom select element</label>
+			<label class="form-label" for="cs-choice">Custom select element</label>
 			<div class="form-controlGroup-inputWrapper">
 				<!-- Wrap a select element with .form-input--selectWrapper -->
 				<label class="form-input form-input--selectWrapper">
-					<select class="form-input" id="choice2">
+					<select class="form-input" id="cs-choice">
 						<option>1</option>
 						<option>2</option>
 						<option>3</option>
@@ -588,80 +588,80 @@ You can easily update field states by adding modifier classes to `.form-controlG
 			<fieldset class="form-fieldset">
 				<legend class="form-legend">Your form</legend>
 				<div class="form-controlGroup">
-					<label class="form-label" for="text">Text</label>
+					<label class="form-label" for="form-text">Text</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input class="form-input" type="text" id="text" placeholder="Some text" required/>
+						<input class="form-input" type="text" id="form-text" placeholder="Some text" required/>
 					</div>
 				</div>
 				<div class="form-controlGroup">
-					<label for="email" class="form-label">Email</label>
+					<label for="form-email" class="form-label">Email</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" required/>
+						<input class="form-input" type="email" id="form-email" placeholder="tech@tmw.co.uk" required/>
 					</div>
 				</div>
 				<div class="form-controlGroup">
-					<label for="password" class="form-label">Password</label>
+					<label for="form-password" class="form-label">Password</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input class="form-input" type="password" id="password" placeholder="Your password" />
+						<input class="form-input" type="password" id="form-password" placeholder="Your password" />
 					</div>
 				</div>
 
 				<div class="form-controlGroup form-controlGroup--success">
-					<label class="form-label" for="text">Text (Success)</label>
+					<label class="form-label" for="form-success">Text (Success)</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input class="form-input" type="text" id="text" placeholder="Some text" value="A value" required/>
+						<input class="form-input" type="text" id="form-success" placeholder="Some text" value="A value" required/>
 					</div>
 				</div>
 				<div class="form-controlGroup form-controlGroup--error">
-					<label for="email" class="form-label">Email (Error)</label>
+					<label for="form-error" class="form-label">Email (Error)</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" value="A value" required/>
+						<input class="form-input" type="email" id="form-error" placeholder="tech@tmw.co.uk" value="A value" required/>
 					</div>
 				</div>
 				<div class="form-controlGroup form-controlGroup--warning">
-					<label for="password" class="form-label">Password (Warning)</label>
+					<label for="form-warning" class="form-label">Password (Warning)</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input class="form-input" type="password" id="password" placeholder="Your password" value="A value" />
+						<input class="form-input" type="password" id="form-warning" placeholder="Your password" value="A value" />
 					</div>
 				</div>
 
 				<div class="form-controlGroup">
-					<label class="form-label" for="comments">Textarea</label>
+					<label class="form-label" for="form-comments">Textarea</label>
 					<div class="form-controlGroup-inputWrapper">
-						<textarea class="form-input form-input--textarea" id="comments" rows="3" cols="50"></textarea>
+						<textarea class="form-input form-input--textarea" id="form-comments" rows="3" cols="50"></textarea>
 					</div>
 				</div>
 				<div class="form-controlGroup">
-					<label class="form-label" for="text">Disabled Text</label>
+					<label class="form-label" for="form-disabled">Disabled Text</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input class="form-input" type="text" id="text" placeholder="Some text" disabled/>
+						<input class="form-input" type="text" id="form-disabled" placeholder="Some text" disabled/>
 					</div>
 				</div>
 				<div class="form-controlGroup">
-					<label class="form-label" for="file">File upload <br>
+					<label class="form-label" for="form-file">File upload <br>
 						<small>Firefox uses the <code>size</code> attribute to determine width.</small>
 					</label>
 
 					<div class="form-controlGroup-inputWrapper">
 						<label class="form-input form-input--fileWrapper">
-							<input class="form-input-file" type="file" id="file" accept="image/*" size="14" />
+							<input class="form-input-file" type="file" id="form-file" accept="image/*" size="14" />
 						</label>
 					</div>
 				</div>
 				<div class="form-controlGroup">
-					<label class="form-label" for="file">File upload (alt)<br>
+					<label class="form-label" for="form-file--alt">File upload (alt)<br>
 						<small>This version hides the default file input, you will need js to change the 'Choose file..' copy </small>
 					</label>
 
 					<div class="form-controlGroup-inputWrapper">
 						<label class="form-input form-input--fileWrapper--styled">
-							<input class="form-input-file" type="file" id="file" accept="image/*" size="14" />
+							<input class="form-input-file" type="file" id="form-file--alt" accept="image/*" size="14" />
 						</label>
 					</div>
 				</div>
 				<div class="g-row">
 					<div class="form-controlGroup g-span6 g-col">
-						<label class="form-label" for="comments">Checkboxes</label>
+						<label class="form-label">Checkboxes</label>
 						<div class="form-controlGroup-inputWrapper">
 							<label class="control">
 								<input type="checkbox" value="check1">
@@ -679,7 +679,7 @@ You can easily update field states by adding modifier classes to `.form-controlG
 					</div>
 
 					<div class="form-controlGroup g-span6 g-col">
-						<label class="form-label" for="comments">Radio buttons</label>
+						<label class="form-label">Radio buttons</label>
 						<div class="form-controlGroup-inputWrapper">
 							<label class="control">
 								<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
@@ -698,7 +698,7 @@ You can easily update field states by adding modifier classes to `.form-controlG
 				</div>
 
 				<div class="form-controlGroup">
-					<label class="form-label" for="comments">Inline Checkboxes</label>
+					<label class="form-label">Inline Checkboxes</label>
 					<div class="form-controlGroup-inputWrapper">
 						<label class="control control--inline">
 							<input type="checkbox" value="check1">
@@ -716,7 +716,7 @@ You can easily update field states by adding modifier classes to `.form-controlG
 				</div>
 
 				<div class="form-controlGroup">
-					<label class="form-label" for="comments">Inline radio buttons</label>
+					<label class="form-label">Inline radio buttons</label>
 					<div class="form-controlGroup-inputWrapper">
 						<label class="control control--inline">
 							<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
@@ -735,9 +735,9 @@ You can easily update field states by adding modifier classes to `.form-controlG
 
 				<div class="g-row">
 					<div class="form-controlGroup g-col g-span6">
-						<label for="choice" class="form-label">Choice</label>
+						<label for="form-choice" class="form-label">Choice</label>
 						<div class="form-controlGroup-inputWrapper">
-							<select id="choice" class="form-input form-input--select">
+							<select id="form-choice" class="form-input form-input--select">
 								<option>1</option>
 								<option>2</option>
 								<option>3</option>
@@ -747,9 +747,9 @@ You can easily update field states by adding modifier classes to `.form-controlG
 						</div>
 					</div>
 					<div class="form-controlGroup g-col g-span6">
-						<label for="choice" class="form-label">Choice (mulitple)</label>
+						<label for="form-choiceMult" class="form-label">Choice (mulitple)</label>
 						<div class="form-controlGroup-inputWrapper">
-							<select id="choicemulitple" multiple class="form-input form-input--select">
+							<select id="form-choiceMult" multiple class="form-input form-input--select">
 								<option>1</option>
 								<option>2</option>
 								<option>3</option>
@@ -761,9 +761,9 @@ You can easily update field states by adding modifier classes to `.form-controlG
 				</div>
 
 				<div class="form-controlGroup">
-					<label for="search" class="form-label">Search</label>
+					<label for="form-search" class="form-label">Search</label>
 					<div class="form-controlGroup-inputWrapper">
-						<input type="search" id="search" placeholder="Some text" class="form-input form-input--search">
+						<input type="search" id="form-search" placeholder="Some text" class="form-input form-input--search">
 					</div>
 				</div>
 
@@ -782,80 +782,80 @@ You can easily update field states by adding modifier classes to `.form-controlG
 	<fieldset class="form-fieldset">
 		<legend class="form-legend">Your form</legend>
 		<div class="form-controlGroup">
-			<label class="form-label" for="text">Text</label>
+			<label class="form-label" for="form-text">Text</label>
 			<div class="form-controlGroup-inputWrapper">
-				<input class="form-input" type="text" id="text" placeholder="Some text" required/>
+				<input class="form-input" type="text" id="form-text" placeholder="Some text" required/>
 			</div>
 		</div>
 		<div class="form-controlGroup">
-			<label for="email" class="form-label">Email</label>
+			<label for="form-email" class="form-label">Email</label>
 			<div class="form-controlGroup-inputWrapper">
-				<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" required/>
+				<input class="form-input" type="email" id="form-email" placeholder="tech@tmw.co.uk" required/>
 			</div>
 		</div>
 		<div class="form-controlGroup">
-			<label for="password" class="form-label">Password</label>
+			<label for="form-password" class="form-label">Password</label>
 			<div class="form-controlGroup-inputWrapper">
-				<input class="form-input" type="password" id="password" placeholder="Your password" />
+				<input class="form-input" type="password" id="form-password" placeholder="Your password" />
 			</div>
 		</div>
 
 		<div class="form-controlGroup form-controlGroup--success">
-			<label class="form-label" for="text">Text (Success)</label>
+			<label class="form-label" for="form-success">Text (Success)</label>
 			<div class="form-controlGroup-inputWrapper">
-				<input class="form-input" type="text" id="text" placeholder="Some text" value="A value" required/>
+				<input class="form-input" type="text" id="form-success" placeholder="Some text" value="A value" required/>
 			</div>
 		</div>
 		<div class="form-controlGroup form-controlGroup--error">
-			<label for="email" class="form-label">Email (Error)</label>
+			<label for="form-error" class="form-label">Email (Error)</label>
 			<div class="form-controlGroup-inputWrapper">
-				<input class="form-input" type="email" id="email" placeholder="tech@tmw.co.uk" value="A value" required/>
+				<input class="form-input" type="email" id="form-error" placeholder="tech@tmw.co.uk" value="A value" required/>
 			</div>
 		</div>
 		<div class="form-controlGroup form-controlGroup--warning">
-			<label for="password" class="form-label">Password (Warning)</label>
+			<label for="form-warning" class="form-label">Password (Warning)</label>
 			<div class="form-controlGroup-inputWrapper">
-				<input class="form-input" type="password" id="password" placeholder="Your password" value="A value" />
+				<input class="form-input" type="password" id="form-warning" placeholder="Your password" value="A value" />
 			</div>
 		</div>
 
 		<div class="form-controlGroup">
-			<label class="form-label" for="comments">Textarea</label>
+			<label class="form-label" for="form-comments">Textarea</label>
 			<div class="form-controlGroup-inputWrapper">
-				<textarea class="form-input form-input--textarea" id="comments" rows="3" cols="50"></textarea>
+				<textarea class="form-input form-input--textarea" id="form-comments" rows="3" cols="50"></textarea>
 			</div>
 		</div>
 		<div class="form-controlGroup">
-			<label class="form-label" for="text">Disabled Text</label>
+			<label class="form-label" for="form-disabled">Disabled Text</label>
 			<div class="form-controlGroup-inputWrapper">
-				<input class="form-input" type="text" id="text" placeholder="Some text" disabled/>
+				<input class="form-input" type="text" id="form-disabled" placeholder="Some text" disabled/>
 			</div>
 		</div>
 		<div class="form-controlGroup">
-			<label class="form-label" for="file">File upload <br>
+			<label class="form-label" for="form-file">File upload <br>
 				<small>Firefox uses the <code>size</code> attribute to determine width.</small>
 			</label>
 
 			<div class="form-controlGroup-inputWrapper">
 				<label class="form-input form-input--fileWrapper">
-					<input class="form-input-file" type="file" id="file" accept="image/*" size="14" />
+					<input class="form-input-file" type="file" id="form-file" accept="image/*" size="14" />
 				</label>
 			</div>
 		</div>
 		<div class="form-controlGroup">
-			<label class="form-label" for="file">File upload (alt)<br>
+			<label class="form-label" for="form-file--alt">File upload (alt)<br>
 				<small>This version hides the default file input, you will need js to change the 'Choose file..' copy </small>
 			</label>
 
 			<div class="form-controlGroup-inputWrapper">
 				<label class="form-input form-input--fileWrapper--styled">
-					<input class="form-input-file" type="file" id="file" accept="image/*" size="14" />
+					<input class="form-input-file" type="file" id="form-file--alt" accept="image/*" size="14" />
 				</label>
 			</div>
 		</div>
 		<div class="g-row">
 			<div class="form-controlGroup g-span6 g-col">
-				<label class="form-label" for="comments">Checkboxes</label>
+				<label class="form-label">Checkboxes</label>
 				<div class="form-controlGroup-inputWrapper">
 					<label class="control">
 						<input type="checkbox" value="check1">
@@ -873,7 +873,7 @@ You can easily update field states by adding modifier classes to `.form-controlG
 			</div>
 
 			<div class="form-controlGroup g-span6 g-col">
-				<label class="form-label" for="comments">Radio buttons</label>
+				<label class="form-label">Radio buttons</label>
 				<div class="form-controlGroup-inputWrapper">
 					<label class="control">
 						<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
@@ -892,7 +892,7 @@ You can easily update field states by adding modifier classes to `.form-controlG
 		</div>
 
 		<div class="form-controlGroup">
-			<label class="form-label" for="comments">Inline Checkboxes</label>
+			<label class="form-label">Inline Checkboxes</label>
 			<div class="form-controlGroup-inputWrapper">
 				<label class="control control--inline">
 					<input type="checkbox" value="check1">
@@ -910,7 +910,7 @@ You can easily update field states by adding modifier classes to `.form-controlG
 		</div>
 
 		<div class="form-controlGroup">
-			<label class="form-label" for="comments">Inline radio buttons</label>
+			<label class="form-label">Inline radio buttons</label>
 			<div class="form-controlGroup-inputWrapper">
 				<label class="control control--inline">
 					<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
@@ -929,9 +929,9 @@ You can easily update field states by adding modifier classes to `.form-controlG
 
 		<div class="g-row">
 			<div class="form-controlGroup g-col g-span6">
-				<label for="choice" class="form-label">Choice</label>
+				<label for="form-choice" class="form-label">Choice</label>
 				<div class="form-controlGroup-inputWrapper">
-					<select id="choice" class="form-input form-input--select">
+					<select id="form-choice" class="form-input form-input--select">
 						<option>1</option>
 						<option>2</option>
 						<option>3</option>
@@ -941,9 +941,9 @@ You can easily update field states by adding modifier classes to `.form-controlG
 				</div>
 			</div>
 			<div class="form-controlGroup g-col g-span6">
-				<label for="choice" class="form-label">Choice (mulitple)</label>
+				<label for="form-choiceMult" class="form-label">Choice (mulitple)</label>
 				<div class="form-controlGroup-inputWrapper">
-					<select id="choicemulitple" multiple class="form-input form-input--select">
+					<select id="form-choiceMult" multiple class="form-input form-input--select">
 						<option>1</option>
 						<option>2</option>
 						<option>3</option>
@@ -955,12 +955,11 @@ You can easily update field states by adding modifier classes to `.form-controlG
 		</div>
 
 		<div class="form-controlGroup">
-			<label for="search" class="form-label">Search</label>
+			<label for="form-search" class="form-label">Search</label>
 			<div class="form-controlGroup-inputWrapper">
-				<input type="search" id="search" placeholder="Some text" class="form-input form-input--search">
+				<input type="search" id="form-search" placeholder="Some text" class="form-input form-input--search">
 			</div>
 		</div>
-
 	</fieldset>
 
 	<div class="form-actions text_centre">
