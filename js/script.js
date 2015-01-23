@@ -64,8 +64,10 @@ TMW.Kickoff = {
 		this.getPackageJSON();
 		trak.start();
 		// trak.options.debug = true;
+		this.getLatestCommit();
 	},
 
+	// Show Repo versions
 	getPackageJSON : function() {
 		var that = this;
 		$.ajax({
@@ -82,6 +84,26 @@ TMW.Kickoff = {
 
 	setVersion : function(version) {
 		$('.currentVersion').text(version);
-	}
+	},
+
+	// Show latest commit message
+	getLatestCommit : function() {
+		var that = this;
+		$.ajax({
+			url: 'https://api.github.com/repos/tmwagency/kickoff/commits',
+			type: 'GET',
+			dataType: 'json',
+		})
+		.done(function(data) {
+			console.log("success", data[0].commit);
+			var commitText = 'Latest commit: "' + data[0].commit.message + '" by ' + data[0].commit.author.name;
+			var commitUrl = data[0].commit.url.replace('api.', '').replace('repos/', '').replace('git/', '').replace('commits', 'commit');
+
+			$('.latestCommit span').text(commitText);
+			$('.latestCommit a').attr('href', commitUrl);
+		});
+	},
+
+
 
 };
