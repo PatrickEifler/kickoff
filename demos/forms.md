@@ -9,12 +9,12 @@ meta:
   description: See Kickoff's form demo
 
 next:
- - title: Get Kickoff
-   body: Find out how to get your hands on Kickoff here.
-   link: get.html
- - title: Use Kickoff
-   body: Ready to get your hands dirty?<br>We’ll show you where to start.
-   link: use.html
+ - title: Typography demo
+   body: See the default typography styles included with the framework
+   link: typography.html
+ - title: Components
+   body: See all the included components
+   link: components.html
 ---
 
 <a name="labelsabove"></a>

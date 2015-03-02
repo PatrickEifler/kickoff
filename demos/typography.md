@@ -8,12 +8,12 @@ meta:
   description: See Kickoff's typography demo
 
 next:
- - title: Get Kickoff
-   body: Find out how to get your hands on Kickoff here.
-   link: get.html
- - title: Use Kickoff
-   body: Ready to get your hands dirty?<br>We’ll show you where to start.
-   link: use.html
+ - title: Grids demo
+   body: Find out about our grid and how to use it
+   link: grids.html
+ - title: Components demo
+   body: See all the included components with the framework
+   link: components.html
 ---
 
 <a name="hp"></a>
@@ -250,7 +250,8 @@ As we are British, we decided to include two spellings for our centred text : `.
 
 ---
 
-<a name="uul"></a>
+<a name="usul"></a>
+
 <h3>Unstyled [un]ordered lists</h3>
 <p>Add an <code>.unstyled</code> class to any <code>&lt;ul></code> or <code>&lt;ol></code> to remove the default bullets, numbering and margins.</p>
 <div class="demo">
@@ -263,7 +264,7 @@ As we are British, we decided to include two spellings for our centred text : `.
 			<li>ul list item 3</li>
 			<li>ul list item 4</li>
 		</ul>
-		<br>
+		<br/>
 		<ol class="unstyled">
 			<li>ol list item 1</li>
 			<li>ol list item 2</li>
@@ -293,8 +294,8 @@ As we are British, we decided to include two spellings for our centred text : `.
 ---
 
 <a name="dl"></a>
-<h3>Definition list</h3>
 
+<h3>Definition list</h3>
 <div class="demo">
 	<a href="https://github.com/tmwagency/kickoff/blob/master/scss/_typography.scss" class="demo-src">_typography.scss</a>
 
